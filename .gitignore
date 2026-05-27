@@ -1,0 +1,4 @@
+# Local agent/runtime state; do not commit machine/session artifacts.
+.omx/
+.codex/
+.agents/

@@ -1,0 +1,5 @@
+source=https://github.com/Leonxlnx/taste-skill
+project_repo=/opt/ai/taste-skill
+commit=3c7017d636c3a4aad378433ea6d0cfa6c921da4a
+canonical_skill_dir=/home/jacyl4/1base/GitLab/agent_skills/taste-skill
+installed_at=2026-05-28T11:19:11+08:00

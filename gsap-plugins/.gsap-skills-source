@@ -1,0 +1,5 @@
+source=https://github.com/greensock/gsap-skills
+project_repo=/opt/ai/gsap-skills
+commit=aed9cfd3277740755f6bfc1155c7aa645403b760
+canonical_skill_dir=/home/jacyl4/1base/GitLab/agent_skills/gsap-plugins
+installed_at=2026-05-28T11:13:49+08:00

@@ -58,9 +58,9 @@ Frontend performance is primarily governed by:
 - How consistently it stays responsive after load
 
 ## When To Use This Skill
+## When To Use This Skill
 
 Use this skill when the task involves:
-
 - Frontend performance optimization
 - Browser rendering issues
 - Slow first load or slow route transition
@@ -82,6 +82,9 @@ Use this skill when the task involves:
 - Accessibility and semantic correctness
 - Debugging production frontend latency
 - Choosing between React, Vue, Svelte, Astro, Solid, Qwik, vanilla, Web Components, or server-first rendering
+
+**Picot-style codebase review trigger (2026-06 session learning)**:
+When the project under analysis contains a SvelteKit/Svelte frontend with interaction-heavy God Nodes (ZoomViewer, PhotoStream, PrefetchOrchestrator, UploadQueue, DirectoryPanel, etc.), **proactively load and apply** this skill together with `gpt-taste` and the `gsap-*` series. Do not default to only `graphify` + `codegraph`. The browser execution model, compositor-friendly animation, and high-end design engineering patterns are first-class concerns for such codebases.
 
 ## Non-Goals
 
@@ -864,6 +867,8 @@ Use this order unless evidence suggests otherwise:
 - Framework runtime for tiny interactions
 - Multiple frontend frameworks on one page without reason
 - Component abstraction that creates excessive DOM depth
+
+**Picot-specific pitfall (2026-06 session)**: Treating a SvelteKit image gallery project as a pure backend + graph-analysis task. The frontend God Nodes (especially ZoomViewer + PrefetchOrchestrator) live on the critical rendering + input path; skipping browser-first + GSAP analysis leaves layout thrashing, main-thread blocking, and low-quality interaction physics unaddressed.
 
 ### Loading Anti-Patterns
 

@@ -47,8 +47,9 @@ curl -s -X POST http://127.0.0.1:11235/html \
 ## Hermes / Firecrawl replacement notes
 
 - Firecrawl is intentionally disabled on this machine; do not restore it as the default fallback.
-- If `hermes doctor` reports a generic missing-API-key issue after Firecrawl removal, check whether Hermes' native `web` toolset is enabled. On this machine, prefer local SearXNG for native search (`web.backend: searxng`, `web.search_backend: searxng`, `SEARXNG_URL=http://127.0.0.1:8888`) while keeping Crawl4AI as the primary ingest path. `ddgs` remains a lightweight fallback for machines without SearXNG.
-- When SearXNG-backed `web_search` fails with `SEARXNG_URL is not set`, distinguish config-file state from running-process environment. `~/.hermes/.env` helps fresh Hermes sessions, but gateway/systemd processes may need an explicit user-service drop-in and restart; the current conversation may need `/reset` or process restart. See `references/searxng-hermes-web-search.md` for the verification ladder and drop-in recipe.
+- If `hermes doctor` reports a generic missing-API-key issue after Firecrawl removal, check whether Hermes' native `web` toolset is enabled. On this machine, prefer official Hermes `web_search` with local SearXNG (`web.backend: searxng`, `web.search_backend: searxng`, `SEARXNG_URL=http://127.0.0.1:8888`) while keeping Crawl4AI as the primary ingest path. `ddgs` remains a lightweight fallback for machines without SearXNG.
+- SearXNG is a search-only provider in Hermes. Keep `web.extract_backend` empty for the local stack and call Crawl4AI MCP for public URL extraction; set `web.extract_backend` only to an official extraction provider when the user explicitly wants native `web_extract`.
+- When SearXNG-backed `web_search` fails with `SEARXNG_URL is not set`, distinguish config-file state from running-process environment. `~/.hermes/.env` helps fresh Hermes sessions, but gateway/systemd processes may need an explicit user-service drop-in and restart; the current conversation may need `/reset` or process restart. See `references/searxng-hermes-web-search.md` for the verification ladder, default routing, and drop-in recipe.
 - For the detailed deployment/debug pattern, see `references/hermes-web-ingest-stack.md`.
 
 ## Safety

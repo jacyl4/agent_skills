@@ -27,6 +27,17 @@ Prefer Scrapling for:
 
 Do not use Scrapling as the default public webpage reader. Use Crawl4AI first for ordinary articles/docs. Use QWebBridge instead when the user's real Chrome login/session/UI interaction matters.
 
+For always-on agent configurations, avoid registering the full Scrapling MCP server by default when token/schema budget matters. Scrapling's MCP schema is large compared with Crawl4AI/QWebBridge. Prefer the local `scrapling_lite` Hermes toolset or shell wrapper instead of full MCP.
+
+Current default-profile pattern on this machine:
+- Full Scrapling MCP stays configured but disabled.
+- `scrapling_lite` is enabled and exposes compact built-in tools:
+  - `web_fetch_smart`: Crawl4AI-first public page reader with quality checks and automatic fallback to Scrapling fetch/stealth.
+  - `scrapling_fetch`: explicit Scrapling get/fetch/stealth call with capped output and optional CSS selector.
+- Shell-first agents use `/home/jacyl4/.local/bin/scrapling-fetch-lite` for on-demand `get|fetch|stealth` without registering Scrapling MCP.
+
+In token/cost-sensitive Hermes setups, keep this single-profile research-lite arrangement: SearXNG `web_search` + Crawl4AI/QWebBridge MCP + `scrapling_lite`. Avoid a separate `web-full` profile unless the user explicitly wants profile-level isolation.
+
 ## Checks
 
 ```bash

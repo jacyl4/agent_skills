@@ -1,0 +1,1197 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "automation/agents/btw/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/btw/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 1.0,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "automation/agents/create-gsd-extension/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/create-gsd-extension/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.993333,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "automation/agents/forensics/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/forensics/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.972417,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "automation/skills/create-skill/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/create-skill/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.973643,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "automation/skills/spike-wrap-up/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/spike-wrap-up/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.953003,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "automation/web/agent-browser/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/agent-browser/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.995937,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "automation/web/web-perf/LICENSE",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/LICENSE",
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f"
+      }
+    },
+    {
+      "path": "automation/workflows/create-workflow/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/create-workflow/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.996969,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "documents/morph-ppt-3d/LICENSE",
+      "sha256": "7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/LICENSE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/morph-ppt-3d/NOTICE",
+      "sha256": "3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://github.com/iOfficeAI/OfficeCLI/blob/fb98e593612dee2cec36847666671dba502e60aa/NOTICE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/morph-ppt/LICENSE",
+      "sha256": "7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/LICENSE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/morph-ppt/NOTICE",
+      "sha256": "3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://github.com/iOfficeAI/OfficeCLI/blob/fb98e593612dee2cec36847666671dba502e60aa/NOTICE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/officecli-academic-paper/LICENSE",
+      "sha256": "7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/LICENSE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/officecli-academic-paper/NOTICE",
+      "sha256": "3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://github.com/iOfficeAI/OfficeCLI/blob/fb98e593612dee2cec36847666671dba502e60aa/NOTICE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/officecli-data-dashboard/LICENSE",
+      "sha256": "7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/LICENSE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/officecli-data-dashboard/NOTICE",
+      "sha256": "3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://github.com/iOfficeAI/OfficeCLI/blob/fb98e593612dee2cec36847666671dba502e60aa/NOTICE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/officecli-docx/LICENSE",
+      "sha256": "7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/LICENSE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/officecli-docx/NOTICE",
+      "sha256": "3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://github.com/iOfficeAI/OfficeCLI/blob/fb98e593612dee2cec36847666671dba502e60aa/NOTICE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/officecli-financial-model/LICENSE",
+      "sha256": "7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/LICENSE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/officecli-financial-model/NOTICE",
+      "sha256": "3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://github.com/iOfficeAI/OfficeCLI/blob/fb98e593612dee2cec36847666671dba502e60aa/NOTICE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/officecli-pitch-deck/LICENSE",
+      "sha256": "7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/LICENSE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/officecli-pitch-deck/NOTICE",
+      "sha256": "3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://github.com/iOfficeAI/OfficeCLI/blob/fb98e593612dee2cec36847666671dba502e60aa/NOTICE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/officecli-pptx/LICENSE",
+      "sha256": "7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/LICENSE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/officecli-pptx/NOTICE",
+      "sha256": "3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://github.com/iOfficeAI/OfficeCLI/blob/fb98e593612dee2cec36847666671dba502e60aa/NOTICE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/officecli-word-form/LICENSE",
+      "sha256": "7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/LICENSE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/officecli-word-form/NOTICE",
+      "sha256": "3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://github.com/iOfficeAI/OfficeCLI/blob/fb98e593612dee2cec36847666671dba502e60aa/NOTICE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/officecli-xlsx/LICENSE",
+      "sha256": "7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/LICENSE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/officecli-xlsx/NOTICE",
+      "sha256": "3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://github.com/iOfficeAI/OfficeCLI/blob/fb98e593612dee2cec36847666671dba502e60aa/NOTICE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/officecli/LICENSE",
+      "sha256": "7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/LICENSE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "documents/officecli/NOTICE",
+      "sha256": "3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://github.com/iOfficeAI/OfficeCLI/blob/fb98e593612dee2cec36847666671dba502e60aa/NOTICE",
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa"
+      }
+    },
+    {
+      "path": "engineering/api/api-design/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/api-design/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.98198,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "engineering/communication/cavecrew/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/LICENSE",
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798"
+      }
+    },
+    {
+      "path": "engineering/communication/cavecrew/NOTICE",
+      "sha256": "20112dc6e62e91da4f03c29fd10cfa41743a9c526389fdf1396c3649c18216fc",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/NOTICE",
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798"
+      }
+    },
+    {
+      "path": "engineering/communication/caveman-commit/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/LICENSE",
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798"
+      }
+    },
+    {
+      "path": "engineering/communication/caveman-commit/NOTICE",
+      "sha256": "20112dc6e62e91da4f03c29fd10cfa41743a9c526389fdf1396c3649c18216fc",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/NOTICE",
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798"
+      }
+    },
+    {
+      "path": "engineering/communication/caveman-compress/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/LICENSE",
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798"
+      }
+    },
+    {
+      "path": "engineering/communication/caveman-compress/NOTICE",
+      "sha256": "20112dc6e62e91da4f03c29fd10cfa41743a9c526389fdf1396c3649c18216fc",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/NOTICE",
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798"
+      }
+    },
+    {
+      "path": "engineering/communication/caveman-help/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/LICENSE",
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798"
+      }
+    },
+    {
+      "path": "engineering/communication/caveman-help/NOTICE",
+      "sha256": "20112dc6e62e91da4f03c29fd10cfa41743a9c526389fdf1396c3649c18216fc",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/NOTICE",
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798"
+      }
+    },
+    {
+      "path": "engineering/communication/caveman-review/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/LICENSE",
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798"
+      }
+    },
+    {
+      "path": "engineering/communication/caveman-review/NOTICE",
+      "sha256": "20112dc6e62e91da4f03c29fd10cfa41743a9c526389fdf1396c3649c18216fc",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/NOTICE",
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798"
+      }
+    },
+    {
+      "path": "engineering/communication/caveman-stats/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/LICENSE",
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798"
+      }
+    },
+    {
+      "path": "engineering/communication/caveman-stats/NOTICE",
+      "sha256": "20112dc6e62e91da4f03c29fd10cfa41743a9c526389fdf1396c3649c18216fc",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/NOTICE",
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798"
+      }
+    },
+    {
+      "path": "engineering/communication/caveman/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/LICENSE",
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798"
+      }
+    },
+    {
+      "path": "engineering/communication/caveman/NOTICE",
+      "sha256": "20112dc6e62e91da4f03c29fd10cfa41743a9c526389fdf1396c3649c18216fc",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/NOTICE",
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798"
+      }
+    },
+    {
+      "path": "engineering/debugging/debug-like-expert/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/debug-like-expert/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 1.0,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "engineering/dependencies/dependency-upgrade/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/dependency-upgrade/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.99069,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "engineering/design/design-an-interface/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/design-an-interface/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.975641,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "engineering/github/github-workflows/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/github-workflows/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 1.0,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "engineering/github/github-workflows/references/gh/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/github-workflows/references/gh/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.967476,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "engineering/mcp/create-mcp-server/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/create-mcp-server/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.979729,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "engineering/observability/observability/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/observability/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.987505,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "engineering/performance/code-optimizer/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/code-optimizer/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.955587,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "engineering/planning/decompose-into-slices/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/decompose-into-slices/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.9166,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "engineering/planning/grill-me/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/grill-me/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.969174,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "engineering/planning/write-milestone-brief/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/write-milestone-brief/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.967382,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "engineering/ponytail/ponytail-audit/LICENSE",
+      "sha256": "fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/dietrichgebert/ponytail/16352ac229eb08a9598dcae48fe9f2b342567d86/LICENSE",
+        "commit": "16352ac229eb08a9598dcae48fe9f2b342567d86"
+      }
+    },
+    {
+      "path": "engineering/ponytail/ponytail-debt/LICENSE",
+      "sha256": "fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/dietrichgebert/ponytail/16352ac229eb08a9598dcae48fe9f2b342567d86/LICENSE",
+        "commit": "16352ac229eb08a9598dcae48fe9f2b342567d86"
+      }
+    },
+    {
+      "path": "engineering/ponytail/ponytail-gain/LICENSE",
+      "sha256": "fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/dietrichgebert/ponytail/16352ac229eb08a9598dcae48fe9f2b342567d86/LICENSE",
+        "commit": "16352ac229eb08a9598dcae48fe9f2b342567d86"
+      }
+    },
+    {
+      "path": "engineering/ponytail/ponytail-help/LICENSE",
+      "sha256": "fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/dietrichgebert/ponytail/16352ac229eb08a9598dcae48fe9f2b342567d86/LICENSE",
+        "commit": "16352ac229eb08a9598dcae48fe9f2b342567d86"
+      }
+    },
+    {
+      "path": "engineering/ponytail/ponytail-review/LICENSE",
+      "sha256": "fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/dietrichgebert/ponytail/16352ac229eb08a9598dcae48fe9f2b342567d86/LICENSE",
+        "commit": "16352ac229eb08a9598dcae48fe9f2b342567d86"
+      }
+    },
+    {
+      "path": "engineering/ponytail/ponytail/LICENSE",
+      "sha256": "fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/dietrichgebert/ponytail/16352ac229eb08a9598dcae48fe9f2b342567d86/LICENSE",
+        "commit": "16352ac229eb08a9598dcae48fe9f2b342567d86"
+      }
+    },
+    {
+      "path": "engineering/practices/full-output-enforcement/LICENSE",
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/LICENSE",
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246"
+      }
+    },
+    {
+      "path": "engineering/quality/best-practices/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/best-practices/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 1.0,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "engineering/quality/lint/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/lint/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 1.0,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "engineering/quality/review/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/review/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 1.0,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "engineering/quality/verify-before-complete/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/verify-before-complete/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 1.0,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "engineering/security/security-review/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/security-review/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.987817,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "engineering/testing/tdd/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/tdd/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.986418,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "engineering/testing/test/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/test/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 1.0,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "frontend/animation/gsap-core/LICENSE",
+      "sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/greensock/gsap-skills/aed9cfd3277740755f6bfc1155c7aa645403b760/LICENSE",
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760"
+      }
+    },
+    {
+      "path": "frontend/animation/gsap-frameworks/LICENSE",
+      "sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/greensock/gsap-skills/aed9cfd3277740755f6bfc1155c7aa645403b760/LICENSE",
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760"
+      }
+    },
+    {
+      "path": "frontend/animation/gsap-performance/LICENSE",
+      "sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/greensock/gsap-skills/aed9cfd3277740755f6bfc1155c7aa645403b760/LICENSE",
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760"
+      }
+    },
+    {
+      "path": "frontend/animation/gsap-plugins/LICENSE",
+      "sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/greensock/gsap-skills/aed9cfd3277740755f6bfc1155c7aa645403b760/LICENSE",
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760"
+      }
+    },
+    {
+      "path": "frontend/animation/gsap-react/LICENSE",
+      "sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/greensock/gsap-skills/aed9cfd3277740755f6bfc1155c7aa645403b760/LICENSE",
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760"
+      }
+    },
+    {
+      "path": "frontend/animation/gsap-scrolltrigger/LICENSE",
+      "sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/greensock/gsap-skills/aed9cfd3277740755f6bfc1155c7aa645403b760/LICENSE",
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760"
+      }
+    },
+    {
+      "path": "frontend/animation/gsap-timeline/LICENSE",
+      "sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/greensock/gsap-skills/aed9cfd3277740755f6bfc1155c7aa645403b760/LICENSE",
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760"
+      }
+    },
+    {
+      "path": "frontend/animation/gsap-utils/LICENSE",
+      "sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/greensock/gsap-skills/aed9cfd3277740755f6bfc1155c7aa645403b760/LICENSE",
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760"
+      }
+    },
+    {
+      "path": "frontend/design/brandkit/LICENSE",
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/LICENSE",
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246"
+      }
+    },
+    {
+      "path": "frontend/design/design-taste-frontend-v1/LICENSE",
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/LICENSE",
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246"
+      }
+    },
+    {
+      "path": "frontend/design/design-taste-frontend/LICENSE",
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/LICENSE",
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246"
+      }
+    },
+    {
+      "path": "frontend/design/frontend-design/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "npm-package-root-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/frontend-design/SKILL.md",
+        "skill_sha256": "3dc8886d38b6470dfb70ab037db15a6ce48e167339692475086f73a1c8f2a8ac"
+      }
+    },
+    {
+      "path": "frontend/design/frontend-design/LICENSE.txt",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "origin": {
+        "kind": "modified-github-derivative-notice",
+        "url": "https://raw.githubusercontent.com/anthropics/skills/00756142ab04c82a447693cf373c4e0c554d1005/skills/frontend-design/LICENSE.txt",
+        "commit": "00756142ab04c82a447693cf373c4e0c554d1005",
+        "git_blob": "f433b1a53f5b830a205fd2df78e2b34974656c7b",
+        "verified_skill_path": "skills/frontend-design/SKILL.md",
+        "comparison": "SKILL differs by three blank lines only; GSD root MIT is separate package attribution"
+      }
+    },
+    {
+      "path": "frontend/design/gpt-taste/LICENSE",
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/LICENSE",
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246"
+      }
+    },
+    {
+      "path": "frontend/design/high-end-visual-design/LICENSE",
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/LICENSE",
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246"
+      }
+    },
+    {
+      "path": "frontend/design/image-to-code/LICENSE",
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/LICENSE",
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246"
+      }
+    },
+    {
+      "path": "frontend/design/imagegen-frontend-mobile/LICENSE",
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/LICENSE",
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246"
+      }
+    },
+    {
+      "path": "frontend/design/imagegen-frontend-web/LICENSE",
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/LICENSE",
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246"
+      }
+    },
+    {
+      "path": "frontend/design/industrial-brutalist-ui/LICENSE",
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/LICENSE",
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246"
+      }
+    },
+    {
+      "path": "frontend/design/make-interfaces-feel-better/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/make-interfaces-feel-better/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.98803,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "frontend/design/minimalist-ui/LICENSE",
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/LICENSE",
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246"
+      }
+    },
+    {
+      "path": "frontend/design/redesign-existing-projects/LICENSE",
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/LICENSE",
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246"
+      }
+    },
+    {
+      "path": "frontend/design/stitch-design-taste/LICENSE",
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/LICENSE",
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246"
+      }
+    },
+    {
+      "path": "frontend/design/userinterface-wiki/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/userinterface-wiki/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 1.0,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "frontend/performance/core-web-vitals/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/core-web-vitals/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 1.0,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "frontend/quality/accessibility/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/accessibility/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 1.0,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "frontend/quality/web-design-guidelines/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/web-design-guidelines/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 1.0,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "frontend/quality/web-quality-audit/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/web-quality-audit/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 1.0,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "frontend/react/react-best-practices/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/react-best-practices/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 1.0,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "platforms/cloudflare/agents-sdk/LICENSE",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/LICENSE",
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f"
+      }
+    },
+    {
+      "path": "platforms/cloudflare/cloudflare-email-service/LICENSE",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/LICENSE",
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f"
+      }
+    },
+    {
+      "path": "platforms/cloudflare/cloudflare-one-migrations/LICENSE",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/LICENSE",
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f"
+      }
+    },
+    {
+      "path": "platforms/cloudflare/cloudflare-one/LICENSE",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/LICENSE",
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f"
+      }
+    },
+    {
+      "path": "platforms/cloudflare/cloudflare/LICENSE",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/LICENSE",
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f"
+      }
+    },
+    {
+      "path": "platforms/cloudflare/durable-objects/LICENSE",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/LICENSE",
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f"
+      }
+    },
+    {
+      "path": "platforms/cloudflare/turnstile-spin/LICENSE",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/LICENSE",
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f"
+      }
+    },
+    {
+      "path": "platforms/cloudflare/workers-best-practices/LICENSE",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/LICENSE",
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f"
+      }
+    },
+    {
+      "path": "platforms/cloudflare/wrangler/LICENSE",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "origin": {
+        "kind": "github-root-notice",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/LICENSE",
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f"
+      }
+    },
+    {
+      "path": "platforms/hermes/audiocraft-audio-generation/LICENSE",
+      "sha256": "821556e6336796450ab852d375117b48a4887e71d255794fd6318d99982a5ab6",
+      "origin": {
+        "kind": "modified-github-derivative-notice",
+        "url": "https://github.com/NousResearch/hermes-agent/blob/91937a6dc3ffbbe2f3be91a500f0ecf962c4cf53/LICENSE",
+        "commit": "91937a6dc3ffbbe2f3be91a500f0ecf962c4cf53",
+        "verified_skill_path": "optional-skills/creative/audiocraft-audio-generation/SKILL.md",
+        "skill_text_similarity": 0.998101,
+        "matching_files": 2,
+        "compared_files": 3,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "platforms/hermes/godmode/LICENSE",
+      "sha256": "821556e6336796450ab852d375117b48a4887e71d255794fd6318d99982a5ab6",
+      "origin": {
+        "kind": "modified-github-derivative-notice",
+        "url": "https://github.com/NousResearch/hermes-agent/blob/91937a6dc3ffbbe2f3be91a500f0ecf962c4cf53/LICENSE",
+        "commit": "91937a6dc3ffbbe2f3be91a500f0ecf962c4cf53",
+        "verified_skill_path": "optional-skills/security/godmode/SKILL.md",
+        "skill_text_similarity": 0.998183,
+        "matching_files": 7,
+        "compared_files": 9,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "platforms/hermes/hermes-s6-container-supervision/LICENSE",
+      "sha256": "821556e6336796450ab852d375117b48a4887e71d255794fd6318d99982a5ab6",
+      "origin": {
+        "kind": "modified-github-derivative-notice",
+        "url": "https://github.com/NousResearch/hermes-agent/blob/91937a6dc3ffbbe2f3be91a500f0ecf962c4cf53/LICENSE",
+        "commit": "91937a6dc3ffbbe2f3be91a500f0ecf962c4cf53",
+        "verified_skill_path": "optional-skills/devops/hermes-s6-container-supervision/SKILL.md",
+        "skill_text_similarity": 0.959734,
+        "matching_files": 0,
+        "compared_files": 1,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "platforms/hermes/obliteratus/LICENSE",
+      "sha256": "821556e6336796450ab852d375117b48a4887e71d255794fd6318d99982a5ab6",
+      "origin": {
+        "kind": "modified-github-derivative-notice",
+        "url": "https://github.com/NousResearch/hermes-agent/blob/91937a6dc3ffbbe2f3be91a500f0ecf962c4cf53/LICENSE",
+        "commit": "91937a6dc3ffbbe2f3be91a500f0ecf962c4cf53",
+        "verified_skill_path": "optional-skills/mlops/obliteratus/SKILL.md",
+        "skill_text_similarity": 0.999151,
+        "matching_files": 5,
+        "compared_files": 6,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "platforms/hermes/subagent-driven-development/LICENSE",
+      "sha256": "821556e6336796450ab852d375117b48a4887e71d255794fd6318d99982a5ab6",
+      "origin": {
+        "kind": "modified-github-derivative-notice",
+        "url": "https://github.com/NousResearch/hermes-agent/blob/91937a6dc3ffbbe2f3be91a500f0ecf962c4cf53/LICENSE",
+        "commit": "91937a6dc3ffbbe2f3be91a500f0ecf962c4cf53",
+        "verified_skill_path": "optional-skills/software-development/subagent-driven-development/SKILL.md",
+        "skill_text_similarity": 0.997594,
+        "matching_files": 2,
+        "compared_files": 3,
+        "exact_payload": false
+      }
+    },
+    {
+      "path": "writing/documentation/write-docs/LICENSE",
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "origin": {
+        "kind": "modified-package-derivative-notice",
+        "package": "@opengsd/gsd-pi",
+        "version": "1.22.0",
+        "verified_skill_path": "src/resources/skills/write-docs/SKILL.md",
+        "comparison": "blank-line-normalized text similarity",
+        "similarity": 0.975895,
+        "exact_payload": false
+      }
+    }
+  ]
+}

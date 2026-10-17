@@ -1,0 +1,85 @@
+{
+  "notices": 114,
+  "matched_imports": {
+    "gsd": [
+      "frontend/design/frontend-design",
+      "frontend/quality/accessibility",
+      "automation/web/agent-browser",
+      "engineering/api/api-design",
+      "engineering/quality/best-practices",
+      "automation/agents/btw",
+      "engineering/performance/code-optimizer",
+      "frontend/performance/core-web-vitals",
+      "automation/agents/create-gsd-extension",
+      "engineering/mcp/create-mcp-server",
+      "automation/skills/create-skill",
+      "automation/workflows/create-workflow",
+      "engineering/debugging/debug-like-expert",
+      "engineering/planning/decompose-into-slices",
+      "engineering/dependencies/dependency-upgrade",
+      "engineering/design/design-an-interface",
+      "automation/agents/forensics",
+      "engineering/github/github-workflows",
+      "engineering/planning/grill-me",
+      "engineering/quality/lint",
+      "frontend/design/make-interfaces-feel-better",
+      "engineering/observability/observability",
+      "frontend/react/react-best-practices",
+      "engineering/quality/review",
+      "engineering/security/security-review",
+      "automation/skills/spike-wrap-up",
+      "engineering/testing/tdd",
+      "engineering/testing/test",
+      "frontend/design/userinterface-wiki",
+      "engineering/quality/verify-before-complete",
+      "frontend/quality/web-design-guidelines",
+      "frontend/quality/web-quality-audit",
+      "writing/documentation/write-docs",
+      "engineering/planning/write-milestone-brief"
+    ],
+    "hermes": [
+      "platforms/hermes/obliteratus",
+      "platforms/hermes/audiocraft-audio-generation",
+      "platforms/hermes/godmode",
+      "platforms/hermes/hermes-s6-container-supervision",
+      "platforms/hermes/subagent-driven-development"
+    ],
+    "unattributed_local": [
+      "engineering/planning/handoff",
+      "platforms/hermes/macos-computer-use",
+      "platforms/hermes/kanban-codex-lane",
+      "platforms/hermes/jupyter-live-kernel",
+      "platforms/hermes/hermes-agent-ops",
+      "platforms/hermes/hermes-local-ai-stack-ops",
+      "platforms/hermes/honcho-local-memory-ops",
+      "platforms/hermes/local-web-research-stack",
+      "platforms/hermes/python-app-deployment",
+      "platforms/hermes/webhook-subscriptions",
+      "platforms/hermes/windterm-linux-integration",
+      "platforms/hermes/hermes-desktop-plugins",
+      "platforms/hermes/native-mcp",
+      "platforms/hermes/spotify",
+      "platforms/hermes/linear",
+      "platforms/hermes/petdex",
+      "platforms/hermes/debugging-hermes-tui-commands",
+      "platforms/hermes/writing-plans"
+    ]
+  },
+  "optional_notice_checks": [
+    {
+      "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/NOTICE",
+      "http_status": "404"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/NOTICE",
+      "http_status": "200"
+    }
+  ],
+  "policy": "Preserve exact provided notices for verified imports and modified derivatives; similarity is provenance evidence, not proof of exact payload or a new license grant.",
+  "frontend_design_original_terms": {
+    "commit": "00756142ab04c82a447693cf373c4e0c554d1005",
+    "file": "frontend/design/frontend-design/LICENSE.txt",
+    "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+    "body_comparison": "three blank lines only"
+  }
+}

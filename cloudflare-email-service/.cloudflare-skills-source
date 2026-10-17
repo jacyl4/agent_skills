@@ -1,7 +1,0 @@
-source_url=https://github.com/cloudflare/skills
-source_repo=cloudflare/skills
-source_ref=main
-source_commit=30553f89ae1ef1e3c2917cd09d72dac992bb4e9a
-source_path=skills/cloudflare-email-service
-installed_at=2026-07-27T19:42:09+08:00
-canonical_skill_dir=/home/jacyl4/1base/GitLab/agent_skills/cloudflare-email-service

@@ -1,0 +1,582 @@
+{
+  "source": "/home/jacyl4/1base/GitLab/agent_skills/skills",
+  "before_unique_skills": 68,
+  "source_count": 126,
+  "imported_directories": 57,
+  "imported_shared_directories": 35,
+  "imported_hermes_directories": 22,
+  "native_owners_preserved": [
+    "Codex .system",
+    "OMX",
+    "Codex plugins",
+    "Understand Anything",
+    "Hermes bundled manifest",
+    "Hermes WebUI manifest",
+    "Hermes Hub lock"
+  ],
+  "officecli_normalization": {
+    "repo_url": "https://github.com/iOfficeAI/OfficeCLI",
+    "subdir": "skills/officecli",
+    "commit": "fb98e593612dee2cec36847666671dba502e60aa",
+    "skill_body_unchanged": true
+  },
+  "imports": [
+    {
+      "source": "/home/jacyl4/.agents/skills/accessibility",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/frontend/quality/accessibility",
+      "original_sha256": "d62e417088b7d894c87883a2be9ceba9ea5cc3056cbf378f9f0e0f0ea8252351",
+      "managed_sha256": "d62e417088b7d894c87883a2be9ceba9ea5cc3056cbf378f9f0e0f0ea8252351",
+      "targets": [],
+      "relative_path": "frontend/quality/accessibility",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/agent-browser",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/automation/web/agent-browser",
+      "original_sha256": "ff888a85c9fea7a79b4fa31b4149433a21227c3bcf4cffbe9d7cd01177c7c7da",
+      "managed_sha256": "ff888a85c9fea7a79b4fa31b4149433a21227c3bcf4cffbe9d7cd01177c7c7da",
+      "targets": [],
+      "relative_path": "automation/web/agent-browser",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/api-design",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/engineering/api/api-design",
+      "original_sha256": "8ba7eb3a76673cb17933677537bef1822e99a6ad7afc20f12747995535f6e269",
+      "managed_sha256": "8ba7eb3a76673cb17933677537bef1822e99a6ad7afc20f12747995535f6e269",
+      "targets": [],
+      "relative_path": "engineering/api/api-design",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/best-practices",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/engineering/quality/best-practices",
+      "original_sha256": "f0995e14d712be66163d8fd27d66d561ba230b08ebc550bd44ae70f568b434cd",
+      "managed_sha256": "f0995e14d712be66163d8fd27d66d561ba230b08ebc550bd44ae70f568b434cd",
+      "targets": [],
+      "relative_path": "engineering/quality/best-practices",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/btw",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/automation/agents/btw",
+      "original_sha256": "e1da9040432ee0acd2c62adfb743e26d8eeca1dd23515401047066f99f9859dd",
+      "managed_sha256": "e1da9040432ee0acd2c62adfb743e26d8eeca1dd23515401047066f99f9859dd",
+      "targets": [],
+      "relative_path": "automation/agents/btw",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/code-optimizer",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/engineering/performance/code-optimizer",
+      "original_sha256": "62eabcc0e8968b03a81e58aa79ee8b15cafcce1cbc77224edbc276fb67415067",
+      "managed_sha256": "62eabcc0e8968b03a81e58aa79ee8b15cafcce1cbc77224edbc276fb67415067",
+      "targets": [],
+      "relative_path": "engineering/performance/code-optimizer",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/core-web-vitals",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/frontend/performance/core-web-vitals",
+      "original_sha256": "58e0798caa26bcb745e594fb65241b853ab7597b4a50234f4cd16cfe1479f2b4",
+      "managed_sha256": "58e0798caa26bcb745e594fb65241b853ab7597b4a50234f4cd16cfe1479f2b4",
+      "targets": [],
+      "relative_path": "frontend/performance/core-web-vitals",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/create-gsd-extension",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/automation/agents/create-gsd-extension",
+      "original_sha256": "6364a21a33f056c617829767dd04fc6a5bc2368e3dccbbbc53f35262d1c5d422",
+      "managed_sha256": "6364a21a33f056c617829767dd04fc6a5bc2368e3dccbbbc53f35262d1c5d422",
+      "targets": [],
+      "relative_path": "automation/agents/create-gsd-extension",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/create-mcp-server",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/engineering/mcp/create-mcp-server",
+      "original_sha256": "0212af3ee886f8ce9dbbc4764a0059e0ce4a2905d60da78526a115772d26c0e6",
+      "managed_sha256": "0212af3ee886f8ce9dbbc4764a0059e0ce4a2905d60da78526a115772d26c0e6",
+      "targets": [],
+      "relative_path": "engineering/mcp/create-mcp-server",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/create-skill",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/automation/skills/create-skill",
+      "original_sha256": "6ea05b33ad04b9950976391d95bc13e876803b4daff451ec632f08a6e16216cb",
+      "managed_sha256": "6ea05b33ad04b9950976391d95bc13e876803b4daff451ec632f08a6e16216cb",
+      "targets": [],
+      "relative_path": "automation/skills/create-skill",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/create-workflow",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/automation/workflows/create-workflow",
+      "original_sha256": "3b81375c06a0b4947f824a7a076cda7ebb49b9ed104469cff0163b6d2e5fcb61",
+      "managed_sha256": "3b81375c06a0b4947f824a7a076cda7ebb49b9ed104469cff0163b6d2e5fcb61",
+      "targets": [],
+      "relative_path": "automation/workflows/create-workflow",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/debug-like-expert",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/engineering/debugging/debug-like-expert",
+      "original_sha256": "fda7db405ccec2cc9ca524d8f079e77b67995790d8f2bfc273bd84b7a310917b",
+      "managed_sha256": "fda7db405ccec2cc9ca524d8f079e77b67995790d8f2bfc273bd84b7a310917b",
+      "targets": [],
+      "relative_path": "engineering/debugging/debug-like-expert",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/decompose-into-slices",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/engineering/planning/decompose-into-slices",
+      "original_sha256": "fcfe2146bc4ca442ded9417d5aad29b02afe61f83b104e5b6c83a475b34b6a88",
+      "managed_sha256": "fcfe2146bc4ca442ded9417d5aad29b02afe61f83b104e5b6c83a475b34b6a88",
+      "targets": [],
+      "relative_path": "engineering/planning/decompose-into-slices",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/dependency-upgrade",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/engineering/dependencies/dependency-upgrade",
+      "original_sha256": "8d59950dbc2b143d2f9d5aba1de1e9c6e14fdeb9199072befea27de1dee8095e",
+      "managed_sha256": "8d59950dbc2b143d2f9d5aba1de1e9c6e14fdeb9199072befea27de1dee8095e",
+      "targets": [],
+      "relative_path": "engineering/dependencies/dependency-upgrade",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/design-an-interface",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/engineering/design/design-an-interface",
+      "original_sha256": "8e23b96bdf1afb1db12e98a7d009f38c240c3e6fa883b242cbb90443d7d6441e",
+      "managed_sha256": "8e23b96bdf1afb1db12e98a7d009f38c240c3e6fa883b242cbb90443d7d6441e",
+      "targets": [],
+      "relative_path": "engineering/design/design-an-interface",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/forensics",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/automation/agents/forensics",
+      "original_sha256": "7baf7f69b750f0204f8d4a1aa62991f7346aa0af42082270cf9482ebda60f83e",
+      "managed_sha256": "7baf7f69b750f0204f8d4a1aa62991f7346aa0af42082270cf9482ebda60f83e",
+      "targets": [],
+      "relative_path": "automation/agents/forensics",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/frontend-design",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/frontend/design/frontend-design",
+      "original_sha256": "56f9cd202ae29643e745b630950d8afc47a8eb090d619f092aba15a39b117c90",
+      "managed_sha256": "56f9cd202ae29643e745b630950d8afc47a8eb090d619f092aba15a39b117c90",
+      "targets": [],
+      "relative_path": "frontend/design/frontend-design",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/github-workflows",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/engineering/github/github-workflows",
+      "original_sha256": "360f289bf042a63a9938e4dd476ba2289efd99ed4095290e486ee114b6324d1f",
+      "managed_sha256": "360f289bf042a63a9938e4dd476ba2289efd99ed4095290e486ee114b6324d1f",
+      "targets": [],
+      "relative_path": "engineering/github/github-workflows",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/grill-me",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/engineering/planning/grill-me",
+      "original_sha256": "b085c4aff7ad073f65d8e06eb53d213f047bc045b70d51ea34f1687b9265b416",
+      "managed_sha256": "b085c4aff7ad073f65d8e06eb53d213f047bc045b70d51ea34f1687b9265b416",
+      "targets": [],
+      "relative_path": "engineering/planning/grill-me",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/handoff",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/engineering/planning/handoff",
+      "original_sha256": "db4407473dfaa7e9f85b00b70bd1d4e4f78065ce5ca57cf58362a16e2472f2c1",
+      "managed_sha256": "db4407473dfaa7e9f85b00b70bd1d4e4f78065ce5ca57cf58362a16e2472f2c1",
+      "targets": [],
+      "relative_path": "engineering/planning/handoff",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/lint",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/engineering/quality/lint",
+      "original_sha256": "42923ed99e69e2b1522d4f07dff986839d2f96f76bf3c08167cdce3eaccbb6a3",
+      "managed_sha256": "42923ed99e69e2b1522d4f07dff986839d2f96f76bf3c08167cdce3eaccbb6a3",
+      "targets": [],
+      "relative_path": "engineering/quality/lint",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/make-interfaces-feel-better",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/frontend/design/make-interfaces-feel-better",
+      "original_sha256": "cadd191bd80d23dd1bec56669998528e5f2157a65d7d2eac35d52293052258f7",
+      "managed_sha256": "cadd191bd80d23dd1bec56669998528e5f2157a65d7d2eac35d52293052258f7",
+      "targets": [],
+      "relative_path": "frontend/design/make-interfaces-feel-better",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/observability",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/engineering/observability/observability",
+      "original_sha256": "c39001a9125e4fe5afb505aa35271e950e81ef86d6a7f700e760529358b0e27d",
+      "managed_sha256": "c39001a9125e4fe5afb505aa35271e950e81ef86d6a7f700e760529358b0e27d",
+      "targets": [],
+      "relative_path": "engineering/observability/observability",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/react-best-practices",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/frontend/react/react-best-practices",
+      "original_sha256": "cc10fff02525d1ba05bc7e5c6177a8a59b5e90473ae87e2f590eefdfd1b32a15",
+      "managed_sha256": "cc10fff02525d1ba05bc7e5c6177a8a59b5e90473ae87e2f590eefdfd1b32a15",
+      "targets": [],
+      "relative_path": "frontend/react/react-best-practices",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/review",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/engineering/quality/review",
+      "original_sha256": "9796968cbf9254faa0ec94946a14b287a8447198f56e1582b5a25b2620badb6c",
+      "managed_sha256": "9796968cbf9254faa0ec94946a14b287a8447198f56e1582b5a25b2620badb6c",
+      "targets": [],
+      "relative_path": "engineering/quality/review",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/security-review",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/engineering/security/security-review",
+      "original_sha256": "b4c17d008f2c49c793f3413d32b54eaf0846f104ac072a24e95c28de7ad060ef",
+      "managed_sha256": "b4c17d008f2c49c793f3413d32b54eaf0846f104ac072a24e95c28de7ad060ef",
+      "targets": [],
+      "relative_path": "engineering/security/security-review",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/spike-wrap-up",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/automation/skills/spike-wrap-up",
+      "original_sha256": "6b02134108ef0c1a97e2762868b82385b973b304b0860ac901fa50a75ce30369",
+      "managed_sha256": "6b02134108ef0c1a97e2762868b82385b973b304b0860ac901fa50a75ce30369",
+      "targets": [],
+      "relative_path": "automation/skills/spike-wrap-up",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/tdd",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/engineering/testing/tdd",
+      "original_sha256": "3b634558384ca98929b9bbf8dd25fe86a8e90f07c967e7d02c004445c58dcd0d",
+      "managed_sha256": "3b634558384ca98929b9bbf8dd25fe86a8e90f07c967e7d02c004445c58dcd0d",
+      "targets": [],
+      "relative_path": "engineering/testing/tdd",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/test",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/engineering/testing/test",
+      "original_sha256": "88d66ffb454db728da64198658e767f4ca17b3df37a7e852a02b40d62821294e",
+      "managed_sha256": "88d66ffb454db728da64198658e767f4ca17b3df37a7e852a02b40d62821294e",
+      "targets": [],
+      "relative_path": "engineering/testing/test",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/userinterface-wiki",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/frontend/design/userinterface-wiki",
+      "original_sha256": "37027c49cab94ae0ab73b5485e8101f82a95691480447e0dafecca40110ef113",
+      "managed_sha256": "37027c49cab94ae0ab73b5485e8101f82a95691480447e0dafecca40110ef113",
+      "targets": [],
+      "relative_path": "frontend/design/userinterface-wiki",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/verify-before-complete",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/engineering/quality/verify-before-complete",
+      "original_sha256": "d9597f98df985467f01c4b0177cfb42e19b40a6c87a37d230b193e0a62d2dc00",
+      "managed_sha256": "d9597f98df985467f01c4b0177cfb42e19b40a6c87a37d230b193e0a62d2dc00",
+      "targets": [],
+      "relative_path": "engineering/quality/verify-before-complete",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/web-design-guidelines",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/frontend/quality/web-design-guidelines",
+      "original_sha256": "cbeffe36bb44fec3a467f55274526a81a9f2528d10d55a16bccff54cc5b59cc1",
+      "managed_sha256": "cbeffe36bb44fec3a467f55274526a81a9f2528d10d55a16bccff54cc5b59cc1",
+      "targets": [],
+      "relative_path": "frontend/quality/web-design-guidelines",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/web-quality-audit",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/frontend/quality/web-quality-audit",
+      "original_sha256": "f66595226aaa15385e09a59416c026fd3ec1a7f492600541df32b5f17235d176",
+      "managed_sha256": "f66595226aaa15385e09a59416c026fd3ec1a7f492600541df32b5f17235d176",
+      "targets": [],
+      "relative_path": "frontend/quality/web-quality-audit",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/write-docs",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/writing/documentation/write-docs",
+      "original_sha256": "307c14de1d8ce6b173625f39c15ae5c327329c6e933167489a6fc54eaf68198b",
+      "managed_sha256": "307c14de1d8ce6b173625f39c15ae5c327329c6e933167489a6fc54eaf68198b",
+      "targets": [],
+      "relative_path": "writing/documentation/write-docs",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/write-milestone-brief",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/engineering/planning/write-milestone-brief",
+      "original_sha256": "1dc88dc57e63435eaeb881b3f707b8ff74815a50db000eac09dbc4842104fa26",
+      "managed_sha256": "1dc88dc57e63435eaeb881b3f707b8ff74815a50db000eac09dbc4842104fa26",
+      "targets": [],
+      "relative_path": "engineering/planning/write-milestone-brief",
+      "origin_agent": "shared"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/apple/macos-computer-use",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/macos-computer-use",
+      "original_sha256": "793cee916ef6108f368df59278a00337f59d4a75e6793da12fbfb7878d6b52a4",
+      "managed_sha256": "51fe6a4d935775b0b039e8fa5ab6fdaaad9ee7beb7892af8bd62ec0e56a43c69",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/macos-computer-use",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/autonomous-ai-agents/kanban-codex-lane",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/kanban-codex-lane",
+      "original_sha256": "175f5461f47968c49f0eb57882906f2fd00f90f1ccf7551936ccc91bcdf621ae",
+      "managed_sha256": "3688ad2f7f1c0005173d9b35d5a86fed27adb7bcc340ad54bfacf1c9c9673e8a",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/kanban-codex-lane",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/data-science/jupyter-live-kernel",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/jupyter-live-kernel",
+      "original_sha256": "b136d152e171856a77b4ec68815880f9d3704f62af3ed295859ec9eb223972eb",
+      "managed_sha256": "71ab05041ace27f82e2ecf2877d9ef5e93ab252a53fa0c56bb48ee8e73ba78f3",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/jupyter-live-kernel",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/devops/hermes-agent-ops",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/hermes-agent-ops",
+      "original_sha256": "24da112ca3960170ec0bb114b58f0f9174c16747c9bfab7a5d016cbe599fdf8e",
+      "managed_sha256": "21e0919a7586b65e889a194b4386f261ee32d95f9191c3615ef1920e5cd16a94",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/hermes-agent-ops",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/devops/hermes-local-ai-stack-ops",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/hermes-local-ai-stack-ops",
+      "original_sha256": "5443ad94c9caa1e5aeddb2cb5046c9bf90c1d8e507c7ec8b68bacb0b89f9f1ca",
+      "managed_sha256": "207789b76201cf3b19bc44fe48ba6a2d32df536e747f8c8ba41204daae34d80b",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/hermes-local-ai-stack-ops",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/devops/honcho-local-memory-ops",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/honcho-local-memory-ops",
+      "original_sha256": "f321919661bbb1435178b3fc160ebcb2d5bd72bdcc791d34a043b16a62f35e12",
+      "managed_sha256": "7cc074b641e5adbc97a35d3184431d0dc7645fafb9e90a7ae2591df142966bd4",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/honcho-local-memory-ops",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/devops/local-web-research-stack",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/local-web-research-stack",
+      "original_sha256": "9e5ccbdc52e35cad3ec829bff25a3395d75be43d1b99da74b3d5a82e4951d8bf",
+      "managed_sha256": "0bdab96ebc2eaa0eb22208be94740ac799f748c1e3840daea77c6a90294886d5",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/local-web-research-stack",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/devops/python-app-deployment",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/python-app-deployment",
+      "original_sha256": "f4cbfb1fc1562fa7f3bd401baca2f72efbcc6215b5f1b3cd56bfd0a89ea16df6",
+      "managed_sha256": "b4908767fd21f45dee5e3555c32cf7d86018457092c414e48a65451c5fdd3192",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/python-app-deployment",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/devops/webhook-subscriptions",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/webhook-subscriptions",
+      "original_sha256": "1af8c032ead074d81edaf4f981e0c6460a35f2e225abd6a44d7154683c70d3fb",
+      "managed_sha256": "874fa789b829c598185ef298b23a501ff4ff116a86270f15a51fe469da7cc5a1",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/webhook-subscriptions",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/devops/windterm-linux-integration",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/windterm-linux-integration",
+      "original_sha256": "fd99bbddcc40c3ad3096eb9f900b126a8b926c3746531b26b472c31f35a06e3f",
+      "managed_sha256": "208be4a22a7fb710e25baea7df5662d2e4508dc2e68c192b992949681322e140",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/windterm-linux-integration",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/hermes-desktop-plugins",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/hermes-desktop-plugins",
+      "original_sha256": "24c2a97de57fcdf3391595d320aa444c84dc7d89e101319b3ade43a9cea05adb",
+      "managed_sha256": "e7c5269b60bd9b8e2280b155765ec5a0f5c9898c205f5c74a90ab8d8680deb88",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/hermes-desktop-plugins",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/mcp/native-mcp",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/native-mcp",
+      "original_sha256": "6d28952ec37903fddcf43028a152a6eefd71fd799311cf46ca7030b63aa4a2cb",
+      "managed_sha256": "ef323aae25e4f6504ffcfa9472784f56c388004860b05158806c8c018744c75d",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/native-mcp",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/media/spotify",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/spotify",
+      "original_sha256": "84ba3e8ad852130d00ac5604c67feaf81751818af0ac45d28fad9323950409d7",
+      "managed_sha256": "3cf3062605f80663872ab7640de92d9c681dbc6faa37718b95e144331892c14e",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/spotify",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/mlops/inference/obliteratus",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/obliteratus",
+      "original_sha256": "4345b909494248398b50c26e0f1aa23bcc8f2290cbe96c68177df07a17d41b51",
+      "managed_sha256": "8a2951baaf2eeaed83dacb7c6ead56cdd4eb39c581ceb7906e3cc1b57d378f2b",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/obliteratus",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/mlops/models/audiocraft",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/audiocraft-audio-generation",
+      "original_sha256": "81699e2f1c0a44d241e17b4055c70c6c32e982db95dec0eee8540be54f08e20d",
+      "managed_sha256": "0cbcd6150c0d09c8d70d546016be17b3073fc183a892ae86c8a3f566dd8e2398",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/audiocraft-audio-generation",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/productivity/linear",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/linear",
+      "original_sha256": "67e847e1a80181129acace4d3b3d6326a4b9369647b3944d5edd4307ab0d3d89",
+      "managed_sha256": "0b6fc843adc1156d303d2c2f01ca468e8344650759ffdd32d3b7d3f9fbf154ef",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/linear",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/productivity/petdex",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/petdex",
+      "original_sha256": "3008506c82b4e7a07a581685be681fb43309d3b98f51aac9e9c854d2df487ceb",
+      "managed_sha256": "fd0a3f5c028e61701d5d96e67167c915179e3c6d3b6112de11de01ffc22b812c",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/petdex",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/red-teaming/godmode",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/godmode",
+      "original_sha256": "d479f91d78cb67111209a19e3763b402b321913f1642a655096ce300d17ec7bd",
+      "managed_sha256": "22dbb65fc775892929a976cab29ac2803823a94d2eda76d05fca4f19de6221c7",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/godmode",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/software-development/debugging-hermes-tui-commands",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/debugging-hermes-tui-commands",
+      "original_sha256": "c5676ea4a7264cb493cb0ab9bc62df95d36405b7493f9c01554456f07cdbcf2f",
+      "managed_sha256": "e6d63e1228bd493c578c634211f19a86b7abf93d0a1b62ff61b3bcd41795db90",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/debugging-hermes-tui-commands",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/software-development/hermes-s6-container-supervision",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/hermes-s6-container-supervision",
+      "original_sha256": "138ce68ef397a2ceef3322f139001ada1494ac54b4505d01ae8dcb95a7cfa08b",
+      "managed_sha256": "3c45a4dde066926a819e2c86d330650445cd97440f5e46dae3f3c2f8c172ec4b",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/hermes-s6-container-supervision",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/software-development/subagent-driven-development",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/subagent-driven-development",
+      "original_sha256": "592451053b38c146f7ad438c719df91ad6e05e87e5c468c34c06b5f6323c73db",
+      "managed_sha256": "0cb6cdb7c7e5ee3d764d47ce5b45853e4086d4d21c605fe0e38abfbb68142f4d",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/subagent-driven-development",
+      "origin_agent": "hermes"
+    },
+    {
+      "source": "/home/jacyl4/.hermes/skills/software-development/writing-plans",
+      "destination": "/home/jacyl4/1base/GitLab/agent_skills/skills/platforms/hermes/writing-plans",
+      "original_sha256": "af838bc18c68fe36f630aa6be7332bb7ed165e943224b13feee8589e950c2882",
+      "managed_sha256": "431887f30940962364c32e2c2958dfd9055f2d8da5a0098af9050ccc70918a16",
+      "targets": [
+        "hermes"
+      ],
+      "relative_path": "platforms/hermes/writing-plans",
+      "origin_agent": "hermes"
+    }
+  ]
+}

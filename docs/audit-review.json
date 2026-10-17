@@ -1,0 +1,87 @@
+{
+  "reviewed_at": "2026-10-18",
+  "scope": "Native Web UI audit; one result per actual skill",
+  "summary": {
+    "total": 126,
+    "passed": 57,
+    "warning": 66,
+    "failed": 3,
+    "critical": 5,
+    "high": 64,
+    "medium": 26,
+    "low": 1551,
+    "info": 36,
+    "threshold": "CRITICAL",
+    "riskScore": 100,
+    "riskLabel": "critical",
+    "avgAnalyzability": 0.9957749784519213,
+    "byCategory": {
+      "credential": 9,
+      "exfiltration": 24,
+      "injection": 12,
+      "obfuscation": 4,
+      "privilege": 26,
+      "risk": 1577,
+      "structure": 22,
+      "trust": 8
+    },
+    "policyProfile": "default",
+    "policyDedupe": "global"
+  },
+  "critical_review": [
+    {
+      "skill": "create-skill",
+      "file": "references/api-security.md",
+      "line": 10,
+      "rule_id": "data-exfiltration-0",
+      "fingerprint": "96a7901d02ddf033312cdf396dd6c8cba4dba709afcae2c29338dcc1f1066726",
+      "classification": "reviewed-false-positive"
+    },
+    {
+      "skill": "cloudflare",
+      "file": "references/smart-placement/README.md",
+      "line": 103,
+      "rule_id": "data-exfiltration-0",
+      "fingerprint": "b1b755f51f297d201240f806c305aac54d17aa6c629e5dff59d3496452b84a0f",
+      "classification": "reviewed-false-positive"
+    },
+    {
+      "skill": "cloudflare",
+      "file": "references/smart-placement/api.md",
+      "line": 131,
+      "rule_id": "data-exfiltration-0",
+      "fingerprint": "5afb2b08210eaec2e83142129874263313e0a9fab34f8146be33cd9a8979f9f2",
+      "classification": "reviewed-false-positive"
+    },
+    {
+      "skill": "godmode",
+      "file": "SKILL.md",
+      "line": 359,
+      "rule_id": "prompt-injection-0",
+      "fingerprint": "57a34ec5ab8c3825cc6f991ef2133145afe5ddaa6c81637772984f2d1f96c483",
+      "classification": "accepted-risk"
+    },
+    {
+      "skill": "godmode",
+      "file": "scripts/parseltongue.py",
+      "line": 35,
+      "rule_id": "prompt-injection-0",
+      "fingerprint": "c62e56623948395c16f5d600fc5660d757e04fa15b8c7c29569db925c79670a3",
+      "classification": "accepted-risk"
+    }
+  ],
+  "user_decision": "Keep godmode; retain native risk detection and block decisions.",
+  "audit_policy_changed": false,
+  "native_rules_disabled": false,
+  "credential_examples_reviewed": [
+    "CAVEMAN_COMPRESS_API_KEY is an environment variable name, not a key value",
+    "ghp_xxxxxxxxxxxxxxxxxxxx is a uniform placeholder, not a token"
+  ],
+  "git_secret_scan": {
+    "candidate_files_scanned": 973,
+    "matches": 0,
+    "not_a_guarantee": "Regex and manual review do not certify all skill behavior."
+  },
+  "notice_files_verified": 114,
+  "tests_passed": 50
+}

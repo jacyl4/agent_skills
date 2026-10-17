@@ -1,0 +1,458 @@
+{
+  "migration_started": "2026-10-16",
+  "original": [
+    {
+      "old": "agents-sdk",
+      "new": "platforms/cloudflare/agents-sdk",
+      "name": "agents-sdk",
+      "current": "skills/platforms/cloudflare/agents-sdk"
+    },
+    {
+      "old": "cloudflare",
+      "new": "platforms/cloudflare/cloudflare",
+      "name": "cloudflare",
+      "current": "skills/platforms/cloudflare/cloudflare"
+    },
+    {
+      "old": "cloudflare-email-service",
+      "new": "platforms/cloudflare/cloudflare-email-service",
+      "name": "cloudflare-email-service",
+      "current": "skills/platforms/cloudflare/cloudflare-email-service"
+    },
+    {
+      "old": "cloudflare-one",
+      "new": "platforms/cloudflare/cloudflare-one",
+      "name": "cloudflare-one",
+      "current": "skills/platforms/cloudflare/cloudflare-one"
+    },
+    {
+      "old": "cloudflare-one-migrations",
+      "new": "platforms/cloudflare/cloudflare-one-migrations",
+      "name": "cloudflare-one-migrations",
+      "current": "skills/platforms/cloudflare/cloudflare-one-migrations"
+    },
+    {
+      "old": "durable-objects",
+      "new": "platforms/cloudflare/durable-objects",
+      "name": "durable-objects",
+      "current": "skills/platforms/cloudflare/durable-objects"
+    },
+    {
+      "old": "sandbox-sdk",
+      "new": "platforms/cloudflare/sandbox-sdk",
+      "name": "sandbox-sdk",
+      "current": "skills/platforms/cloudflare/sandbox-sdk"
+    },
+    {
+      "old": "turnstile-spin",
+      "new": "platforms/cloudflare/turnstile-spin",
+      "name": "turnstile-spin",
+      "current": "skills/platforms/cloudflare/turnstile-spin"
+    },
+    {
+      "old": "workers-best-practices",
+      "new": "platforms/cloudflare/workers-best-practices",
+      "name": "workers-best-practices",
+      "current": "skills/platforms/cloudflare/workers-best-practices"
+    },
+    {
+      "old": "wrangler",
+      "new": "platforms/cloudflare/wrangler",
+      "name": "wrangler",
+      "current": "skills/platforms/cloudflare/wrangler"
+    },
+    {
+      "old": "brandkit",
+      "new": "frontend/design/brandkit",
+      "name": "brandkit",
+      "current": "skills/frontend/design/brandkit"
+    },
+    {
+      "old": "brutalist-skill",
+      "new": "frontend/design/industrial-brutalist-ui",
+      "name": "industrial-brutalist-ui",
+      "current": "skills/frontend/design/industrial-brutalist-ui"
+    },
+    {
+      "old": "gpt-tasteskill",
+      "new": "frontend/design/gpt-taste",
+      "name": "gpt-taste",
+      "current": "skills/frontend/design/gpt-taste"
+    },
+    {
+      "old": "image-to-code-skill",
+      "new": "frontend/design/image-to-code",
+      "name": "image-to-code",
+      "current": "skills/frontend/design/image-to-code"
+    },
+    {
+      "old": "imagegen-frontend-mobile",
+      "new": "frontend/design/imagegen-frontend-mobile",
+      "name": "imagegen-frontend-mobile",
+      "current": "skills/frontend/design/imagegen-frontend-mobile"
+    },
+    {
+      "old": "imagegen-frontend-web",
+      "new": "frontend/design/imagegen-frontend-web",
+      "name": "imagegen-frontend-web",
+      "current": "skills/frontend/design/imagegen-frontend-web"
+    },
+    {
+      "old": "minimalist-skill",
+      "new": "frontend/design/minimalist-ui",
+      "name": "minimalist-ui",
+      "current": "skills/frontend/design/minimalist-ui"
+    },
+    {
+      "old": "redesign-skill",
+      "new": "frontend/design/redesign-existing-projects",
+      "name": "redesign-existing-projects",
+      "current": "skills/frontend/design/redesign-existing-projects"
+    },
+    {
+      "old": "soft-skill",
+      "new": "frontend/design/high-end-visual-design",
+      "name": "high-end-visual-design",
+      "current": "skills/frontend/design/high-end-visual-design"
+    },
+    {
+      "old": "stitch-skill",
+      "new": "frontend/design/stitch-design-taste",
+      "name": "stitch-design-taste",
+      "current": "skills/frontend/design/stitch-design-taste"
+    },
+    {
+      "old": "taste-skill",
+      "new": "frontend/design/design-taste-frontend",
+      "name": "design-taste-frontend",
+      "current": "skills/frontend/design/design-taste-frontend"
+    },
+    {
+      "old": "taste-skill-v1",
+      "new": "frontend/design/design-taste-frontend-v1",
+      "name": "design-taste-frontend-v1",
+      "current": "skills/frontend/design/design-taste-frontend-v1"
+    },
+    {
+      "old": "gsap-core",
+      "new": "frontend/animation/gsap-core",
+      "name": "gsap-core",
+      "current": "skills/frontend/animation/gsap-core"
+    },
+    {
+      "old": "gsap-frameworks",
+      "new": "frontend/animation/gsap-frameworks",
+      "name": "gsap-frameworks",
+      "current": "skills/frontend/animation/gsap-frameworks"
+    },
+    {
+      "old": "gsap-performance",
+      "new": "frontend/animation/gsap-performance",
+      "name": "gsap-performance",
+      "current": "skills/frontend/animation/gsap-performance"
+    },
+    {
+      "old": "gsap-plugins",
+      "new": "frontend/animation/gsap-plugins",
+      "name": "gsap-plugins",
+      "current": "skills/frontend/animation/gsap-plugins"
+    },
+    {
+      "old": "gsap-react",
+      "new": "frontend/animation/gsap-react",
+      "name": "gsap-react",
+      "current": "skills/frontend/animation/gsap-react"
+    },
+    {
+      "old": "gsap-scrolltrigger",
+      "new": "frontend/animation/gsap-scrolltrigger",
+      "name": "gsap-scrolltrigger",
+      "current": "skills/frontend/animation/gsap-scrolltrigger"
+    },
+    {
+      "old": "gsap-timeline",
+      "new": "frontend/animation/gsap-timeline",
+      "name": "gsap-timeline",
+      "current": "skills/frontend/animation/gsap-timeline"
+    },
+    {
+      "old": "gsap-utils",
+      "new": "frontend/animation/gsap-utils",
+      "name": "gsap-utils",
+      "current": "skills/frontend/animation/gsap-utils"
+    },
+    {
+      "old": "browser-first-frontend-engineering",
+      "new": "engineering/practices/browser-first-frontend-engineering",
+      "name": "browser-first-frontend-engineering",
+      "current": "skills/engineering/practices/browser-first-frontend-engineering"
+    },
+    {
+      "old": "computer-first-performance-engineering",
+      "new": "engineering/practices/computer-first-performance-engineering",
+      "name": "computer-first-performance-engineering",
+      "current": "skills/engineering/practices/computer-first-performance-engineering"
+    },
+    {
+      "old": "karpathy",
+      "new": "engineering/practices/karpathy",
+      "name": "karpathy",
+      "current": "skills/engineering/practices/karpathy"
+    },
+    {
+      "old": "output-skill",
+      "new": "engineering/practices/full-output-enforcement",
+      "name": "full-output-enforcement",
+      "current": "skills/engineering/practices/full-output-enforcement"
+    },
+    {
+      "old": "schematic",
+      "new": "engineering/practices/schematic",
+      "name": "schematic",
+      "current": "skills/engineering/practices/schematic"
+    },
+    {
+      "old": "ponytail",
+      "new": "engineering/ponytail/ponytail",
+      "name": "ponytail",
+      "current": "skills/engineering/ponytail/ponytail"
+    },
+    {
+      "old": "ponytail-audit",
+      "new": "engineering/ponytail/ponytail-audit",
+      "name": "ponytail-audit",
+      "current": "skills/engineering/ponytail/ponytail-audit"
+    },
+    {
+      "old": "ponytail-debt",
+      "new": "engineering/ponytail/ponytail-debt",
+      "name": "ponytail-debt",
+      "current": "skills/engineering/ponytail/ponytail-debt"
+    },
+    {
+      "old": "ponytail-gain",
+      "new": "engineering/ponytail/ponytail-gain",
+      "name": "ponytail-gain",
+      "current": "skills/engineering/ponytail/ponytail-gain"
+    },
+    {
+      "old": "ponytail-help",
+      "new": "engineering/ponytail/ponytail-help",
+      "name": "ponytail-help",
+      "current": "skills/engineering/ponytail/ponytail-help"
+    },
+    {
+      "old": "ponytail-review",
+      "new": "engineering/ponytail/ponytail-review",
+      "name": "ponytail-review",
+      "current": "skills/engineering/ponytail/ponytail-review"
+    },
+    {
+      "old": "crawl4ai",
+      "new": "automation/web/crawl4ai",
+      "name": "crawl4ai",
+      "current": "skills/automation/web/crawl4ai"
+    },
+    {
+      "old": "qweb-bridge",
+      "new": "automation/web/qweb-bridge",
+      "name": "qweb-bridge",
+      "current": "skills/automation/web/qweb-bridge"
+    },
+    {
+      "old": "scrapling",
+      "new": "automation/web/scrapling",
+      "name": "scrapling",
+      "current": "skills/automation/web/scrapling"
+    },
+    {
+      "old": "web-perf",
+      "new": "automation/web/web-perf",
+      "name": "web-perf",
+      "current": "skills/automation/web/web-perf"
+    },
+    {
+      "old": "deslop-zh",
+      "new": "writing/deslop-zh",
+      "name": "deslop-zh",
+      "current": "skills/writing/deslop-zh"
+    },
+    {
+      "old": "talk-normal",
+      "new": "writing/talk-normal",
+      "name": "talk-normal",
+      "current": "skills/writing/talk-normal"
+    },
+    {
+      "old": "honker-sqlite-event-engine",
+      "new": "data/honker-sqlite-event-engine",
+      "name": "honker-sqlite-event-engine",
+      "current": "skills/data/honker-sqlite-event-engine"
+    }
+  ],
+  "imports": [
+    {
+      "source": "/home/jacyl4/.agents/skills/cavecrew",
+      "new": "engineering/communication/cavecrew",
+      "name": "cavecrew",
+      "original_file_count": 2,
+      "original_bundle_sha256": "403178fcbb4b2be0afa8ed0d51c71426588dab2c24f1a6378a5ceebe174ae3a5",
+      "current": "skills/engineering/communication/cavecrew"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/caveman",
+      "new": "engineering/communication/caveman",
+      "name": "caveman",
+      "original_file_count": 2,
+      "original_bundle_sha256": "4b509dd0ba003ed7b464b6f066f1eb32edc317db9f431dfc685524aac819e64f",
+      "current": "skills/engineering/communication/caveman"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/caveman-commit",
+      "new": "engineering/communication/caveman-commit",
+      "name": "caveman-commit",
+      "original_file_count": 2,
+      "original_bundle_sha256": "ded77655c370c98561d0ace8880b0b0cf6d952beb034f9a2f021b4313ce8771c",
+      "current": "skills/engineering/communication/caveman-commit"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/caveman-compress",
+      "new": "engineering/communication/caveman-compress",
+      "name": "caveman-compress",
+      "original_file_count": 10,
+      "original_bundle_sha256": "dcfd14f619f54792df019cd95f0a2bedcba95f3f2f622044071d2b90c3dc150a",
+      "current": "skills/engineering/communication/caveman-compress"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/caveman-help",
+      "new": "engineering/communication/caveman-help",
+      "name": "caveman-help",
+      "original_file_count": 2,
+      "original_bundle_sha256": "3eaaca45c4d686f090ab7eac696a45a79194c3042ad11591216c7ac08605838f",
+      "current": "skills/engineering/communication/caveman-help"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/caveman-review",
+      "new": "engineering/communication/caveman-review",
+      "name": "caveman-review",
+      "original_file_count": 2,
+      "original_bundle_sha256": "1d07d62acb2795757c8c5ede1779c4e89dd674fcfa49549cd43180dad2ac2af2",
+      "current": "skills/engineering/communication/caveman-review"
+    },
+    {
+      "source": "/home/jacyl4/.agents/skills/caveman-stats",
+      "new": "engineering/communication/caveman-stats",
+      "name": "caveman-stats",
+      "original_file_count": 2,
+      "original_bundle_sha256": "28c85839f6b36819ffc3661a71c209f2bf7897fc8770735b493f95e911095fff",
+      "current": "skills/engineering/communication/caveman-stats"
+    },
+    {
+      "source": "/home/jacyl4/.codex/skills/morph-ppt",
+      "new": "documents/morph-ppt",
+      "name": "morph-ppt",
+      "original_file_count": 111,
+      "original_bundle_sha256": "f5053e4f55325464f604fa901b0c5f8642ed0fe94b880c3a4a3bcccd84baa4b6",
+      "current": "skills/documents/morph-ppt"
+    },
+    {
+      "source": "/home/jacyl4/.codex/skills/morph-ppt-3d",
+      "new": "documents/morph-ppt-3d",
+      "name": "morph-ppt-3d",
+      "original_file_count": 1,
+      "original_bundle_sha256": "25afaadcc9ad8210871912ea5c9e78b31ae7648a09c67f50bef646f71a0f18ab",
+      "current": "skills/documents/morph-ppt-3d"
+    },
+    {
+      "source": "/home/jacyl4/.codex/skills/officecli",
+      "new": "documents/officecli",
+      "name": "officecli",
+      "original_file_count": 1,
+      "original_bundle_sha256": "d1bd1d3a5c46eea5ba2161d8a11e8f163ed7cc55f4ddb6745ef52f15ffd4c427",
+      "current": "skills/documents/officecli"
+    },
+    {
+      "source": "/home/jacyl4/.codex/skills/officecli-academic-paper",
+      "new": "documents/officecli-academic-paper",
+      "name": "officecli-academic-paper",
+      "original_file_count": 1,
+      "original_bundle_sha256": "f77c21a6bc68c0a3bfb51754b434170a93d8b9fc632a3b75e256401b2ae6aba5",
+      "current": "skills/documents/officecli-academic-paper"
+    },
+    {
+      "source": "/home/jacyl4/.codex/skills/officecli-data-dashboard",
+      "new": "documents/officecli-data-dashboard",
+      "name": "officecli-data-dashboard",
+      "original_file_count": 1,
+      "original_bundle_sha256": "2b1b87a5598ac7811535646919b857005ce36a06ead31bc94dd2f6825a7a3a22",
+      "current": "skills/documents/officecli-data-dashboard"
+    },
+    {
+      "source": "/home/jacyl4/.codex/skills/officecli-docx",
+      "new": "documents/officecli-docx",
+      "name": "officecli-docx",
+      "original_file_count": 1,
+      "original_bundle_sha256": "c63dc2af31346a8e157e18714333fec21b2e9c5c7754e252ff76f58d58d5820b",
+      "current": "skills/documents/officecli-docx"
+    },
+    {
+      "source": "/home/jacyl4/.codex/skills/officecli-financial-model",
+      "new": "documents/officecli-financial-model",
+      "name": "officecli-financial-model",
+      "original_file_count": 1,
+      "original_bundle_sha256": "a5ecbecc5dc6adc901aa331e168ce01cd640cbff93849612bc22f37d0a95624f",
+      "current": "skills/documents/officecli-financial-model"
+    },
+    {
+      "source": "/home/jacyl4/.codex/skills/officecli-pitch-deck",
+      "new": "documents/officecli-pitch-deck",
+      "name": "officecli-pitch-deck",
+      "original_file_count": 1,
+      "original_bundle_sha256": "3a1ba43d546f966bd87a4b26c668b307059aaafe5ab9bd8de672ffd741a1313e",
+      "current": "skills/documents/officecli-pitch-deck"
+    },
+    {
+      "source": "/home/jacyl4/.codex/skills/officecli-pptx",
+      "new": "documents/officecli-pptx",
+      "name": "officecli-pptx",
+      "original_file_count": 1,
+      "original_bundle_sha256": "3491a5e88ca0f3218acb8b077b6a00de68ef0fdfc21bb1b762110214b6488a6b",
+      "current": "skills/documents/officecli-pptx"
+    },
+    {
+      "source": "/home/jacyl4/.codex/skills/officecli-word-form",
+      "new": "documents/officecli-word-form",
+      "name": "officecli-word-form",
+      "original_file_count": 1,
+      "original_bundle_sha256": "f137b3a2060927419d922eb28673570f7cc1941067fd6cdf3a5b4504bb0dccc9",
+      "current": "skills/documents/officecli-word-form"
+    },
+    {
+      "source": "/home/jacyl4/.codex/skills/officecli-xlsx",
+      "new": "documents/officecli-xlsx",
+      "name": "officecli-xlsx",
+      "original_file_count": 1,
+      "original_bundle_sha256": "daa065957d641c23ac6587ae30531e508f566da80221399231e1cd2d0d9f075b",
+      "current": "skills/documents/officecli-xlsx"
+    },
+    {
+      "source": "/home/jacyl4/.codex/skills/graphify",
+      "new": "automation/local/graphify",
+      "name": "graphify",
+      "original_file_count": 10,
+      "original_bundle_sha256": "9addb0674d922ea475cb4723b596d16a301720f33ebee363d6da2219a2d6040c",
+      "current": "skills/automation/local/graphify"
+    },
+    {
+      "source": "/home/jacyl4/.codex/skills/paraspeech",
+      "new": "automation/local/paraspeech",
+      "name": "paraspeech",
+      "original_file_count": 1,
+      "original_bundle_sha256": "43b5911a130061de28898c912798a710be6b64e4526f5681243c4f1dd6652214",
+      "current": "skills/automation/local/paraspeech"
+    }
+  ],
+  "later_consolidation": "12 Hermes local same-name bundles quarantined; unique Paraspeech/Graphify/OfficeCLI notes retained in canonical bundles; schematic YAML date quoted for JSON compatibility",
+  "current_source": "skills/",
+  "path_semantics": "old/new/source and original hashes record the initial migration; current is the current repository-relative path after the separate skills Source migration on 2026-10-17"
+}

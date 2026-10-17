@@ -1,0 +1,1629 @@
+{
+  "recorded_at": "2026-10-17T09:45:24.485712Z",
+  "scope": "association-only; no skill upgraded",
+  "native_associated": 55,
+  "local_retained": 13,
+  "skills": [
+    {
+      "local_path": "skills/automation/web/crawl4ai",
+      "repo_url": null,
+      "subdir": null,
+      "commit": null,
+      "evidence": [
+        "no source marker or trustworthy local Git checkout evidence"
+      ],
+      "local_customization": "unknown",
+      "name": "crawl4ai",
+      "association_status": "local-unverified",
+      "upgrade_policy": "local-only"
+    },
+    {
+      "local_path": "skills/automation/web/qweb-bridge",
+      "repo_url": null,
+      "subdir": null,
+      "commit": null,
+      "evidence": [
+        "no source marker or trustworthy local Git checkout evidence"
+      ],
+      "local_customization": "unknown",
+      "name": "qweb-bridge",
+      "association_status": "local-unverified",
+      "upgrade_policy": "local-only"
+    },
+    {
+      "local_path": "skills/automation/web/scrapling",
+      "repo_url": null,
+      "subdir": null,
+      "commit": null,
+      "evidence": [
+        "no source marker or trustworthy local Git checkout evidence"
+      ],
+      "local_customization": "unknown",
+      "name": "scrapling",
+      "association_status": "local-unverified",
+      "upgrade_policy": "local-only"
+    },
+    {
+      "local_path": "skills/automation/web/web-perf",
+      "repo_url": "https://github.com/cloudflare/skills",
+      "subdir": "skills/web-perf",
+      "commit": "30553f89ae1ef1e3c2917cd09d72dac992bb4e9a",
+      "evidence": [
+        "skills/automation/web/web-perf/.cloudflare-skills-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f",
+        "path": "skills/web-perf/SKILL.md",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/skills/web-perf/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "web-perf",
+        "name_matches": true,
+        "skill_sha256": "79c531e95ca4d96a7de920c28c127c2c09ec55cd452a92222267d2954580be23",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "94c5cb37766676a8321a82861d2ac1072d3dd0ef612f0c946792014ad48fb0c2",
+      "name": "web-perf",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/automation/local/graphify",
+      "subdir": null,
+      "commit": null,
+      "evidence": [
+        "/opt/ai/graphify/.git/config",
+        "/opt/ai/graphify commit; local skill content is repository-local integration, no upstream SKILL.md path found"
+      ],
+      "local_customization": "local integration wrapper; upstream repo has no native agent skill path",
+      "related_repo": "https://github.com/safishamsi/graphify",
+      "repo_url": null,
+      "name": "graphify",
+      "association_status": "related-only",
+      "upgrade_policy": "local-only"
+    },
+    {
+      "local_path": "skills/automation/local/paraspeech",
+      "repo_url": null,
+      "subdir": null,
+      "commit": null,
+      "evidence": [
+        "no source marker or trustworthy local Git checkout evidence"
+      ],
+      "local_customization": "unknown",
+      "name": "paraspeech",
+      "association_status": "local-unverified",
+      "upgrade_policy": "local-only"
+    },
+    {
+      "local_path": "skills/data/honker-sqlite-event-engine",
+      "repo_url": null,
+      "subdir": null,
+      "commit": null,
+      "evidence": [
+        "no source marker or trustworthy local Git checkout evidence"
+      ],
+      "local_customization": "unknown",
+      "name": "honker-sqlite-event-engine",
+      "association_status": "local-unverified",
+      "upgrade_policy": "local-only"
+    },
+    {
+      "local_path": "skills/documents/morph-ppt",
+      "repo_url": "https://github.com/iOfficeAI/OfficeCLI",
+      "subdir": "skills/morph-ppt",
+      "commit": "e6507d2d7c5ce06be977c3ef966490f22232725e",
+      "evidence": [
+        "/opt/ai/officecli/.git/config",
+        "matching local checkout path"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa",
+        "path": "skills/morph-ppt/SKILL.md",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/skills/morph-ppt/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "morph-ppt",
+        "name_matches": true,
+        "skill_sha256": "0d7e196f30061e4da8a29fb4fd3f995f6130f02708a98615e28459594a28c07a",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "328cfc1aae9b519de1178fc576c2995d21a1c80816f9e1cd6e4b4fda629a6c55",
+      "name": "morph-ppt",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/documents/morph-ppt-3d",
+      "repo_url": "https://github.com/iOfficeAI/OfficeCLI",
+      "subdir": "skills/morph-ppt-3d",
+      "commit": "e6507d2d7c5ce06be977c3ef966490f22232725e",
+      "evidence": [
+        "/opt/ai/officecli/.git/config",
+        "matching local checkout path"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa",
+        "path": "skills/morph-ppt-3d/SKILL.md",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/skills/morph-ppt-3d/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "morph-ppt-3d",
+        "name_matches": true,
+        "skill_sha256": "951080c11ac0995fc3e4fb9a09a67fa6c8f02f353bf735e7ec6f6c02cab9fdad",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "3ed8929b004baaae014abd98cb72d8f4d5658eb9745366d4cc54df941e151e28",
+      "name": "morph-ppt-3d",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/documents/officecli",
+      "repo_url": "https://github.com/iOfficeAI/OfficeCLI",
+      "subdir": "",
+      "commit": "e6507d2d7c5ce06be977c3ef966490f22232725e",
+      "evidence": [
+        "/opt/ai/officecli/.git/config",
+        "matching local checkout path",
+        "upstream root SKILL.md is /opt/ai/officecli/SKILL.md; this is not skills/officecli"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa",
+        "path": "SKILL.md",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "officecli",
+        "name_matches": true,
+        "skill_sha256": "c950d285ce60021712b4753fb2d9f592308d5622bab776229061dfecb1ce55d4",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": true,
+      "import_base_skill_sha256": "fb3e3b2be0c186c9bc4da3a7e00bbeb5f082951807cedf3553c3b8d25a7aaac8",
+      "name": "officecli",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/documents/officecli-academic-paper",
+      "repo_url": "https://github.com/iOfficeAI/OfficeCLI",
+      "subdir": "skills/officecli-academic-paper",
+      "commit": "e6507d2d7c5ce06be977c3ef966490f22232725e",
+      "evidence": [
+        "/opt/ai/officecli/.git/config",
+        "matching local checkout path"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa",
+        "path": "skills/officecli-academic-paper/SKILL.md",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/skills/officecli-academic-paper/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "officecli-academic-paper",
+        "name_matches": true,
+        "skill_sha256": "573292e01c2b9b9885c6cd24ffec5f808d88f8a1868aa0e962bcab9a479f40e5",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "b1df9178c4c678f726bef35ed366454793b19c98bb51bf498c7506abe842a2f3",
+      "name": "officecli-academic-paper",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/documents/officecli-data-dashboard",
+      "repo_url": "https://github.com/iOfficeAI/OfficeCLI",
+      "subdir": "skills/officecli-data-dashboard",
+      "commit": "e6507d2d7c5ce06be977c3ef966490f22232725e",
+      "evidence": [
+        "/opt/ai/officecli/.git/config",
+        "matching local checkout path"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa",
+        "path": "skills/officecli-data-dashboard/SKILL.md",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/skills/officecli-data-dashboard/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "officecli-data-dashboard",
+        "name_matches": true,
+        "skill_sha256": "e05a3718e4d4f93c9df4d699006e5294158a91c40e1ee087d848d50d1b4d0af0",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "0deb5ff8ee62d89c17bc1aeffb2ad4e74f4072dc38e43cbaa3ad9eb85ec36c66",
+      "name": "officecli-data-dashboard",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/documents/officecli-docx",
+      "repo_url": "https://github.com/iOfficeAI/OfficeCLI",
+      "subdir": "skills/officecli-docx",
+      "commit": "e6507d2d7c5ce06be977c3ef966490f22232725e",
+      "evidence": [
+        "/opt/ai/officecli/.git/config",
+        "matching local checkout path"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa",
+        "path": "skills/officecli-docx/SKILL.md",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/skills/officecli-docx/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "officecli-docx",
+        "name_matches": true,
+        "skill_sha256": "4dbeacba4bd107417fc31204ce22e91b37e5747d0541090d75ebb0ed14e02559",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "0e8473b7ab4b893feadeee760fed3d5c0983aba461d252dfe08a78de41decc58",
+      "name": "officecli-docx",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/documents/officecli-financial-model",
+      "repo_url": "https://github.com/iOfficeAI/OfficeCLI",
+      "subdir": "skills/officecli-financial-model",
+      "commit": "e6507d2d7c5ce06be977c3ef966490f22232725e",
+      "evidence": [
+        "/opt/ai/officecli/.git/config",
+        "matching local checkout path"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa",
+        "path": "skills/officecli-financial-model/SKILL.md",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/skills/officecli-financial-model/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "officecli-financial-model",
+        "name_matches": true,
+        "skill_sha256": "65280bce9537ff3192bbc8fe1ad94980662929a71390b258d7f38f24772d8c9e",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "2d8941b84f3c8072471e40b65308ee793c3ff5ae85191d7221a4a7b3acf2accc",
+      "name": "officecli-financial-model",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/documents/officecli-pitch-deck",
+      "repo_url": "https://github.com/iOfficeAI/OfficeCLI",
+      "subdir": "skills/officecli-pitch-deck",
+      "commit": "e6507d2d7c5ce06be977c3ef966490f22232725e",
+      "evidence": [
+        "/opt/ai/officecli/.git/config",
+        "matching local checkout path"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa",
+        "path": "skills/officecli-pitch-deck/SKILL.md",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/skills/officecli-pitch-deck/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "officecli-pitch-deck",
+        "name_matches": true,
+        "skill_sha256": "6b59efdc094451945fd059548771326cce4bd2e3544d0659d3d6acf0825ea2b1",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "52554c439c0882c306fa0e3f835291c070f70a70d322c99f32d534d5fde42c77",
+      "name": "officecli-pitch-deck",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/documents/officecli-pptx",
+      "repo_url": "https://github.com/iOfficeAI/OfficeCLI",
+      "subdir": "skills/officecli-pptx",
+      "commit": "e6507d2d7c5ce06be977c3ef966490f22232725e",
+      "evidence": [
+        "/opt/ai/officecli/.git/config",
+        "matching local checkout path"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa",
+        "path": "skills/officecli-pptx/SKILL.md",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/skills/officecli-pptx/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "officecli-pptx",
+        "name_matches": true,
+        "skill_sha256": "0d53192751d5770984f16f3c34f9923377651555c667150d7f96e16e8c9757b3",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "4b90a44978cdb75f068dc9a165dea43556b3d803b837fd86aee257c761a42265",
+      "name": "officecli-pptx",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/documents/officecli-word-form",
+      "repo_url": "https://github.com/iOfficeAI/OfficeCLI",
+      "subdir": "skills/officecli-word-form",
+      "commit": "e6507d2d7c5ce06be977c3ef966490f22232725e",
+      "evidence": [
+        "/opt/ai/officecli/.git/config",
+        "matching local checkout path"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa",
+        "path": "skills/officecli-word-form/SKILL.md",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/skills/officecli-word-form/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "officecli-word-form",
+        "name_matches": true,
+        "skill_sha256": "6c6154954089d8b6363a7a49263c986c3795cd438092ff3b0aacf0b32017d039",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "51fe389aebd1765d249d21420c431d995def7e8a4a35a66c96114ee5e838204d",
+      "name": "officecli-word-form",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/documents/officecli-xlsx",
+      "repo_url": "https://github.com/iOfficeAI/OfficeCLI",
+      "subdir": "skills/officecli-xlsx",
+      "commit": "e6507d2d7c5ce06be977c3ef966490f22232725e",
+      "evidence": [
+        "/opt/ai/officecli/.git/config",
+        "matching local checkout path"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "fb98e593612dee2cec36847666671dba502e60aa",
+        "path": "skills/officecli-xlsx/SKILL.md",
+        "url": "https://raw.githubusercontent.com/iOfficeAI/OfficeCLI/fb98e593612dee2cec36847666671dba502e60aa/skills/officecli-xlsx/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "officecli-xlsx",
+        "name_matches": true,
+        "skill_sha256": "95ed125c9c06defda5a9abc9a9a1d7329e8b183c74a4a6b9b8eab2e1529ebb90",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "8d8fe6719ed0971018f1344877e4f49954bacf6916f8165d6f1bb466263086b3",
+      "name": "officecli-xlsx",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/engineering/practices/browser-first-frontend-engineering",
+      "repo_url": null,
+      "subdir": null,
+      "commit": null,
+      "evidence": [
+        "no source marker or trustworthy local Git checkout evidence"
+      ],
+      "local_customization": "unknown",
+      "name": "browser-first-frontend-engineering",
+      "association_status": "local-unverified",
+      "upgrade_policy": "local-only"
+    },
+    {
+      "local_path": "skills/engineering/practices/computer-first-performance-engineering",
+      "repo_url": null,
+      "subdir": null,
+      "commit": null,
+      "evidence": [
+        "no source marker or trustworthy local Git checkout evidence"
+      ],
+      "local_customization": "unknown",
+      "name": "computer-first-performance-engineering",
+      "association_status": "local-unverified",
+      "upgrade_policy": "local-only"
+    },
+    {
+      "local_path": "skills/engineering/practices/karpathy",
+      "repo_url": null,
+      "subdir": null,
+      "commit": null,
+      "evidence": [
+        "no source marker or trustworthy local Git checkout evidence"
+      ],
+      "local_customization": "unknown",
+      "name": "karpathy",
+      "association_status": "local-unverified",
+      "upgrade_policy": "local-only"
+    },
+    {
+      "local_path": "skills/engineering/practices/full-output-enforcement",
+      "repo_url": "https://github.com/Leonxlnx/taste-skill",
+      "subdir": "skills/output-skill",
+      "commit": "3c7017d636c3a4aad378433ea6d0cfa6c921da4a",
+      "evidence": [
+        "skills/engineering/practices/full-output-enforcement/.taste-skill-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246",
+        "path": "skills/output-skill/SKILL.md",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/skills/output-skill/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "full-output-enforcement",
+        "name_matches": true,
+        "skill_sha256": "e5bf48b1ae561511439cf71672209a10a88cee0968cc925909ff861dfa0a96a7",
+        "local_skill_matches_remote_head": true
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "e5bf48b1ae561511439cf71672209a10a88cee0968cc925909ff861dfa0a96a7",
+      "name": "full-output-enforcement",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/engineering/practices/schematic",
+      "repo_url": null,
+      "subdir": null,
+      "commit": null,
+      "evidence": [
+        "no source marker or trustworthy local Git checkout evidence"
+      ],
+      "local_customization": "unknown",
+      "name": "schematic",
+      "association_status": "local-unverified",
+      "upgrade_policy": "local-only"
+    },
+    {
+      "local_path": "skills/engineering/ponytail/ponytail",
+      "repo_url": "https://github.com/dietrichgebert/ponytail",
+      "subdir": "skills/ponytail",
+      "commit": "2ed6c52c9d7e5e56942508591085fd45dea277d3",
+      "evidence": [
+        "skills/engineering/ponytail/ponytail/.ponytail-source"
+      ],
+      "local_customization": "move top-level argument-hint into metadata.argument-hint for local Agent Skills schema compatibility",
+      "remote_verified": {
+        "commit": "16352ac229eb08a9598dcae48fe9f2b342567d86",
+        "path": "skills/ponytail/SKILL.md",
+        "url": "https://raw.githubusercontent.com/dietrichgebert/ponytail/16352ac229eb08a9598dcae48fe9f2b342567d86/skills/ponytail/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "ponytail",
+        "name_matches": true,
+        "skill_sha256": "9badd22a32e19cb884e46dfa8d3aae82bb81dfa5484105b8b4f0262df823a509",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": true,
+      "import_base_skill_sha256": "1316a2f3f95741d2300b116fe0c2d81ce4a9568656ed0a62643f54aaf09957f2",
+      "name": "ponytail",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/engineering/ponytail/ponytail-audit",
+      "repo_url": "https://github.com/dietrichgebert/ponytail",
+      "subdir": "skills/ponytail-audit",
+      "commit": "2ed6c52c9d7e5e56942508591085fd45dea277d3",
+      "evidence": [
+        "skills/engineering/ponytail/ponytail-audit/.ponytail-source"
+      ],
+      "local_customization": "none",
+      "remote_verified": {
+        "commit": "16352ac229eb08a9598dcae48fe9f2b342567d86",
+        "path": "skills/ponytail-audit/SKILL.md",
+        "url": "https://raw.githubusercontent.com/dietrichgebert/ponytail/16352ac229eb08a9598dcae48fe9f2b342567d86/skills/ponytail-audit/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "ponytail-audit",
+        "name_matches": true,
+        "skill_sha256": "2b3223a02c386d1263e1b08343cb8eb3a53e444cdafb1d79e26c8ec2a8fcad28",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "5560b8e383dbe2ddfddc873a1e2bf2e586e23e0cd7d995537482b2315331f6d1",
+      "name": "ponytail-audit",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/engineering/ponytail/ponytail-debt",
+      "repo_url": "https://github.com/dietrichgebert/ponytail",
+      "subdir": "skills/ponytail-debt",
+      "commit": "2ed6c52c9d7e5e56942508591085fd45dea277d3",
+      "evidence": [
+        "skills/engineering/ponytail/ponytail-debt/.ponytail-source"
+      ],
+      "local_customization": "none",
+      "remote_verified": {
+        "commit": "16352ac229eb08a9598dcae48fe9f2b342567d86",
+        "path": "skills/ponytail-debt/SKILL.md",
+        "url": "https://raw.githubusercontent.com/dietrichgebert/ponytail/16352ac229eb08a9598dcae48fe9f2b342567d86/skills/ponytail-debt/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "ponytail-debt",
+        "name_matches": true,
+        "skill_sha256": "b5ec2762f6ba8c4af9ea7173aa6c9f91b88655a25e43f9de0264f6ce8722b25f",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "c84fba75f0ca12bfe83f9a78ea02fd125c5dd3f1fbb18124105a489937f284e6",
+      "name": "ponytail-debt",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/engineering/ponytail/ponytail-gain",
+      "repo_url": "https://github.com/dietrichgebert/ponytail",
+      "subdir": "skills/ponytail-gain",
+      "commit": "2ed6c52c9d7e5e56942508591085fd45dea277d3",
+      "evidence": [
+        "skills/engineering/ponytail/ponytail-gain/.ponytail-source"
+      ],
+      "local_customization": "none",
+      "remote_verified": {
+        "commit": "16352ac229eb08a9598dcae48fe9f2b342567d86",
+        "path": "skills/ponytail-gain/SKILL.md",
+        "url": "https://raw.githubusercontent.com/dietrichgebert/ponytail/16352ac229eb08a9598dcae48fe9f2b342567d86/skills/ponytail-gain/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "ponytail-gain",
+        "name_matches": true,
+        "skill_sha256": "231034a896d6762e4b5c8468287083422c56b499119976ec9f76821f7d083090",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "24e01d1c9715cb136ba1c4f1e52a95940c0193558b876828e537736480d6408b",
+      "name": "ponytail-gain",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/engineering/ponytail/ponytail-help",
+      "repo_url": "https://github.com/dietrichgebert/ponytail",
+      "subdir": "skills/ponytail-help",
+      "commit": "2ed6c52c9d7e5e56942508591085fd45dea277d3",
+      "evidence": [
+        "skills/engineering/ponytail/ponytail-help/.ponytail-source"
+      ],
+      "local_customization": "none",
+      "remote_verified": {
+        "commit": "16352ac229eb08a9598dcae48fe9f2b342567d86",
+        "path": "skills/ponytail-help/SKILL.md",
+        "url": "https://raw.githubusercontent.com/dietrichgebert/ponytail/16352ac229eb08a9598dcae48fe9f2b342567d86/skills/ponytail-help/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "ponytail-help",
+        "name_matches": true,
+        "skill_sha256": "86ab0ce0af70cbeeeef499d5c884873b393f87f86401dcc45553662ce2c1eff9",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "2264d1615117b02b0fd5a69ec84cd2757006471a78e4d6c22eed6d581c1d37a4",
+      "name": "ponytail-help",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/engineering/ponytail/ponytail-review",
+      "repo_url": "https://github.com/dietrichgebert/ponytail",
+      "subdir": "skills/ponytail-review",
+      "commit": "2ed6c52c9d7e5e56942508591085fd45dea277d3",
+      "evidence": [
+        "skills/engineering/ponytail/ponytail-review/.ponytail-source"
+      ],
+      "local_customization": "none",
+      "remote_verified": {
+        "commit": "16352ac229eb08a9598dcae48fe9f2b342567d86",
+        "path": "skills/ponytail-review/SKILL.md",
+        "url": "https://raw.githubusercontent.com/dietrichgebert/ponytail/16352ac229eb08a9598dcae48fe9f2b342567d86/skills/ponytail-review/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "ponytail-review",
+        "name_matches": true,
+        "skill_sha256": "33fe4ebe22a460924e5d4a261e223df22e409cc94ab76182bee9fb91a3ef022e",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "40df33b58fc6ef889b93585733feb9566b76e9586efa7f376785c1e995197ac0",
+      "name": "ponytail-review",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/engineering/communication/cavecrew",
+      "repo_url": "https://github.com/JuliusBrussee/caveman",
+      "subdir": "skills/cavecrew",
+      "commit": null,
+      "evidence": [
+        "skills/engineering/communication/caveman-help/SKILL.md:63",
+        "skills/engineering/communication/caveman-compress/README.md:160"
+      ],
+      "local_customization": "not independently verified against checkout",
+      "remote_verified": {
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798",
+        "path": "skills/cavecrew/SKILL.md",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/skills/cavecrew/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "cavecrew",
+        "name_matches": true,
+        "skill_sha256": "534c0a70d4c7728815214a11e80e66cecbd2104f905f96414e6e32504381c002",
+        "local_skill_matches_remote_head": false
+      },
+      "name": "cavecrew",
+      "association_status": "native-associated",
+      "upgrade_policy": "manual-review-unknown-import-version",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/engineering/communication/caveman",
+      "repo_url": "https://github.com/JuliusBrussee/caveman",
+      "subdir": "skills/caveman",
+      "commit": null,
+      "evidence": [
+        "skills/engineering/communication/caveman-help/SKILL.md:63",
+        "skills/engineering/communication/caveman-compress/README.md:160"
+      ],
+      "local_customization": "not independently verified against checkout",
+      "remote_verified": {
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798",
+        "path": "skills/caveman/SKILL.md",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/skills/caveman/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "caveman",
+        "name_matches": true,
+        "skill_sha256": "415d43518f2b1a9498c15a445d4657117b129ee5e81b19454ce348439cc6672b",
+        "local_skill_matches_remote_head": false
+      },
+      "name": "caveman",
+      "association_status": "native-associated",
+      "upgrade_policy": "manual-review-unknown-import-version",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/engineering/communication/caveman-commit",
+      "repo_url": "https://github.com/JuliusBrussee/caveman",
+      "subdir": "skills/caveman-commit",
+      "commit": null,
+      "evidence": [
+        "skills/engineering/communication/caveman-help/SKILL.md:63",
+        "skills/engineering/communication/caveman-compress/README.md:160"
+      ],
+      "local_customization": "not independently verified against checkout",
+      "remote_verified": {
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798",
+        "path": "skills/caveman-commit/SKILL.md",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/skills/caveman-commit/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "caveman-commit",
+        "name_matches": true,
+        "skill_sha256": "c788a282fc75b981b421dfdad5d84ea7f83f946c126daa39cfc7d3f97845e193",
+        "local_skill_matches_remote_head": false
+      },
+      "name": "caveman-commit",
+      "association_status": "native-associated",
+      "upgrade_policy": "manual-review-unknown-import-version",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/engineering/communication/caveman-compress",
+      "repo_url": "https://github.com/JuliusBrussee/caveman",
+      "subdir": "skills/caveman-compress",
+      "commit": null,
+      "evidence": [
+        "skills/engineering/communication/caveman-help/SKILL.md:63",
+        "skills/engineering/communication/caveman-compress/README.md:160"
+      ],
+      "local_customization": "not independently verified against checkout",
+      "remote_verified": {
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798",
+        "path": "skills/caveman-compress/SKILL.md",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/skills/caveman-compress/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "caveman-compress",
+        "name_matches": true,
+        "skill_sha256": "dd5388f085316f9f6a8b34ad906441023033596f8ac1d63b81fb20e8d3f50283",
+        "local_skill_matches_remote_head": false
+      },
+      "name": "caveman-compress",
+      "association_status": "native-associated",
+      "upgrade_policy": "manual-review-unknown-import-version",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/engineering/communication/caveman-help",
+      "repo_url": "https://github.com/JuliusBrussee/caveman",
+      "subdir": "skills/caveman-help",
+      "commit": null,
+      "evidence": [
+        "skills/engineering/communication/caveman-help/SKILL.md:63",
+        "skills/engineering/communication/caveman-compress/README.md:160"
+      ],
+      "local_customization": "not independently verified against checkout",
+      "remote_verified": {
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798",
+        "path": "skills/caveman-help/SKILL.md",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/skills/caveman-help/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "caveman-help",
+        "name_matches": true,
+        "skill_sha256": "0bf9ee3fc8a9258b2d5f6b8bf24ac21f0bf2e4b9b4641dbc426b74f18186f81d",
+        "local_skill_matches_remote_head": false
+      },
+      "name": "caveman-help",
+      "association_status": "native-associated",
+      "upgrade_policy": "manual-review-unknown-import-version",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/engineering/communication/caveman-review",
+      "repo_url": "https://github.com/JuliusBrussee/caveman",
+      "subdir": "skills/caveman-review",
+      "commit": null,
+      "evidence": [
+        "skills/engineering/communication/caveman-help/SKILL.md:63",
+        "skills/engineering/communication/caveman-compress/README.md:160"
+      ],
+      "local_customization": "not independently verified against checkout",
+      "remote_verified": {
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798",
+        "path": "skills/caveman-review/SKILL.md",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/skills/caveman-review/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "caveman-review",
+        "name_matches": true,
+        "skill_sha256": "599330563f19b5c59c3efddffcd7e8d9098b74c29817ab422ccd3253b103fcb8",
+        "local_skill_matches_remote_head": false
+      },
+      "name": "caveman-review",
+      "association_status": "native-associated",
+      "upgrade_policy": "manual-review-unknown-import-version",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/engineering/communication/caveman-stats",
+      "repo_url": "https://github.com/JuliusBrussee/caveman",
+      "subdir": "skills/caveman-stats",
+      "commit": null,
+      "evidence": [
+        "skills/engineering/communication/caveman-help/SKILL.md:63",
+        "skills/engineering/communication/caveman-compress/README.md:160"
+      ],
+      "local_customization": "not independently verified against checkout",
+      "remote_verified": {
+        "commit": "81958ad82f2e2da4417778f81f8a3c838d81b798",
+        "path": "skills/caveman-stats/SKILL.md",
+        "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/81958ad82f2e2da4417778f81f8a3c838d81b798/skills/caveman-stats/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "caveman-stats",
+        "name_matches": true,
+        "skill_sha256": "4632f1611a56483df7851a0dabcc1e0c1952393cd8f5d08ddeda17f81a4e1e50",
+        "local_skill_matches_remote_head": false
+      },
+      "name": "caveman-stats",
+      "association_status": "native-associated",
+      "upgrade_policy": "manual-review-unknown-import-version",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/design/brandkit",
+      "repo_url": "https://github.com/Leonxlnx/taste-skill",
+      "subdir": "skills/brandkit",
+      "commit": "3c7017d636c3a4aad378433ea6d0cfa6c921da4a",
+      "evidence": [
+        "skills/frontend/design/brandkit/.taste-skill-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246",
+        "path": "skills/brandkit/SKILL.md",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/skills/brandkit/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "brandkit",
+        "name_matches": true,
+        "skill_sha256": "9584a127e535c90b686c8dcb5a707ede586dac6791fbf92cfd118c5fea96f9a0",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "b0c4837e1bd140ca816ae54948754ddd2ac1e2a4d3619363777a80caf00b2ede",
+      "name": "brandkit",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/design/industrial-brutalist-ui",
+      "repo_url": "https://github.com/Leonxlnx/taste-skill",
+      "subdir": "skills/brutalist-skill",
+      "commit": "3c7017d636c3a4aad378433ea6d0cfa6c921da4a",
+      "evidence": [
+        "skills/frontend/design/industrial-brutalist-ui/.taste-skill-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246",
+        "path": "skills/brutalist-skill/SKILL.md",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/skills/brutalist-skill/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "industrial-brutalist-ui",
+        "name_matches": true,
+        "skill_sha256": "fffbaac8597f07679e9d87145533567658aedba3b5eca6f16a7075a333048caa",
+        "local_skill_matches_remote_head": true
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "fffbaac8597f07679e9d87145533567658aedba3b5eca6f16a7075a333048caa",
+      "name": "industrial-brutalist-ui",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/design/gpt-taste",
+      "repo_url": "https://github.com/Leonxlnx/taste-skill",
+      "subdir": "skills/gpt-tasteskill",
+      "commit": "3c7017d636c3a4aad378433ea6d0cfa6c921da4a",
+      "evidence": [
+        "skills/frontend/design/gpt-taste/.taste-skill-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246",
+        "path": "skills/gpt-tasteskill/SKILL.md",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/skills/gpt-tasteskill/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "gpt-taste",
+        "name_matches": true,
+        "skill_sha256": "d2dfb60b01f5b45bdc2d25a3c6a7eed04d6ec59715361182c2f49369a3f87a77",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "2e64c269953f2656c21bf5a0fa6b4568e82fe0c72b36e8f84758e090349966a5",
+      "name": "gpt-taste",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/design/image-to-code",
+      "repo_url": "https://github.com/Leonxlnx/taste-skill",
+      "subdir": "skills/image-to-code-skill",
+      "commit": "3c7017d636c3a4aad378433ea6d0cfa6c921da4a",
+      "evidence": [
+        "skills/frontend/design/image-to-code/.taste-skill-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246",
+        "path": "skills/image-to-code-skill/SKILL.md",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/skills/image-to-code-skill/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "image-to-code",
+        "name_matches": true,
+        "skill_sha256": "4c060a8064a8b13380bc2ef3d6e6a1d0b1e316aa093cd9807d0ce9e4eeb037fa",
+        "local_skill_matches_remote_head": true
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "4c060a8064a8b13380bc2ef3d6e6a1d0b1e316aa093cd9807d0ce9e4eeb037fa",
+      "name": "image-to-code",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/design/imagegen-frontend-mobile",
+      "repo_url": "https://github.com/Leonxlnx/taste-skill",
+      "subdir": "skills/imagegen-frontend-mobile",
+      "commit": "3c7017d636c3a4aad378433ea6d0cfa6c921da4a",
+      "evidence": [
+        "skills/frontend/design/imagegen-frontend-mobile/.taste-skill-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246",
+        "path": "skills/imagegen-frontend-mobile/SKILL.md",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/skills/imagegen-frontend-mobile/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "imagegen-frontend-mobile",
+        "name_matches": true,
+        "skill_sha256": "8a33389979f3074fa0926678e266ad2eb9234624472254469fc1ad916b9caa24",
+        "local_skill_matches_remote_head": true
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "8a33389979f3074fa0926678e266ad2eb9234624472254469fc1ad916b9caa24",
+      "name": "imagegen-frontend-mobile",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/design/imagegen-frontend-web",
+      "repo_url": "https://github.com/Leonxlnx/taste-skill",
+      "subdir": "skills/imagegen-frontend-web",
+      "commit": "3c7017d636c3a4aad378433ea6d0cfa6c921da4a",
+      "evidence": [
+        "skills/frontend/design/imagegen-frontend-web/.taste-skill-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246",
+        "path": "skills/imagegen-frontend-web/SKILL.md",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/skills/imagegen-frontend-web/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "imagegen-frontend-web",
+        "name_matches": true,
+        "skill_sha256": "6b5c2256522fdba1e3313eafa3d743b960a7b13ec029d3e6586e04b23327c1f8",
+        "local_skill_matches_remote_head": true
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "6b5c2256522fdba1e3313eafa3d743b960a7b13ec029d3e6586e04b23327c1f8",
+      "name": "imagegen-frontend-web",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/design/minimalist-ui",
+      "repo_url": "https://github.com/Leonxlnx/taste-skill",
+      "subdir": "skills/minimalist-skill",
+      "commit": "3c7017d636c3a4aad378433ea6d0cfa6c921da4a",
+      "evidence": [
+        "skills/frontend/design/minimalist-ui/.taste-skill-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246",
+        "path": "skills/minimalist-skill/SKILL.md",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/skills/minimalist-skill/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "minimalist-ui",
+        "name_matches": true,
+        "skill_sha256": "769ab38eed137bb22c7c09ee08ebb628e9acf3ad37f138d43f772e3af83933e4",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "36bc7328f085405f43b476938e62460fa573bf7e984e949e072bcf014831a44c",
+      "name": "minimalist-ui",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/design/redesign-existing-projects",
+      "repo_url": "https://github.com/Leonxlnx/taste-skill",
+      "subdir": "skills/redesign-skill",
+      "commit": "3c7017d636c3a4aad378433ea6d0cfa6c921da4a",
+      "evidence": [
+        "skills/frontend/design/redesign-existing-projects/.taste-skill-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246",
+        "path": "skills/redesign-skill/SKILL.md",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/skills/redesign-skill/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "redesign-existing-projects",
+        "name_matches": true,
+        "skill_sha256": "a75d547d04595fe97a5d377dddf145d029d51487a4f2a0a5a9d3b532ca3b84cd",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "98ad3e5b051bfb71b2795f7e8a6aa0d32b51ee095606c098a4b2822ac07926c9",
+      "name": "redesign-existing-projects",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/design/high-end-visual-design",
+      "repo_url": "https://github.com/Leonxlnx/taste-skill",
+      "subdir": "skills/soft-skill",
+      "commit": "3c7017d636c3a4aad378433ea6d0cfa6c921da4a",
+      "evidence": [
+        "skills/frontend/design/high-end-visual-design/.taste-skill-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246",
+        "path": "skills/soft-skill/SKILL.md",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/skills/soft-skill/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "high-end-visual-design",
+        "name_matches": true,
+        "skill_sha256": "e1e32f5e2d420872c6c7332b53d5ff7721946766b78c4822b424c2d512c8fdbc",
+        "local_skill_matches_remote_head": true
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "e1e32f5e2d420872c6c7332b53d5ff7721946766b78c4822b424c2d512c8fdbc",
+      "name": "high-end-visual-design",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/design/stitch-design-taste",
+      "repo_url": "https://github.com/Leonxlnx/taste-skill",
+      "subdir": "skills/stitch-skill",
+      "commit": "3c7017d636c3a4aad378433ea6d0cfa6c921da4a",
+      "evidence": [
+        "skills/frontend/design/stitch-design-taste/.taste-skill-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246",
+        "path": "skills/stitch-skill/SKILL.md",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/skills/stitch-skill/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "stitch-design-taste",
+        "name_matches": true,
+        "skill_sha256": "46bdb08fee2dded38b6ba0a051230a502d6ac6e4044afd47592cb40c256028b5",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "1cd55cf8643f3828bc9a3aaadb5da97ee28f98f745b7071d7e217ffeab92fd2a",
+      "name": "stitch-design-taste",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/design/design-taste-frontend",
+      "repo_url": "https://github.com/Leonxlnx/taste-skill",
+      "subdir": "skills/taste-skill",
+      "commit": "3c7017d636c3a4aad378433ea6d0cfa6c921da4a",
+      "evidence": [
+        "skills/frontend/design/design-taste-frontend/.taste-skill-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246",
+        "path": "skills/taste-skill/SKILL.md",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/skills/taste-skill/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "design-taste-frontend",
+        "name_matches": true,
+        "skill_sha256": "ee847084e58f5a81a46120912be9cd15f083570a6ca8f3d1a30372a720633043",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "aa194351b246b8b4799099d4ed7b033d29eab6e6e3d58d8d2172978be7b3ec89",
+      "name": "design-taste-frontend",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/design/design-taste-frontend-v1",
+      "repo_url": "https://github.com/Leonxlnx/taste-skill",
+      "subdir": "skills/taste-skill-v1",
+      "commit": "3c7017d636c3a4aad378433ea6d0cfa6c921da4a",
+      "evidence": [
+        "skills/frontend/design/design-taste-frontend-v1/.taste-skill-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "f624f37a8c650b9cc550253104925efe4c8de246",
+        "path": "skills/taste-skill-v1/SKILL.md",
+        "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/f624f37a8c650b9cc550253104925efe4c8de246/skills/taste-skill-v1/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "design-taste-frontend-v1",
+        "name_matches": true,
+        "skill_sha256": "43f6f3ed310642931dcebf978a6844d09d6b220c3fa89a177a041d60d06004ed",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "70b8cd16f4103017167fc30d613f049dbeab9df75ae93447e0623650fa7c84a9",
+      "name": "design-taste-frontend-v1",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/animation/gsap-core",
+      "repo_url": "https://github.com/greensock/gsap-skills",
+      "subdir": "skills/gsap-core",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "evidence": [
+        "skills/frontend/animation/gsap-core/.gsap-skills-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+        "path": "skills/gsap-core/SKILL.md",
+        "url": "https://raw.githubusercontent.com/greensock/gsap-skills/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-core/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "gsap-core",
+        "name_matches": true,
+        "skill_sha256": "3887b47e050ab5afbe2a9a820f23d39fa02ab785e06a343be44c6f91d84d12b3",
+        "local_skill_matches_remote_head": true
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "3887b47e050ab5afbe2a9a820f23d39fa02ab785e06a343be44c6f91d84d12b3",
+      "name": "gsap-core",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/animation/gsap-frameworks",
+      "repo_url": "https://github.com/greensock/gsap-skills",
+      "subdir": "skills/gsap-frameworks",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "evidence": [
+        "skills/frontend/animation/gsap-frameworks/.gsap-skills-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+        "path": "skills/gsap-frameworks/SKILL.md",
+        "url": "https://raw.githubusercontent.com/greensock/gsap-skills/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-frameworks/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "gsap-frameworks",
+        "name_matches": true,
+        "skill_sha256": "842d9d3659ec3ddc8abbdc524708f8facf81f468ac25d0577f48c759c4fa31e6",
+        "local_skill_matches_remote_head": true
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "842d9d3659ec3ddc8abbdc524708f8facf81f468ac25d0577f48c759c4fa31e6",
+      "name": "gsap-frameworks",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/animation/gsap-performance",
+      "repo_url": "https://github.com/greensock/gsap-skills",
+      "subdir": "skills/gsap-performance",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "evidence": [
+        "skills/frontend/animation/gsap-performance/.gsap-skills-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+        "path": "skills/gsap-performance/SKILL.md",
+        "url": "https://raw.githubusercontent.com/greensock/gsap-skills/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-performance/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "gsap-performance",
+        "name_matches": true,
+        "skill_sha256": "cb5408d6fba707aabcbfe3320317a14c1f8fca6070074e5261047930f50d441e",
+        "local_skill_matches_remote_head": true
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "cb5408d6fba707aabcbfe3320317a14c1f8fca6070074e5261047930f50d441e",
+      "name": "gsap-performance",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/animation/gsap-plugins",
+      "repo_url": "https://github.com/greensock/gsap-skills",
+      "subdir": "skills/gsap-plugins",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "evidence": [
+        "skills/frontend/animation/gsap-plugins/.gsap-skills-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+        "path": "skills/gsap-plugins/SKILL.md",
+        "url": "https://raw.githubusercontent.com/greensock/gsap-skills/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-plugins/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "gsap-plugins",
+        "name_matches": true,
+        "skill_sha256": "5838b856c74c07fbc9fa99b6dfd1eee34ea554c3e530c30e0d58014b707d70a4",
+        "local_skill_matches_remote_head": true
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "5838b856c74c07fbc9fa99b6dfd1eee34ea554c3e530c30e0d58014b707d70a4",
+      "name": "gsap-plugins",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/animation/gsap-react",
+      "repo_url": "https://github.com/greensock/gsap-skills",
+      "subdir": "skills/gsap-react",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "evidence": [
+        "skills/frontend/animation/gsap-react/.gsap-skills-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+        "path": "skills/gsap-react/SKILL.md",
+        "url": "https://raw.githubusercontent.com/greensock/gsap-skills/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-react/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "gsap-react",
+        "name_matches": true,
+        "skill_sha256": "88e2a5312b45e8cc7b3c496637ff5bc9af2ae9c925b555c8b235b34cbc989d74",
+        "local_skill_matches_remote_head": true
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "88e2a5312b45e8cc7b3c496637ff5bc9af2ae9c925b555c8b235b34cbc989d74",
+      "name": "gsap-react",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/animation/gsap-scrolltrigger",
+      "repo_url": "https://github.com/greensock/gsap-skills",
+      "subdir": "skills/gsap-scrolltrigger",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "evidence": [
+        "skills/frontend/animation/gsap-scrolltrigger/.gsap-skills-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+        "path": "skills/gsap-scrolltrigger/SKILL.md",
+        "url": "https://raw.githubusercontent.com/greensock/gsap-skills/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-scrolltrigger/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "gsap-scrolltrigger",
+        "name_matches": true,
+        "skill_sha256": "9351b6666a4749c0740406ea363aaccb99a087ff45cc5e8b99a0f367facf3ef4",
+        "local_skill_matches_remote_head": true
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "9351b6666a4749c0740406ea363aaccb99a087ff45cc5e8b99a0f367facf3ef4",
+      "name": "gsap-scrolltrigger",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/animation/gsap-timeline",
+      "repo_url": "https://github.com/greensock/gsap-skills",
+      "subdir": "skills/gsap-timeline",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "evidence": [
+        "skills/frontend/animation/gsap-timeline/.gsap-skills-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+        "path": "skills/gsap-timeline/SKILL.md",
+        "url": "https://raw.githubusercontent.com/greensock/gsap-skills/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-timeline/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "gsap-timeline",
+        "name_matches": true,
+        "skill_sha256": "1a8b0f39cc4be3ed3d834b89672e4ae2f151b901dc3450bebf10bbc45379fe02",
+        "local_skill_matches_remote_head": true
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "1a8b0f39cc4be3ed3d834b89672e4ae2f151b901dc3450bebf10bbc45379fe02",
+      "name": "gsap-timeline",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/frontend/animation/gsap-utils",
+      "repo_url": "https://github.com/greensock/gsap-skills",
+      "subdir": "skills/gsap-utils",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "evidence": [
+        "skills/frontend/animation/gsap-utils/.gsap-skills-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+        "path": "skills/gsap-utils/SKILL.md",
+        "url": "https://raw.githubusercontent.com/greensock/gsap-skills/aed9cfd3277740755f6bfc1155c7aa645403b760/skills/gsap-utils/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "gsap-utils",
+        "name_matches": true,
+        "skill_sha256": "1927bcc4ea95b38203404ad5ea1d060b15c4a886c65ae53e885ff1793aabe0ba",
+        "local_skill_matches_remote_head": true
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "1927bcc4ea95b38203404ad5ea1d060b15c4a886c65ae53e885ff1793aabe0ba",
+      "name": "gsap-utils",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/platforms/cloudflare/agents-sdk",
+      "repo_url": "https://github.com/cloudflare/skills",
+      "subdir": "skills/agents-sdk",
+      "commit": "30553f89ae1ef1e3c2917cd09d72dac992bb4e9a",
+      "evidence": [
+        "skills/platforms/cloudflare/agents-sdk/.cloudflare-skills-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f",
+        "path": "skills/agents-sdk/SKILL.md",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/skills/agents-sdk/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "agents-sdk",
+        "name_matches": true,
+        "skill_sha256": "95890d0c50e3a1c871b6508f60cd93e1ae10c83732c90f471e985aa5c07d15b0",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "a05244d3cfb23330daff956ec28a990241f5dbbe489cd7fd6489c8f76bb60877",
+      "name": "agents-sdk",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/platforms/cloudflare/cloudflare",
+      "repo_url": "https://github.com/cloudflare/skills",
+      "subdir": "skills/cloudflare",
+      "commit": "30553f89ae1ef1e3c2917cd09d72dac992bb4e9a",
+      "evidence": [
+        "skills/platforms/cloudflare/cloudflare/.cloudflare-skills-source"
+      ],
+      "local_customization": "move top-level references into metadata.references for Codex Agent Skills schema compatibility",
+      "remote_verified": {
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f",
+        "path": "skills/cloudflare/SKILL.md",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/skills/cloudflare/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "cloudflare",
+        "name_matches": true,
+        "skill_sha256": "336a55878f37551d14b6d8dddabfe0c97362fd5414380083a365802568fb39b7",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": true,
+      "import_base_skill_sha256": "89bcccbb0b6dc77bec5e348f54a5ed8f1943d6ce56c33231a71fd2cd6bb05714",
+      "name": "cloudflare",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/platforms/cloudflare/cloudflare-email-service",
+      "repo_url": "https://github.com/cloudflare/skills",
+      "subdir": "skills/cloudflare-email-service",
+      "commit": "30553f89ae1ef1e3c2917cd09d72dac992bb4e9a",
+      "evidence": [
+        "skills/platforms/cloudflare/cloudflare-email-service/.cloudflare-skills-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f",
+        "path": "skills/cloudflare-email-service/SKILL.md",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/skills/cloudflare-email-service/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "cloudflare-email-service",
+        "name_matches": true,
+        "skill_sha256": "846013394fd263cf637b4ea8fb319ccce8ca23a8e5c5aa2ee920a813cf13781a",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "a62531900a08f9f6c352061d42e8b10a35009f5e1c6f91bbf18752feedad5a79",
+      "name": "cloudflare-email-service",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/platforms/cloudflare/cloudflare-one",
+      "repo_url": "https://github.com/cloudflare/skills",
+      "subdir": "skills/cloudflare-one",
+      "commit": "30553f89ae1ef1e3c2917cd09d72dac992bb4e9a",
+      "evidence": [
+        "skills/platforms/cloudflare/cloudflare-one/.cloudflare-skills-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f",
+        "path": "skills/cloudflare-one/SKILL.md",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/skills/cloudflare-one/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "cloudflare-one",
+        "name_matches": true,
+        "skill_sha256": "78c0540861f0c8f5825f7e871a6e8ebfaae0b2b5a8055ab5cfd18038b2f59b4d",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "605336f84979367b6235a57da8ea43e4f3b856a97efd2c95d9e7f90e41bf17ec",
+      "name": "cloudflare-one",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/platforms/cloudflare/cloudflare-one-migrations",
+      "repo_url": "https://github.com/cloudflare/skills",
+      "subdir": "skills/cloudflare-one-migrations",
+      "commit": "30553f89ae1ef1e3c2917cd09d72dac992bb4e9a",
+      "evidence": [
+        "skills/platforms/cloudflare/cloudflare-one-migrations/.cloudflare-skills-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f",
+        "path": "skills/cloudflare-one-migrations/SKILL.md",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/skills/cloudflare-one-migrations/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "cloudflare-one-migrations",
+        "name_matches": true,
+        "skill_sha256": "d09dd780eeaf28f5aad17b0c2aec2bacd8b7d6cbd07919d24a2092982cab77db",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "50ed246b92a3f82c7afac864201093269fad8de24e4ce7ea18929103a26adad8",
+      "name": "cloudflare-one-migrations",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/platforms/cloudflare/durable-objects",
+      "repo_url": "https://github.com/cloudflare/skills",
+      "subdir": "skills/durable-objects",
+      "commit": "30553f89ae1ef1e3c2917cd09d72dac992bb4e9a",
+      "evidence": [
+        "skills/platforms/cloudflare/durable-objects/.cloudflare-skills-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f",
+        "path": "skills/durable-objects/SKILL.md",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/skills/durable-objects/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "durable-objects",
+        "name_matches": true,
+        "skill_sha256": "2468c1795f439f494f076eb13a2202a3c4e579e71e6e2ed98b4d1f5ce62fef1b",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "cd6797cb18f3ae8f721dfd2e5cb27b73a0aa8636683f1a38163dab2fd51a8dfb",
+      "name": "durable-objects",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/platforms/cloudflare/sandbox-sdk",
+      "repo_url": "https://github.com/cloudflare/skills",
+      "subdir": "skills/sandbox-sdk",
+      "commit": "30553f89ae1ef1e3c2917cd09d72dac992bb4e9a",
+      "evidence": [
+        "skills/platforms/cloudflare/sandbox-sdk/.cloudflare-skills-source"
+      ],
+      "local_customization": null,
+      "verification_failure": "<HTTPError 404: 'Not Found'>",
+      "name": "sandbox-sdk",
+      "association_status": "upstream-path-removed",
+      "upgrade_policy": "manual-migration-required",
+      "remote_verified": {
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f",
+        "path": "skills/sandbox-sdk/SKILL.md",
+        "exists": false,
+        "http_status": 404,
+        "replacement_candidates": [
+          "skills/sandbox-stable",
+          "skills/sandbox-next",
+          "skills/sandbox-migrate-to-next"
+        ],
+        "replacement_policy": "Different skill names and workflows; retain sandbox-sdk until an explicit migration is requested."
+      }
+    },
+    {
+      "local_path": "skills/platforms/cloudflare/turnstile-spin",
+      "repo_url": "https://github.com/cloudflare/skills",
+      "subdir": "skills/turnstile-spin",
+      "commit": "30553f89ae1ef1e3c2917cd09d72dac992bb4e9a",
+      "evidence": [
+        "skills/platforms/cloudflare/turnstile-spin/.cloudflare-skills-source"
+      ],
+      "local_customization": "move top-level references into metadata.references for Codex Agent Skills schema compatibility",
+      "remote_verified": {
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f",
+        "path": "skills/turnstile-spin/SKILL.md",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/skills/turnstile-spin/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "turnstile-spin",
+        "name_matches": true,
+        "skill_sha256": "ec154e3f2df0ce4018be74aa287b59596031617f939c3b4e5ef49a4f10ce6a66",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": true,
+      "import_base_skill_sha256": "0d8df415c594c96ca5a4d393b70681d95d92365465e0eb14af3ab2eaa76d800b",
+      "name": "turnstile-spin",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/platforms/cloudflare/workers-best-practices",
+      "repo_url": "https://github.com/cloudflare/skills",
+      "subdir": "skills/workers-best-practices",
+      "commit": "30553f89ae1ef1e3c2917cd09d72dac992bb4e9a",
+      "evidence": [
+        "skills/platforms/cloudflare/workers-best-practices/.cloudflare-skills-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f",
+        "path": "skills/workers-best-practices/SKILL.md",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/skills/workers-best-practices/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "workers-best-practices",
+        "name_matches": true,
+        "skill_sha256": "039c2a70aac53e00da20adc3d527bd3fc9b727be90c28b94c81c5e10092339ef",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "099432ff265ff6080327ef0b392c118b835d2a5bda98a7de07e1afd115ed6458",
+      "name": "workers-best-practices",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/platforms/cloudflare/wrangler",
+      "repo_url": "https://github.com/cloudflare/skills",
+      "subdir": "skills/wrangler",
+      "commit": "30553f89ae1ef1e3c2917cd09d72dac992bb4e9a",
+      "evidence": [
+        "skills/platforms/cloudflare/wrangler/.cloudflare-skills-source"
+      ],
+      "local_customization": null,
+      "remote_verified": {
+        "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f",
+        "path": "skills/wrangler/SKILL.md",
+        "url": "https://raw.githubusercontent.com/cloudflare/skills/86505e44f87d801aa1864a3c4109e9a8ae5c409f/skills/wrangler/SKILL.md",
+        "exists": true,
+        "frontmatter_name": "wrangler",
+        "name_matches": true,
+        "skill_sha256": "7884f560509c08ac29ee0d3cfe1b5259855fd6790acf0c5292f4d1c54db7c191",
+        "local_skill_matches_remote_head": false
+      },
+      "local_skill_differs_from_import_base": false,
+      "import_base_skill_sha256": "42abe11ba6c0cb0c135deed1d591d844838fe0b61fc8c6d675a832435508a61b",
+      "name": "wrangler",
+      "association_status": "native-associated",
+      "upgrade_policy": "backup-then-single-update",
+      "baseline_semantics": "file_hashes are adopted local bytes, version/commit are known import base only; not an exact upstream-content claim"
+    },
+    {
+      "local_path": "skills/writing/deslop-zh",
+      "repo_url": null,
+      "subdir": null,
+      "commit": null,
+      "evidence": [
+        "no source marker or trustworthy local Git checkout evidence"
+      ],
+      "local_customization": "unknown",
+      "name": "deslop-zh",
+      "association_status": "local-unverified",
+      "upgrade_policy": "local-only"
+    },
+    {
+      "local_path": "skills/writing/talk-normal",
+      "subdir": null,
+      "commit": null,
+      "evidence": [
+        "skills/writing/deslop-zh/SKILL.md:7",
+        "/opt/ai/talk-normal/.git/config"
+      ],
+      "local_customization": "self-maintained Hermes SOUL wrapper; upstream repo is related reference, not native upgrade source",
+      "related_repo": "https://github.com/hexiecs/talk-normal",
+      "repo_url": null,
+      "name": "talk-normal",
+      "association_status": "related-only",
+      "upgrade_policy": "local-only"
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+--- a/internal/server/handler_restart_upgrade.go
++++ b/internal/server/handler_restart_upgrade.go
+@@ -196,7 +196,7 @@
+ 
+ func (s *Server) requireLocalMCP(next http.HandlerFunc) http.HandlerFunc {
+ 	return func(w http.ResponseWriter, r *http.Request) {
+-		if !mcpRequestAllowed(r, s.addr) {
++		if !resourceManagementRequestAllowed(r, s.addr) {
+ 			writeError(w, http.StatusForbidden, "MCP settings are available only when the dashboard is opened by localhost or an IP address, not a domain name")
+ 			return
+ 		}
+--- a/internal/server/handler_hooks.go
++++ b/internal/server/handler_hooks.go
+@@ -26,7 +26,7 @@
+ // requireLocalHooks applies the MCP DNS-rebinding guard: hooks write commands that Agents run.
+ func (s *Server) requireLocalHooks(next http.HandlerFunc) http.HandlerFunc {
+ 	return func(w http.ResponseWriter, r *http.Request) {
+-		if !mcpRequestAllowed(r, s.addr) {
++		if !resourceManagementRequestAllowed(r, s.addr) {
+ 			writeError(w, http.StatusForbidden, "Hooks settings are available only when the dashboard is opened by localhost or an IP address, not a domain name")
+ 			return
+ 		}
+--- a/internal/server/handler_plugin.go
++++ b/internal/server/handler_plugin.go
+@@ -38,7 +38,7 @@
+ 
+ func (s *Server) requireLocalPlugin(next http.HandlerFunc) http.HandlerFunc {
+ 	return func(w http.ResponseWriter, r *http.Request) {
+-		if !mcpRequestAllowed(r, s.addr) {
++		if !resourceManagementRequestAllowed(r, s.addr) {
+ 			writeError(w, http.StatusForbidden, "Plugin management is available only from the local dashboard")
+ 			return
+ 		}
+--- /dev/null
++++ b/internal/server/trusted_resource_origin.go
+@@ -0,0 +1,50 @@
++package server
++
++import (
++	"net"
++	"net/http"
++	"net/url"
++	"os"
++	"strings"
++)
++
++// resourceManagementRequestAllowed preserves the upstream rebinding guard and
++// optionally admits one explicitly configured HTTPS origin through one TCP peer.
++// This deployment-only policy does not change restart/upgrade authorization,
++// trust forwarded addresses as identities, or grant a native Agent's approval.
++func resourceManagementRequestAllowed(r *http.Request, serverAddr string) bool {
++	if mcpRequestAllowed(r, serverAddr) {
++		return true
++	}
++	if !restartRequestAllowed(r, serverAddr) {
++		return false
++	}
++	origin, err := url.Parse(os.Getenv("SKILLSHARE_UI_TRUSTED_ORIGIN"))
++	if err != nil || origin.Scheme != "https" || origin.Host == "" || origin.User != nil || origin.Path != "" || origin.RawQuery != "" || origin.ForceQuery || origin.Fragment != "" || strings.ContainsAny(origin.Host, "*\\ \t\r\n") {
++		return false
++	}
++	if !strings.EqualFold(r.Host, origin.Host) {
++		return false
++	}
++	proxy := net.ParseIP(os.Getenv("SKILLSHARE_UI_TRUSTED_PROXY"))
++	peer, _, err := net.SplitHostPort(r.RemoteAddr)
++	if err != nil || proxy == nil || !proxy.Equal(net.ParseIP(peer)) {
++		return false
++	}
++	// Only the authenticated-by-network proxy can assert the external TLS scheme.
++	if r.Header.Get("X-Forwarded-Proto") != "https" {
++		return false
++	}
++	if len(r.Header.Values("Origin")) > 1 || len(r.Header.Values("Sec-Fetch-Site")) > 1 || len(r.Header.Values("X-Forwarded-Proto")) > 1 {
++		return false
++	}
++	browserOrigin := r.Header.Get("Origin")
++	if browserOrigin != "" && !strings.EqualFold(browserOrigin, origin.String()) {
++		return false
++	}
++	fetchSite := r.Header.Get("Sec-Fetch-Site")
++	if fetchSite != "" && fetchSite != "same-origin" {
++		return false
++	}
++	return browserOrigin != "" || fetchSite == "same-origin"
++}
+--- /dev/null
++++ b/internal/server/trusted_resource_origin_test.go
+@@ -0,0 +1,127 @@
++package server
++
++import (
++	"net/http"
++	"net/http/httptest"
++	"testing"
++)
++
++func TestTrustedResourceOrigin(t *testing.T) {
++	const origin = "https://fwd.seso.icu:34000"
++	for _, tc := range []struct {
++		name, host, peer, origin, site, proto, configuredOrigin, configuredProxy string
++		want                                                                     bool
++	}{
++		{"browser through trusted proxy", "fwd.seso.icu:34000", "10.0.0.2:44000", "", "same-origin", "https", origin, "10.0.0.2", true},
++		{"explicit exact origin", "fwd.seso.icu:34000", "10.0.0.2:44000", origin, "", "https", origin, "10.0.0.2", true},
++		{"exact origin and fetch metadata", "fwd.seso.icu:34000", "10.0.0.2:44000", origin, "same-origin", "https", origin, "10.0.0.2", true},
++		{"disabled by default", "fwd.seso.icu:34000", "10.0.0.2:44000", origin, "same-origin", "https", "", "", false},
++		{"missing proxy policy", "fwd.seso.icu:34000", "10.0.0.2:44000", origin, "same-origin", "https", origin, "", false},
++		{"forged forwarded peer", "fwd.seso.icu:34000", "10.0.0.99:44000", origin, "same-origin", "https", origin, "10.0.0.2", false},
++		{"unparseable peer", "fwd.seso.icu:34000", "10.0.0.2", origin, "same-origin", "https", origin, "10.0.0.2", false},
++		{"wrong domain", "evil.example:34000", "10.0.0.2:44000", "https://evil.example:34000", "same-origin", "https", origin, "10.0.0.2", false},
++		{"domain suffix", "fwd.seso.icu.evil.example:34000", "10.0.0.2:44000", origin, "same-origin", "https", origin, "10.0.0.2", false},
++		{"wrong port", "fwd.seso.icu:443", "10.0.0.2:44000", origin, "same-origin", "https", origin, "10.0.0.2", false},
++		{"missing port", "fwd.seso.icu", "10.0.0.2:44000", origin, "same-origin", "https", origin, "10.0.0.2", false},
++		{"trailing dot", "fwd.seso.icu.:34000", "10.0.0.2:44000", origin, "same-origin", "https", origin, "10.0.0.2", false},
++		{"cross site", "fwd.seso.icu:34000", "10.0.0.2:44000", origin, "cross-site", "https", origin, "10.0.0.2", false},
++		{"same site is not same origin", "fwd.seso.icu:34000", "10.0.0.2:44000", "", "same-site", "https", origin, "10.0.0.2", false},
++		{"foreign origin", "fwd.seso.icu:34000", "10.0.0.2:44000", "https://evil.example", "same-origin", "https", origin, "10.0.0.2", false},
++		{"insecure origin", "fwd.seso.icu:34000", "10.0.0.2:44000", "http://fwd.seso.icu:34000", "same-origin", "https", origin, "10.0.0.2", false},
++		{"null origin", "fwd.seso.icu:34000", "10.0.0.2:44000", "null", "same-origin", "https", origin, "10.0.0.2", false},
++		{"missing browser proof", "fwd.seso.icu:34000", "10.0.0.2:44000", "", "", "https", origin, "10.0.0.2", false},
++		{"insecure forwarding", "fwd.seso.icu:34000", "10.0.0.2:44000", origin, "same-origin", "http", origin, "10.0.0.2", false},
++		{"ambiguous forwarding", "fwd.seso.icu:34000", "10.0.0.2:44000", origin, "same-origin", "https,http", origin, "10.0.0.2", false},
++		{"wildcard policy rejected", "fwd.seso.icu:34000", "10.0.0.2:44000", origin, "same-origin", "https", "https://*.seso.icu:34000", "10.0.0.2", false},
++		{"policy userinfo rejected", "fwd.seso.icu:34000", "10.0.0.2:44000", origin, "same-origin", "https", "https://user@fwd.seso.icu:34000", "10.0.0.2", false},
++		{"policy path rejected", "fwd.seso.icu:34000", "10.0.0.2:44000", origin, "same-origin", "https", origin + "/", "10.0.0.2", false},
++		{"invalid proxy policy", "fwd.seso.icu:34000", "10.0.0.2:44000", origin, "same-origin", "https", origin, "gateway.example", false},
++	} {
++		t.Run(tc.name, func(t *testing.T) {
++			t.Setenv("SKILLSHARE_UI_TRUSTED_ORIGIN", tc.configuredOrigin)
++			t.Setenv("SKILLSHARE_UI_TRUSTED_PROXY", tc.configuredProxy)
++			r := httptest.NewRequest(http.MethodGet, "/api/mcp", nil)
++			r.Host = tc.host
++			r.RemoteAddr = tc.peer
++			if tc.origin != "" {
++				r.Header.Set("Origin", tc.origin)
++			}
++			if tc.site != "" {
++				r.Header.Set("Sec-Fetch-Site", tc.site)
++			}
++			r.Header.Set("X-Forwarded-Proto", tc.proto)
++			r.Header.Set("X-Forwarded-For", "10.0.0.2")
++			if got := resourceManagementRequestAllowed(r, "10.0.0.186:34000"); got != tc.want {
++				t.Fatalf("got %v, want %v", got, tc.want)
++			}
++		})
++	}
++}
++
++func TestTrustedResourceOriginWrappers(t *testing.T) {
++	t.Setenv("SKILLSHARE_UI_TRUSTED_ORIGIN", "https://fwd.seso.icu:34000")
++	t.Setenv("SKILLSHARE_UI_TRUSTED_PROXY", "10.0.0.2")
++	s := &Server{addr: "10.0.0.186:34000"}
++	for name, wrap := range map[string]func(http.HandlerFunc) http.HandlerFunc{"mcp": s.requireLocalMCP, "hooks": s.requireLocalHooks, "plugins": s.requireLocalPlugin} {
++		t.Run(name, func(t *testing.T) {
++			for _, host := range []string{"fwd.seso.icu:34000", "evil.example:34000"} {
++				r := httptest.NewRequest(http.MethodGet, "/api/"+name, nil)
++				r.Host = host
++				r.RemoteAddr = "10.0.0.2:44000"
++				r.Header.Set("Sec-Fetch-Site", "same-origin")
++				r.Header.Set("X-Forwarded-Proto", "https")
++				w := httptest.NewRecorder()
++				called := false
++				wrap(func(w http.ResponseWriter, r *http.Request) { called = true; w.WriteHeader(http.StatusNoContent) })(w, r)
++				if host == "fwd.seso.icu:34000" {
++					if !called || w.Code != 204 {
++						t.Fatalf("allowlisted handler not reached: %d", w.Code)
++					}
++				} else if called || w.Code != 403 {
++					t.Fatalf("foreign host reached handler: %d", w.Code)
++				}
++			}
++		})
++	}
++}
++
++func TestTrustedResourceOriginPreservesNativeAccess(t *testing.T) {
++	for _, enabled := range []bool{false, true} {
++		if enabled {
++			t.Setenv("SKILLSHARE_UI_TRUSTED_ORIGIN", "https://fwd.seso.icu:34000")
++			t.Setenv("SKILLSHARE_UI_TRUSTED_PROXY", "10.0.0.2")
++		} else {
++			t.Setenv("SKILLSHARE_UI_TRUSTED_ORIGIN", "")
++			t.Setenv("SKILLSHARE_UI_TRUSTED_PROXY", "")
++		}
++		for _, host := range []string{"localhost:34000", "10.0.0.186:34000"} {
++			r := httptest.NewRequest(http.MethodGet, "/api/mcp", nil)
++			r.Host = host
++			r.RemoteAddr = "127.0.0.1:44000"
++			if !resourceManagementRequestAllowed(r, "10.0.0.186:34000") {
++				t.Fatalf("native access rejected, policy=%v host=%s", enabled, host)
++			}
++			r.Header.Set("Sec-Fetch-Site", "cross-site")
++			if resourceManagementRequestAllowed(r, "10.0.0.186:34000") {
++				t.Fatal("cross-site native access was allowed")
++			}
++		}
++	}
++}
++
++func TestTrustedResourceOriginRejectsDuplicateHeaders(t *testing.T) {
++	t.Setenv("SKILLSHARE_UI_TRUSTED_ORIGIN", "https://fwd.seso.icu:34000")
++	t.Setenv("SKILLSHARE_UI_TRUSTED_PROXY", "10.0.0.2")
++	for _, header := range []string{"Origin", "Sec-Fetch-Site", "X-Forwarded-Proto"} {
++		r := httptest.NewRequest(http.MethodGet, "/api/mcp", nil)
++		r.Host = "fwd.seso.icu:34000"
++		r.RemoteAddr = "10.0.0.2:44000"
++		r.Header.Set("Origin", "https://fwd.seso.icu:34000")
++		r.Header.Set("Sec-Fetch-Site", "same-origin")
++		r.Header.Set("X-Forwarded-Proto", "https")
++		r.Header.Add(header, r.Header.Get(header))
++		if resourceManagementRequestAllowed(r, "10.0.0.186:34000") {
++			t.Fatalf("duplicate %s accepted", header)
++		}
++	}
++}
+--- a/wiki/architecture.md
++++ b/wiki/architecture.md
+@@ -147,3 +147,16 @@
+ 3. If the CLI and Web API expose the same behavior, verify that they share domain logic.
+ 4. For state changes, inspect backup, rollback, oplog, dry-run, and audit implications.
+ 5. Load `documentation` for public contract changes, `cli-development` for implementation, and `testing` before execution.
++
++## Deployment-only trusted origin fork
++
++This local fork preserves the native DNS-rebinding guard by default. Only MCP,
++hooks and plugins management wrappers can additionally accept the exact HTTPS
++origin configured in `SKILLSHARE_UI_TRUSTED_ORIGIN`, received from the actual TCP
++peer in `SKILLSHARE_UI_TRUSTED_PROXY`. The trusted proxy must preserve the browser
++Host, assert HTTPS, and reject other Hosts. Requests still require exact Origin
++or same-origin Fetch Metadata; cross-site, same-site-only, mismatched Origin,
++wrong authority/port, and untrusted peers are denied. Forwarded IP headers never
++establish the trusted peer. This does not add login authentication, change native
++Agent trust, or extend restart/upgrade authorization. Deployment ACLs, artifact
++paths, and rollout evidence belong in deployment documentation.

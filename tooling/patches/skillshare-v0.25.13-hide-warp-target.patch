@@ -1,0 +1,177 @@
+--- a/internal/server/handler_config.go
++++ b/internal/server/handler_config.go
+@@ -7,6 +7,7 @@
+ 	"os"
+ 	"path/filepath"
+ 	"slices"
++	"strings"
+ 	"time"
+ 
+ 	"gopkg.in/yaml.v3"
+@@ -256,8 +257,18 @@
+ 		agentDefaults = config.DefaultAgentTargets()
+ 	}
+ 
++	hiddenTargets := make(map[string]struct{})
++	for _, name := range strings.Split(os.Getenv("SKILLSHARE_UI_HIDE_TARGETS"), ",") {
++		if name = strings.TrimSpace(name); name != "" {
++			hiddenTargets[name] = struct{}{}
++		}
++	}
++
+ 	items := make([]availTarget, 0, len(defaults))
+ 	for name, tc := range defaults {
++		if _, hidden := hiddenTargets[name]; hidden {
++			continue
++		}
+ 		_, installed := targets[name]
+ 		// Check if the tool's config directory exists: its declared detect dir,
+ 		// else the parent of the skills path.
+--- /dev/null
++++ b/internal/server/hidden_targets_test.go
+@@ -0,0 +1,130 @@
++package server
++
++import (
++	"encoding/json"
++	"net/http"
++	"net/http/httptest"
++	"os"
++	"path/filepath"
++	"testing"
++)
++
++type availableTargetsResponse struct {
++	Targets []struct {
++		Name   string   `json:"name"`
++		ReadBy []string `json:"readBy"`
++	} `json:"targets"`
++}
++
++func availableTargets(t *testing.T, s *Server) availableTargetsResponse {
++	t.Helper()
++	req := httptest.NewRequest(http.MethodGet, "/api/config/available-targets", nil)
++	rr := httptest.NewRecorder()
++	s.handler.ServeHTTP(rr, req)
++	if rr.Code != http.StatusOK {
++		t.Fatalf("expected 200, got %d: %s", rr.Code, rr.Body.String())
++	}
++
++	var resp availableTargetsResponse
++	if err := json.Unmarshal(rr.Body.Bytes(), &resp); err != nil {
++		t.Fatalf("decode available targets: %v", err)
++	}
++	return resp
++}
++
++func availableTargetNames(t *testing.T, s *Server) map[string]bool {
++	t.Helper()
++	resp := availableTargets(t, s)
++	names := make(map[string]bool, len(resp.Targets))
++	for _, target := range resp.Targets {
++		names[target.Name] = true
++	}
++	return names
++}
++
++func TestHandleAvailableTargets_HidesConfiguredUITargets(t *testing.T) {
++	for _, tc := range []struct {
++		name    string
++		project bool
++	}{
++		{name: "global"},
++		{name: "project", project: true},
++	} {
++		t.Run(tc.name, func(t *testing.T) {
++			home := t.TempDir()
++			t.Setenv("HOME", home)
++			t.Setenv("SKILLSHARE_UI_HIDE_TARGETS", "  warp , unused  ")
++			if err := os.MkdirAll(filepath.Join(home, ".agents", "skills"), 0755); err != nil {
++				t.Fatal(err)
++			}
++
++			var s *Server
++			if tc.project {
++				var projectRoot string
++				s, projectRoot = newTestProjectServerWithExtras(t, nil)
++				if err := os.MkdirAll(filepath.Join(projectRoot, ".agents", "skills"), 0755); err != nil {
++					t.Fatal(err)
++				}
++			} else {
++				s, _ = newTestServer(t)
++			}
++
++			names := availableTargetNames(t, s)
++			if names["warp"] {
++				t.Error("warp present in available targets despite UI exclusion")
++			}
++			if !names["codex"] {
++				t.Error("codex missing after hiding warp")
++			}
++			for _, target := range availableTargets(t, s).Targets {
++				for _, reader := range target.ReadBy {
++					if reader == "warp" {
++						t.Errorf("%s readBy still exposes hidden warp target", target.Name)
++					}
++				}
++			}
++		})
++	}
++}
++
++func TestHandleAvailableTargets_HideNamesAreExactAndOptIn(t *testing.T) {
++	for _, tc := range []struct {
++		name string
++		env  string
++	}{
++		{name: "unset"},
++		{name: "near-name", env: "war"},
++		{name: "case-sensitive", env: "Warp"},
++	} {
++		t.Run(tc.name, func(t *testing.T) {
++			t.Setenv("SKILLSHARE_UI_HIDE_TARGETS", tc.env)
++			s, _ := newTestServer(t)
++			if !availableTargetNames(t, s)["warp"] {
++				t.Error("warp missing without an exact case-sensitive exclusion")
++			}
++		})
++	}
++}
++
++func TestHandleAvailableTargets_HidingDoesNotChangeConfiguredTargets(t *testing.T) {
++	t.Setenv("SKILLSHARE_UI_HIDE_TARGETS", "warp")
++	configuredPath := filepath.Join(t.TempDir(), "warp-skills")
++	s, _ := newTestServerWithTargets(t, map[string]string{"warp": configuredPath})
++
++	before := s.cloneTargets()
++	beforeWarp, ok := before["warp"]
++	if !ok {
++		t.Fatal("configured warp target missing before request")
++	}
++	if availableTargetNames(t, s)["warp"] {
++		t.Error("warp present in available targets despite UI exclusion")
++	}
++	after := s.cloneTargets()
++	afterWarp, ok := after["warp"]
++	if !ok {
++		t.Fatal("configured warp target missing after request")
++	}
++	if beforeWarp.SkillsConfig().Path != configuredPath || afterWarp.SkillsConfig().Path != configuredPath {
++		t.Fatalf("configured warp target changed: before=%q after=%q want=%q", beforeWarp.SkillsConfig().Path, afterWarp.SkillsConfig().Path, configuredPath)
++	}
++}
+--- a/wiki/architecture.md
++++ b/wiki/architecture.md
+@@ -160,3 +160,12 @@
+ establish the trusted peer. This does not add login authentication, change native
+ Agent trust, or extend restart/upgrade authorization. Deployment ACLs, artifact
+ paths, and rollout evidence belong in deployment documentation.
++
++## Deployment-only target visibility
++
++The local UI fork optionally accepts `SKILLSHARE_UI_HIDE_TARGETS`, a comma-separated
++list of exact, case-sensitive target names (surrounding whitespace is ignored).
++These entries are omitted from the available-target API, including discovery and
++the Add Target chooser. The default empty value preserves the upstream catalog.
++This is presentation filtering, not uninstall, authorization, or a change to
++configured targets, native adapters, CLI support, or shared skills directories.

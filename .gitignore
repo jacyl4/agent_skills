@@ -2,3 +2,7 @@
 .omx/
 .codex/
 .agents/
+
+# Python maintenance/test bytecode
+__pycache__/
+*.py[cod]

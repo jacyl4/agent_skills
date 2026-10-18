@@ -88,7 +88,7 @@ PYTHONDONTWRITEBYTECODE=1 "$PYTHON" tooling/scripts/sync_skills.py --apply
 
 ## MCP、Hooks 与 Plugins
 
-已原地纳管3个MCP定义（Codex/Grok共4个绑定）、8组Codex/Cursor hooks和9个现有Codex插件。结构化主源位于本机 `~/.config/skillshare/config.yaml`，不进入本Git仓库或 `skills/`。鉴权、原生信任和工具自管扩展仍归原渠道；不支持的Hermes/GSD内容未强行迁移。
+MCP 现交由 **Magpie** 管理，Skillshare 已撤销原3个定义、4个绑定的纳管，保留 Agent 原生配置不动。Skillshare 继续管理8组Codex/Cursor hooks和9个现有Codex插件。结构化主源位于本机 `~/.config/skillshare/config.yaml`，不进入本Git仓库或 `skills/`。鉴权、原生信任和工具自管扩展仍归原渠道。
 
 [纳管范围、网页安全入口、维护与回退](docs/resource-management.md)。现有域名已追加精确白名单，三项可直接访问；见[域名白名单与维护说明](docs/domain-allowlist.md)。未配置的其他域名及跨站请求仍拒绝。
 

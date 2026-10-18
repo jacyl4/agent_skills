@@ -1,5 +1,9 @@
 # MCP、Hooks、Plugins 纳管（2026-10-17）
 
+> **当前职责调整（2026-10-18）：MCP 已交由 Magpie 管理。** Skillshare 对 context7、crawl4ai、qwebbridge 使用 `mcp remove --keep-files` 撤销纳管，并清除 4 条绑定的所有权记录；Agent 原生配置内容及权限不变。现有 Hooks、Plugins 和技能管理保持。以下 MCP 导入／同步记录属于历史部署说明，不再是当前操作流程；不要重新导入 MCP 或用 Skillshare 覆盖 Magpie 的配置。
+>
+> 当前验证：MCP 受管定义 0、所有权条目 0、`skillshare sync mcp -g --dry-run --json` 变更 0。网页仍可能发现原生 MCP 并显示为 unmanaged，不代表重新接管。备份及验证证据由 `.omx/plans/mcp-handoff-backup-path` 指向；回退前需协调 Magpie，不能直接恢复旧所有权和配置覆盖其后续修改。
+
 ## 已完成的实际管理范围
 
 配置源：**`~/.config/skillshare/config.yaml`**（0600）。MCP、hooks、plugins 是结构化主机配置，不是 `SKILL.md`，不放进 `skills/` 或本 Git 仓库。Skillshare 程序仍为固定 v0.25.13。

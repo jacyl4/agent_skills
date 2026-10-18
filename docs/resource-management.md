@@ -4,6 +4,8 @@
 >
 > 当前验证：MCP 受管定义 0、所有权条目 0、`skillshare sync mcp -g --dry-run --json` 变更 0。网页仍可能发现原生 MCP 并显示为 unmanaged，不代表重新接管。备份及验证证据由 `.omx/plans/mcp-handoff-backup-path` 指向；回退前需协调 Magpie，不能直接恢复旧所有权和配置覆盖其后续修改。
 
+> 后续界面适配：Sync 页默认不勾选 MCP，刷新后仍排除；真实点击 Sync 已确认不发送 MCP 写入请求。此项为前端默认值，不是禁止用户以后手动勾选的服务端策略。源码补丁为 `tooling/patches/skillshare-v0.25.13-sync-mcp-default-off.patch`；当前生产缓存和回退证据由 `.omx/plans/sync-repair-backup-path` 指向。
+
 ## 已完成的实际管理范围
 
 配置源：**`~/.config/skillshare/config.yaml`**（0600）。MCP、hooks、plugins 是结构化主机配置，不是 `SKILL.md`，不放进 `skills/` 或本 Git 仓库。Skillshare 程序仍为固定 v0.25.13。

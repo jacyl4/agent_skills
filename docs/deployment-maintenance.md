@@ -249,6 +249,8 @@ SHA256：6c1fec10f541d259ebb9afee9e799ead2db2ed46fa5961f1a1ed4fdfe736008c
 
 这是同机私有快照，不是异机灾备。迁机或磁盘故障恢复前，必须将该目录及所需私有配置安全复制到可信备份介质；只有桌面 Markdown 或 Git 仓库不包含这些二进制、前端缓存与凭据。未来升级后应另生成新归档和 hash，不能沿用本次摘要。
 
+**后续 MCP 默认排除适配：** 上述 12:08 全程序快照不含这项后续前端默认值。最新前端缓存另存 `/home/jacyl4/.local/state/skillshare-onboarding/sync-repair-20261018-135545/ui-cache-mcp-off1.tar.gz`，SHA256 为 `5ff378c3e04c16962f2eaa9f7b0417782a3e537cd981d77bddfce3f2da66317d`；恢复旧程序快照后，应校验并恢复此更新缓存，或按下一节补丁流程重建。该缓存仍包含审计文案修正，恢复时不覆盖 Magpie/Agent 配置。
+
 ## 6. 技能 GitHub 来源与更新
 
 原生更新映射位于 `skills/.metadata.json`；来源证据见仓库 `docs/upstream-sources.json`、`docs/upstream-updates.md`。有来源不等于适合自动覆盖；本地包装和无可靠来源的技能不应按同名仓库强行绑定。
@@ -275,8 +277,9 @@ skillshare update -g frontend/animation/gsap-core --diff
 1. `tooling/patches/skillshare-v0.25.13-trusted-origin.patch`：精确域名/网关同源守卫。
 2. `tooling/patches/skillshare-v0.25.13-hide-warp-target.patch`：显式隐藏已清理的 Target 候选，保留通用 Target。
 3. `tooling/patches/skillshare-v0.25.13-audit-sync-label.patch`：11 语言共 55 条提示，澄清审计阈值不阻止普通同步。
+4. `tooling/patches/skillshare-v0.25.13-sync-mcp-default-off.patch`：Sync 页默认排除 MCP，避免与 Magpie 职责混淆。
 
-前两项已在 fwd2 二进制内；第三项当前通过前端缓存资源修正，JS 文件/引用和 service worker 缓存名均已更新。**删缓存或升级可能丢失提示修正；只备份 Go 二进制不够。**
+前两项已在 fwd2 二进制内；第三、四项当前通过前端缓存资源适配，JS 文件/引用和 service worker 缓存名均已更新。**删缓存或升级可能丢失提示与默认值修正；只备份 Go 二进制不够。**
 
 升级流程：备份当前 artifact/缓存/配置 → 核对新版本官方来源、校验与配置迁移 → 在干净源码对补丁 `git apply --check` → 审阅上游是否已原生解决，决定重用或移除 → 隔离容器构建和测试 → 发布到新的版本目录 → 切换 user drop-in → 验证健康/同源正负用例/技能分发 → 保留旧版本供回退。
 
@@ -295,6 +298,8 @@ skillshare sync mcp -g --dry-run --json
 ```
 
 网页仍可能展示 unmanaged MCP，这是只读发现，不代表接管。不要重新 import 或执行 Skillshare 的 MCP add/edit/sync 作为日常配置流程；MCP 日常配置交给 Magpie。恢复旧 Skillshare 快照时尤其不能重新覆盖 Magpie。
+
+Sync 页的 MCP 默认不勾选；刷新仍不参与，真实点击 Sync 验证没有 MCP 写入请求。此项只改默认选择，用户以后仍可手动勾选，不是服务端永久禁用 MCP 功能。
 
 ### 审计不是分发失败
 
@@ -343,6 +348,7 @@ Git 日常只用明确文件集合提交，保持既有 origin/main。确认工�
 | DNS 连不上 | 检查客户端是否将域名指向 10.0.0.2；用 --resolve 的可信 TLS 检查只证明内网链路 |
 | Plugin 删除泛化报错 | 看原生命令错误；默认预装策略拒绝与本地权限错误不同 |
 | 审计非绿 | 按真实风险逐项复核，不靠关规则或改标签伪装安全 |
+| `symlink to external location (...), kept` | 属于保留外部链接的提示，不是同步失败。当前 Magpie/Understand Anything 的链接应保留；看 API failed、日志状态和 Doctor drift，不为清空提示删除链接或改 Source |
 | 更新后许可证/基线失败 | 对照真实上游声明和本地修订，不删除回归测试或伪造来源 |
 
 建议保留如下证据：Source 校验通过；测试通过；预演无意外清理；实际同步成功；334 条受管链接（此基线）指向正确 Source；Doctor 无 error/drift/broken/duplicate；HTTPS health 200；浏览器三写入方/五读取方正确；MCP 受管 0；hooks/plugins 正常；Nginx `-t` 通过。

@@ -1,0 +1,11 @@
+--- a/ui/src/pages/SyncPage.tsx
++++ b/ui/src/pages/SyncPage.tsx
+@@ -83,7 +83,7 @@
+   const hooks = useHooksQuery({ staleTime: staleTimes.extras });
+   const log = useQuery({ queryKey: queryKeys.log('ops', 20, { cmd: 'sync' }), queryFn: () => api.listLog('ops', 20, { cmd: 'sync' }), staleTime: staleTimes.log });
+ 
+-  const [off, setOff] = useState<Set<Part>>(new Set());
++  const [off, setOff] = useState<Set<Part>>(new Set(['mcp']));
+   const [force, setForce] = useState(false);
+   // The bar draws its bottom line once the line above it scrolls away.
+   const [stuck, setStuck] = useState(false);

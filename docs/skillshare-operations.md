@@ -1,5 +1,7 @@
 # Skillshare 本机运维
 
+> **当前统一入口：[部署安装与维护总手册](deployment-maintenance.md)。** 下文保留早期迁移记录；旧的两个写入 Target、68 项技能和 MCP 纳管描述不再代表现状。
+
 > 最新运维基线：[日志/审计与共享写入修复](audit-review.md)。保留8项登记，仅Universal/agy/Hermes直接写技能，其他5项经Universal共享读取。
 
 > 当前追加状态：GSD/Pi 已卸载清理，Universal 保持可见，见 [清理记录](unused-agents-cleanup.md)。下文迁移过程涉及 GSD/Pi 的描述为历史状态。

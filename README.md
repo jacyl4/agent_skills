@@ -69,7 +69,8 @@ PYTHONDONTWRITEBYTECODE=1 "$PYTHON" tooling/scripts/sync_skills.py --apply
 
 此脚本是本仓库的保守保护入口，不是 Skillshare 的替代实现。它会连当前已过滤名称也一起检查；不自动解决冲突，不支持 `--force`。GUI 和直接调用原生 `sync` 不经过这层检查。
 
-- [本机部署、维护、升级、回滚与排障](docs/skillshare-operations.md)
+- [当前部署安装与维护总手册（含桌面副本）](docs/deployment-maintenance.md)
+- [早期本机运维记录（部分段落为历史状态）](docs/skillshare-operations.md)
 - [Warp 智能终端清理、Targets 隐藏与回退](docs/warp-cleanup.md)
 - [旧 Antigravity IDE / Gemini CLI 清理与保留边界](docs/legacy-google-cleanup.md)
 - [Dexto / Witsy / Pi / GSD 清理与 Universal 保留](docs/unused-agents-cleanup.md)

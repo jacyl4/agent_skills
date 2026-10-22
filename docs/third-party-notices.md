@@ -22,3 +22,25 @@
 对原生已关联上游的73份新增声明，同时将已核实SHA加入本地接受基线 `.metadata.json/file_hashes`，不改上游版本、commit或规则；避免把已审阅许可证误报为未知额外文件。其他未登记的额外文件仍会触发完整性检查。
 
 frontend-design原文明确引用 `LICENSE.txt`。已用同一Anthropic官方提交00756142…核实技能仅差3个空行，并补回该提交实际Apache-2.0文件；未把GSD包根MIT改名冒充。校验器另检查显式许可附件引用是否存在且安全。
+
+## 2026-10-22：上游更新后的同步修复
+
+10月21日的原生子目录更新再次移除了61份仓库根LICENSE/NOTICE，并从
+`.metadata.json/file_hashes` 移除了这些附件的基线。原生CLI/UI同步预检仍可成功，
+但本仓库保护入口会报 `verified license/notice is missing`，这是校验生效，不能跳过。
+
+本次按当前已安装提交，从Cloudflare、OfficeCLI、Caveman、Ponytail、GSAP、
+Taste六个上游的根目录取回8种声明，逐一核对已有清单SHA256，全部一致后恢复61个
+缺失附件及对应原生基线。没有回退技能正文、当前版本或提交号，没有修改许可清单阈值。
+原生更新会给 `repo_url` 添加 `.git`，回归测试现按同一仓库的两种合法URL比较，
+不再把这一格式变化当作来源错误。
+
+验收：50项维护测试通过，保护入口 `--apply` 成功；UI技能同步API返回HTTP200、
+`failed=[]`；三个目标的334个托管链接全部有效，重复同步没有更新或删除。
+全局配置未变，未同步MCP/hooks/plugins。浏览器桥扩展未连接，未验证页面按钮本身。
+
+取证与修复前差异：
+`~/.local/state/skillshare-onboarding/sync-repair-20261022/`。
+后续子目录Update仍可能删除根声明；更新后先运行README的验证与保护同步。
+若再次缺失，按**当前commit**重新核实上游原件并恢复基线；摘要变化时必须另行审阅，
+不能直接复制旧声明或删除清单项消警。

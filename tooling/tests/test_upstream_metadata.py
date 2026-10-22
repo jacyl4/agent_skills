@@ -33,7 +33,9 @@ class UpstreamMetadataTests(unittest.TestCase):
                 subdir = entry.get('subdir', '')
                 self.assertFalse(PurePosixPath(subdir).is_absolute())
                 self.assertNotIn('..', PurePosixPath(subdir).parts)
-                self.assertEqual(entry['source'], entry['repo_url'] + ('/' + subdir if subdir else ''))
+                # Native updates add .git to clone URLs, not to source URLs.
+                repository = entry['repo_url'].removesuffix('.git')
+                self.assertEqual(entry['source'], repository + ('/' + subdir if subdir else ''))
                 # Follow the upstream default branch, not a pinned historical SHA.
                 self.assertNotIn('/tree/', entry['source'])
 
@@ -78,7 +80,8 @@ class UpstreamMetadataTests(unittest.TestCase):
         legacy = entries['frontend/design/design-taste-frontend-v1']
         self.assertEqual(current['subdir'], 'skills/taste-skill')
         self.assertEqual(legacy['subdir'], 'skills/taste-skill-v1')
-        self.assertEqual(current['repo_url'], legacy['repo_url'])
+        self.assertEqual(current['repo_url'].removesuffix('.git'),
+                         legacy['repo_url'].removesuffix('.git'))
 
 
 if __name__ == '__main__':

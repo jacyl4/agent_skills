@@ -5,22 +5,21 @@
       "source": "https://github.com/cloudflare/skills/skills/web-perf",
       "type": "github-subdir",
       "group": "automation/web",
-      "installed_at": "2026-10-21T19:33:38.632363965+08:00",
+      "installed_at": "2026-10-22T14:35:28.9456482+08:00",
       "repo_url": "https://github.com/cloudflare/skills.git",
       "subdir": "skills/web-perf",
       "version": "86505e4",
       "tree_hash": "c4c15a909ae86c00d4fbf841238bbf56eb505ac8",
       "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f",
       "file_hashes": {
-        "SKILL.md": "sha256:79c531e95ca4d96a7de920c28c127c2c09ec55cd452a92222267d2954580be23",
-        "LICENSE": "sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+        "SKILL.md": "sha256:79c531e95ca4d96a7de920c28c127c2c09ec55cd452a92222267d2954580be23"
       }
     },
     "documents/morph-ppt": {
       "source": "https://github.com/iOfficeAI/OfficeCLI/skills/morph-ppt",
       "type": "github-subdir",
       "group": "documents",
-      "installed_at": "2026-10-21T19:32:20.17898082+08:00",
+      "installed_at": "2026-10-22T14:34:26.539766313+08:00",
       "repo_url": "https://github.com/iOfficeAI/OfficeCLI.git",
       "subdir": "skills/morph-ppt",
       "version": "06ab520",
@@ -137,176 +136,154 @@
         "reference/styles/warm--playful-organic/build.sh": "sha256:c3335b8275e9c8f5a6a5f2358487ed1c968c663834f59e85e9c2e623d9bbd24f",
         "reference/styles/warm--playful-organic/style.md": "sha256:5fa311bfe1c28dbb33b5bd61676b31d7768bf972edc8e23afe5872e72fc5b136",
         "reference/styles/warm--sunset-mosaic/style.md": "sha256:3a4db863f356b4d8174f52b0f646c35f0fe441f0d16342948b6a699fd4666227",
-        "reference/styles/warm--vital-bloom/style.md": "sha256:8b928419cb4b76b72eee0db9868da79fcc06a062a9cd0929f14bf9900a167f7b",
-        "LICENSE": "sha256:7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
-        "NOTICE": "sha256:3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b"
+        "reference/styles/warm--vital-bloom/style.md": "sha256:8b928419cb4b76b72eee0db9868da79fcc06a062a9cd0929f14bf9900a167f7b"
       }
     },
     "documents/morph-ppt-3d": {
       "source": "https://github.com/iOfficeAI/OfficeCLI/skills/morph-ppt-3d",
       "type": "github-subdir",
       "group": "documents",
-      "installed_at": "2026-10-21T19:32:24.64608324+08:00",
+      "installed_at": "2026-10-22T14:34:29.719177503+08:00",
       "repo_url": "https://github.com/iOfficeAI/OfficeCLI.git",
       "subdir": "skills/morph-ppt-3d",
       "version": "06ab520",
       "tree_hash": "4411a170cce777b800361ad59a4fdec9f208a969",
       "commit": "06ab520135a5289d0556d3e47fc2d42523f86547",
       "file_hashes": {
-        "SKILL.md": "sha256:951080c11ac0995fc3e4fb9a09a67fa6c8f02f353bf735e7ec6f6c02cab9fdad",
-        "LICENSE": "sha256:7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
-        "NOTICE": "sha256:3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b"
+        "SKILL.md": "sha256:951080c11ac0995fc3e4fb9a09a67fa6c8f02f353bf735e7ec6f6c02cab9fdad"
       }
     },
     "documents/officecli": {
       "source": "https://github.com/iOfficeAI/OfficeCLI/skills/officecli",
       "type": "github-subdir",
       "group": "documents",
-      "installed_at": "2026-10-21T19:32:27.752177317+08:00",
+      "installed_at": "2026-10-22T14:34:32.052525733+08:00",
       "repo_url": "https://github.com/iOfficeAI/OfficeCLI.git",
       "subdir": "skills/officecli",
       "version": "06ab520",
       "tree_hash": "45a58548a75165752bcd57302e4ad2431890aaa5",
       "commit": "06ab520135a5289d0556d3e47fc2d42523f86547",
       "file_hashes": {
-        "SKILL.md": "sha256:c950d285ce60021712b4753fb2d9f592308d5622bab776229061dfecb1ce55d4",
-        "LICENSE": "sha256:7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
-        "NOTICE": "sha256:3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b"
+        "SKILL.md": "sha256:c950d285ce60021712b4753fb2d9f592308d5622bab776229061dfecb1ce55d4"
       }
     },
     "documents/officecli-academic-paper": {
       "source": "https://github.com/iOfficeAI/OfficeCLI/skills/officecli-academic-paper",
       "type": "github-subdir",
       "group": "documents",
-      "installed_at": "2026-10-21T19:32:31.596150558+08:00",
+      "installed_at": "2026-10-22T14:34:34.65948225+08:00",
       "repo_url": "https://github.com/iOfficeAI/OfficeCLI.git",
       "subdir": "skills/officecli-academic-paper",
       "version": "06ab520",
       "tree_hash": "d039f069c6c790f7aeb4dc2f70181ee5368de918",
       "commit": "06ab520135a5289d0556d3e47fc2d42523f86547",
       "file_hashes": {
-        "SKILL.md": "sha256:573292e01c2b9b9885c6cd24ffec5f808d88f8a1868aa0e962bcab9a479f40e5",
-        "LICENSE": "sha256:7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
-        "NOTICE": "sha256:3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b"
+        "SKILL.md": "sha256:573292e01c2b9b9885c6cd24ffec5f808d88f8a1868aa0e962bcab9a479f40e5"
       }
     },
     "documents/officecli-data-dashboard": {
       "source": "https://github.com/iOfficeAI/OfficeCLI/skills/officecli-data-dashboard",
       "type": "github-subdir",
       "group": "documents",
-      "installed_at": "2026-10-21T19:32:35.88224482+08:00",
+      "installed_at": "2026-10-22T14:34:37.194963602+08:00",
       "repo_url": "https://github.com/iOfficeAI/OfficeCLI.git",
       "subdir": "skills/officecli-data-dashboard",
       "version": "06ab520",
       "tree_hash": "25041e7c1642bfc16b7fd01125fb7f879b832327",
       "commit": "06ab520135a5289d0556d3e47fc2d42523f86547",
       "file_hashes": {
-        "SKILL.md": "sha256:e05a3718e4d4f93c9df4d699006e5294158a91c40e1ee087d848d50d1b4d0af0",
-        "LICENSE": "sha256:7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
-        "NOTICE": "sha256:3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b"
+        "SKILL.md": "sha256:e05a3718e4d4f93c9df4d699006e5294158a91c40e1ee087d848d50d1b4d0af0"
       }
     },
     "documents/officecli-docx": {
       "source": "https://github.com/iOfficeAI/OfficeCLI/skills/officecli-docx",
       "type": "github-subdir",
       "group": "documents",
-      "installed_at": "2026-10-21T19:32:38.82149897+08:00",
+      "installed_at": "2026-10-22T14:34:39.688841649+08:00",
       "repo_url": "https://github.com/iOfficeAI/OfficeCLI.git",
       "subdir": "skills/officecli-docx",
       "version": "06ab520",
       "tree_hash": "abf90495be3693cef7ba3168561275bb731dacfc",
       "commit": "06ab520135a5289d0556d3e47fc2d42523f86547",
       "file_hashes": {
-        "SKILL.md": "sha256:a5a294fc04ec9983d766cec70887d563f3337e13a8a25db37d5a522bd37fc298",
-        "LICENSE": "sha256:7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
-        "NOTICE": "sha256:3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b"
+        "SKILL.md": "sha256:a5a294fc04ec9983d766cec70887d563f3337e13a8a25db37d5a522bd37fc298"
       }
     },
     "documents/officecli-financial-model": {
       "source": "https://github.com/iOfficeAI/OfficeCLI/skills/officecli-financial-model",
       "type": "github-subdir",
       "group": "documents",
-      "installed_at": "2026-10-21T19:32:41.90530178+08:00",
+      "installed_at": "2026-10-22T14:34:42.321741187+08:00",
       "repo_url": "https://github.com/iOfficeAI/OfficeCLI.git",
       "subdir": "skills/officecli-financial-model",
       "version": "06ab520",
       "tree_hash": "480002acbb1fb51dae321e6238c08b5b166d5db8",
       "commit": "06ab520135a5289d0556d3e47fc2d42523f86547",
       "file_hashes": {
-        "SKILL.md": "sha256:65280bce9537ff3192bbc8fe1ad94980662929a71390b258d7f38f24772d8c9e",
-        "LICENSE": "sha256:7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
-        "NOTICE": "sha256:3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b"
+        "SKILL.md": "sha256:65280bce9537ff3192bbc8fe1ad94980662929a71390b258d7f38f24772d8c9e"
       }
     },
     "documents/officecli-pitch-deck": {
       "source": "https://github.com/iOfficeAI/OfficeCLI/skills/officecli-pitch-deck",
       "type": "github-subdir",
       "group": "documents",
-      "installed_at": "2026-10-21T19:32:47.099510789+08:00",
+      "installed_at": "2026-10-22T14:34:44.723159973+08:00",
       "repo_url": "https://github.com/iOfficeAI/OfficeCLI.git",
       "subdir": "skills/officecli-pitch-deck",
       "version": "06ab520",
       "tree_hash": "38688f9db1544a7d0b9bb1842eff6afafc1ff37f",
       "commit": "06ab520135a5289d0556d3e47fc2d42523f86547",
       "file_hashes": {
-        "SKILL.md": "sha256:6b59efdc094451945fd059548771326cce4bd2e3544d0659d3d6acf0825ea2b1",
-        "LICENSE": "sha256:7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
-        "NOTICE": "sha256:3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b"
+        "SKILL.md": "sha256:6b59efdc094451945fd059548771326cce4bd2e3544d0659d3d6acf0825ea2b1"
       }
     },
     "documents/officecli-pptx": {
       "source": "https://github.com/iOfficeAI/OfficeCLI/skills/officecli-pptx",
       "type": "github-subdir",
       "group": "documents",
-      "installed_at": "2026-10-21T19:32:51.747442386+08:00",
+      "installed_at": "2026-10-22T14:34:47.189033703+08:00",
       "repo_url": "https://github.com/iOfficeAI/OfficeCLI.git",
       "subdir": "skills/officecli-pptx",
       "version": "06ab520",
       "tree_hash": "d3be17be1676dadd81494085fe530eeccf867e79",
       "commit": "06ab520135a5289d0556d3e47fc2d42523f86547",
       "file_hashes": {
-        "SKILL.md": "sha256:0d53192751d5770984f16f3c34f9923377651555c667150d7f96e16e8c9757b3",
-        "LICENSE": "sha256:7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
-        "NOTICE": "sha256:3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b"
+        "SKILL.md": "sha256:0d53192751d5770984f16f3c34f9923377651555c667150d7f96e16e8c9757b3"
       }
     },
     "documents/officecli-word-form": {
       "source": "https://github.com/iOfficeAI/OfficeCLI/skills/officecli-word-form",
       "type": "github-subdir",
       "group": "documents",
-      "installed_at": "2026-10-21T19:32:58.755831048+08:00",
+      "installed_at": "2026-10-22T14:34:49.638244996+08:00",
       "repo_url": "https://github.com/iOfficeAI/OfficeCLI.git",
       "subdir": "skills/officecli-word-form",
       "version": "06ab520",
       "tree_hash": "75e2298b23815c38de733652dd36bb313368a849",
       "commit": "06ab520135a5289d0556d3e47fc2d42523f86547",
       "file_hashes": {
-        "SKILL.md": "sha256:6c6154954089d8b6363a7a49263c986c3795cd438092ff3b0aacf0b32017d039",
-        "LICENSE": "sha256:7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
-        "NOTICE": "sha256:3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b"
+        "SKILL.md": "sha256:6c6154954089d8b6363a7a49263c986c3795cd438092ff3b0aacf0b32017d039"
       }
     },
     "documents/officecli-xlsx": {
       "source": "https://github.com/iOfficeAI/OfficeCLI/skills/officecli-xlsx",
       "type": "github-subdir",
       "group": "documents",
-      "installed_at": "2026-10-21T19:33:02.095870789+08:00",
+      "installed_at": "2026-10-22T14:34:52.259437854+08:00",
       "repo_url": "https://github.com/iOfficeAI/OfficeCLI.git",
       "subdir": "skills/officecli-xlsx",
       "version": "06ab520",
       "tree_hash": "cdd166588a11d9790f65e601581c9806e9a20882",
       "commit": "06ab520135a5289d0556d3e47fc2d42523f86547",
       "file_hashes": {
-        "SKILL.md": "sha256:95ed125c9c06defda5a9abc9a9a1d7329e8b183c74a4a6b9b8eab2e1529ebb90",
-        "LICENSE": "sha256:7e282402a5a6db33995fe638bb3fe79013f9884d8f7d15a42e481c1e86aadda1",
-        "NOTICE": "sha256:3a4715b268e148a8e9566f5e835f766f5c95c3da4d6e5ddd908806a258a2f07b"
+        "SKILL.md": "sha256:95ed125c9c06defda5a9abc9a9a1d7329e8b183c74a4a6b9b8eab2e1529ebb90"
       }
     },
     "engineering/communication/cavecrew": {
       "source": "https://github.com/JuliusBrussee/caveman/skills/cavecrew",
       "type": "github-subdir",
       "group": "engineering/communication",
-      "installed_at": "2026-10-21T19:29:47.882052642+08:00",
+      "installed_at": "2026-10-22T14:32:46.509398866+08:00",
       "repo_url": "https://github.com/JuliusBrussee/caveman.git",
       "subdir": "skills/cavecrew",
       "version": "bad48a0",
@@ -314,16 +291,14 @@
       "commit": "bad48a0e1df55e05e3f52249afa35ecc1909ee76",
       "file_hashes": {
         "README.md": "sha256:42e9972951719548b83402c726e8c07a01305e609c3d49626d1cab7dc5af7315",
-        "SKILL.md": "sha256:534c0a70d4c7728815214a11e80e66cecbd2104f905f96414e6e32504381c002",
-        "LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-        "NOTICE": "sha256:20112dc6e62e91da4f03c29fd10cfa41743a9c526389fdf1396c3649c18216fc"
+        "SKILL.md": "sha256:534c0a70d4c7728815214a11e80e66cecbd2104f905f96414e6e32504381c002"
       }
     },
     "engineering/communication/caveman": {
       "source": "https://github.com/JuliusBrussee/caveman/skills/caveman",
       "type": "github-subdir",
       "group": "engineering/communication",
-      "installed_at": "2026-10-21T19:29:52.011032337+08:00",
+      "installed_at": "2026-10-22T14:32:49.047033842+08:00",
       "repo_url": "https://github.com/JuliusBrussee/caveman.git",
       "subdir": "skills/caveman",
       "version": "bad48a0",
@@ -331,16 +306,14 @@
       "commit": "bad48a0e1df55e05e3f52249afa35ecc1909ee76",
       "file_hashes": {
         "README.md": "sha256:e8b22f37ccb204bd00cdf98c723c0df37aeda1f5863e9ad1d634f5c839d99e5d",
-        "SKILL.md": "sha256:415d43518f2b1a9498c15a445d4657117b129ee5e81b19454ce348439cc6672b",
-        "LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-        "NOTICE": "sha256:20112dc6e62e91da4f03c29fd10cfa41743a9c526389fdf1396c3649c18216fc"
+        "SKILL.md": "sha256:415d43518f2b1a9498c15a445d4657117b129ee5e81b19454ce348439cc6672b"
       }
     },
     "engineering/communication/caveman-commit": {
       "source": "https://github.com/JuliusBrussee/caveman/skills/caveman-commit",
       "type": "github-subdir",
       "group": "engineering/communication",
-      "installed_at": "2026-10-21T19:29:55.59400915+08:00",
+      "installed_at": "2026-10-22T14:32:51.357989123+08:00",
       "repo_url": "https://github.com/JuliusBrussee/caveman.git",
       "subdir": "skills/caveman-commit",
       "version": "bad48a0",
@@ -348,16 +321,14 @@
       "commit": "bad48a0e1df55e05e3f52249afa35ecc1909ee76",
       "file_hashes": {
         "README.md": "sha256:a2e82924b487fc1845114c247b47c2d3c2d1bd60f90bbfa60e9831319eb964fa",
-        "SKILL.md": "sha256:c788a282fc75b981b421dfdad5d84ea7f83f946c126daa39cfc7d3f97845e193",
-        "LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-        "NOTICE": "sha256:20112dc6e62e91da4f03c29fd10cfa41743a9c526389fdf1396c3649c18216fc"
+        "SKILL.md": "sha256:c788a282fc75b981b421dfdad5d84ea7f83f946c126daa39cfc7d3f97845e193"
       }
     },
     "engineering/communication/caveman-compress": {
       "source": "https://github.com/JuliusBrussee/caveman/skills/caveman-compress",
       "type": "github-subdir",
       "group": "engineering/communication",
-      "installed_at": "2026-10-21T19:29:58.840529199+08:00",
+      "installed_at": "2026-10-22T14:32:53.804972517+08:00",
       "repo_url": "https://github.com/JuliusBrussee/caveman.git",
       "subdir": "skills/caveman-compress",
       "version": "bad48a0",
@@ -373,16 +344,14 @@
         "scripts/cli.py": "sha256:04d615a66dbf204e3a883b53706320c0c48e0a4c717b0516d41f647a7cfafeb2",
         "scripts/compress.py": "sha256:bdef644c8654b045d6c092dea96fc41bbb8d85b274218f3f6868cb2847480279",
         "scripts/detect.py": "sha256:8dbdce1df5b6ccb049cd2c84b16f3409ac5551abb9fbc07ddd1616393b78b8f5",
-        "scripts/validate.py": "sha256:f850fc6767c2be7731fb5817cbbf9f52792463c78e369060ea442a06fc44c75a",
-        "LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-        "NOTICE": "sha256:20112dc6e62e91da4f03c29fd10cfa41743a9c526389fdf1396c3649c18216fc"
+        "scripts/validate.py": "sha256:f850fc6767c2be7731fb5817cbbf9f52792463c78e369060ea442a06fc44c75a"
       }
     },
     "engineering/communication/caveman-help": {
       "source": "https://github.com/JuliusBrussee/caveman/skills/caveman-help",
       "type": "github-subdir",
       "group": "engineering/communication",
-      "installed_at": "2026-10-21T19:30:02.743695659+08:00",
+      "installed_at": "2026-10-22T14:32:56.522106343+08:00",
       "repo_url": "https://github.com/JuliusBrussee/caveman.git",
       "subdir": "skills/caveman-help",
       "version": "bad48a0",
@@ -390,16 +359,14 @@
       "commit": "bad48a0e1df55e05e3f52249afa35ecc1909ee76",
       "file_hashes": {
         "README.md": "sha256:b88d5e36dfab3a681f52d6b4bfcdbe188aebd2ef9decf7f58b025a75867810e3",
-        "SKILL.md": "sha256:0bf9ee3fc8a9258b2d5f6b8bf24ac21f0bf2e4b9b4641dbc426b74f18186f81d",
-        "LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-        "NOTICE": "sha256:20112dc6e62e91da4f03c29fd10cfa41743a9c526389fdf1396c3649c18216fc"
+        "SKILL.md": "sha256:0bf9ee3fc8a9258b2d5f6b8bf24ac21f0bf2e4b9b4641dbc426b74f18186f81d"
       }
     },
     "engineering/communication/caveman-review": {
       "source": "https://github.com/JuliusBrussee/caveman/skills/caveman-review",
       "type": "github-subdir",
       "group": "engineering/communication",
-      "installed_at": "2026-10-21T19:30:06.078231154+08:00",
+      "installed_at": "2026-10-22T14:32:58.773501627+08:00",
       "repo_url": "https://github.com/JuliusBrussee/caveman.git",
       "subdir": "skills/caveman-review",
       "version": "bad48a0",
@@ -407,16 +374,14 @@
       "commit": "bad48a0e1df55e05e3f52249afa35ecc1909ee76",
       "file_hashes": {
         "README.md": "sha256:a06403b2722a069a9a2b0011772ae73296e68b4e46ace2f4b42b4ea546052b64",
-        "SKILL.md": "sha256:599330563f19b5c59c3efddffcd7e8d9098b74c29817ab422ccd3253b103fcb8",
-        "LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-        "NOTICE": "sha256:20112dc6e62e91da4f03c29fd10cfa41743a9c526389fdf1396c3649c18216fc"
+        "SKILL.md": "sha256:599330563f19b5c59c3efddffcd7e8d9098b74c29817ab422ccd3253b103fcb8"
       }
     },
     "engineering/communication/caveman-stats": {
       "source": "https://github.com/JuliusBrussee/caveman/skills/caveman-stats",
       "type": "github-subdir",
       "group": "engineering/communication",
-      "installed_at": "2026-10-21T19:30:10.729399483+08:00",
+      "installed_at": "2026-10-22T14:33:01.236475692+08:00",
       "repo_url": "https://github.com/JuliusBrussee/caveman.git",
       "subdir": "skills/caveman-stats",
       "version": "bad48a0",
@@ -424,99 +389,91 @@
       "commit": "bad48a0e1df55e05e3f52249afa35ecc1909ee76",
       "file_hashes": {
         "README.md": "sha256:a6d778cf6dd8382b7c27695aa57e5d2d70e93c5b326347f6c17162f56cddbfd6",
-        "SKILL.md": "sha256:4632f1611a56483df7851a0dabcc1e0c1952393cd8f5d08ddeda17f81a4e1e50",
-        "LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-        "NOTICE": "sha256:20112dc6e62e91da4f03c29fd10cfa41743a9c526389fdf1396c3649c18216fc"
+        "SKILL.md": "sha256:4632f1611a56483df7851a0dabcc1e0c1952393cd8f5d08ddeda17f81a4e1e50"
       }
     },
     "engineering/ponytail/ponytail": {
       "source": "https://github.com/dietrichgebert/ponytail/skills/ponytail",
       "type": "github-subdir",
       "group": "engineering/ponytail",
-      "installed_at": "2026-10-21T19:33:04.331636709+08:00",
+      "installed_at": "2026-10-22T14:34:54.548609835+08:00",
       "repo_url": "https://github.com/dietrichgebert/ponytail.git",
       "subdir": "skills/ponytail",
       "version": "09c434a",
       "tree_hash": "e8d3fa76e7ff9223a784dbd4bcfc9ff46b3fa55d",
       "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
       "file_hashes": {
-        "SKILL.md": "sha256:9badd22a32e19cb884e46dfa8d3aae82bb81dfa5484105b8b4f0262df823a509",
-        "LICENSE": "sha256:fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab"
+        "SKILL.md": "sha256:9badd22a32e19cb884e46dfa8d3aae82bb81dfa5484105b8b4f0262df823a509"
       }
     },
     "engineering/ponytail/ponytail-audit": {
       "source": "https://github.com/dietrichgebert/ponytail/skills/ponytail-audit",
       "type": "github-subdir",
       "group": "engineering/ponytail",
-      "installed_at": "2026-10-21T19:33:07.052184078+08:00",
+      "installed_at": "2026-10-22T14:34:59.746856901+08:00",
       "repo_url": "https://github.com/dietrichgebert/ponytail.git",
       "subdir": "skills/ponytail-audit",
       "version": "09c434a",
       "tree_hash": "0c1468092a2b011b7acd369becea098f0c17f1c0",
       "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
       "file_hashes": {
-        "SKILL.md": "sha256:2b3223a02c386d1263e1b08343cb8eb3a53e444cdafb1d79e26c8ec2a8fcad28",
-        "LICENSE": "sha256:fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab"
+        "SKILL.md": "sha256:2b3223a02c386d1263e1b08343cb8eb3a53e444cdafb1d79e26c8ec2a8fcad28"
       }
     },
     "engineering/ponytail/ponytail-debt": {
       "source": "https://github.com/dietrichgebert/ponytail/skills/ponytail-debt",
       "type": "github-subdir",
       "group": "engineering/ponytail",
-      "installed_at": "2026-10-21T19:33:10.293848475+08:00",
+      "installed_at": "2026-10-22T14:35:09.112301628+08:00",
       "repo_url": "https://github.com/dietrichgebert/ponytail.git",
       "subdir": "skills/ponytail-debt",
       "version": "09c434a",
       "tree_hash": "16c3b7953629510afa8f061f0fefa61a104e3020",
       "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
       "file_hashes": {
-        "SKILL.md": "sha256:b5ec2762f6ba8c4af9ea7173aa6c9f91b88655a25e43f9de0264f6ce8722b25f",
-        "LICENSE": "sha256:fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab"
+        "SKILL.md": "sha256:b5ec2762f6ba8c4af9ea7173aa6c9f91b88655a25e43f9de0264f6ce8722b25f"
       }
     },
     "engineering/ponytail/ponytail-gain": {
       "source": "https://github.com/dietrichgebert/ponytail/skills/ponytail-gain",
       "type": "github-subdir",
       "group": "engineering/ponytail",
-      "installed_at": "2026-10-21T19:33:13.947314452+08:00",
+      "installed_at": "2026-10-22T14:35:12.107343801+08:00",
       "repo_url": "https://github.com/dietrichgebert/ponytail.git",
       "subdir": "skills/ponytail-gain",
       "version": "09c434a",
       "tree_hash": "c41e9e90173ddc6844c0bc44a89ba739534e06b0",
       "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
       "file_hashes": {
-        "SKILL.md": "sha256:231034a896d6762e4b5c8468287083422c56b499119976ec9f76821f7d083090",
-        "LICENSE": "sha256:fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab"
+        "SKILL.md": "sha256:231034a896d6762e4b5c8468287083422c56b499119976ec9f76821f7d083090"
       }
     },
     "engineering/ponytail/ponytail-help": {
       "source": "https://github.com/dietrichgebert/ponytail/skills/ponytail-help",
       "type": "github-subdir",
       "group": "engineering/ponytail",
-      "installed_at": "2026-10-21T19:33:17.179471425+08:00",
+      "installed_at": "2026-10-22T14:35:14.047432254+08:00",
       "repo_url": "https://github.com/dietrichgebert/ponytail.git",
       "subdir": "skills/ponytail-help",
       "version": "09c434a",
       "tree_hash": "f293d9e0ecff5da72cb4accf8a9e4717892cf0ad",
       "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
       "file_hashes": {
-        "SKILL.md": "sha256:86ab0ce0af70cbeeeef499d5c884873b393f87f86401dcc45553662ce2c1eff9",
-        "LICENSE": "sha256:fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab"
+        "SKILL.md": "sha256:86ab0ce0af70cbeeeef499d5c884873b393f87f86401dcc45553662ce2c1eff9"
       }
     },
     "engineering/ponytail/ponytail-review": {
       "source": "https://github.com/dietrichgebert/ponytail/skills/ponytail-review",
       "type": "github-subdir",
       "group": "engineering/ponytail",
-      "installed_at": "2026-10-21T19:33:19.859287494+08:00",
+      "installed_at": "2026-10-22T14:35:16.051068839+08:00",
       "repo_url": "https://github.com/dietrichgebert/ponytail.git",
       "subdir": "skills/ponytail-review",
       "version": "09c434a",
       "tree_hash": "8ad8430c42a6f8cd18758dddb70cfee399725de6",
       "commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
       "file_hashes": {
-        "SKILL.md": "sha256:33fe4ebe22a460924e5d4a261e223df22e409cc94ab76182bee9fb91a3ef022e",
-        "LICENSE": "sha256:fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab"
+        "SKILL.md": "sha256:33fe4ebe22a460924e5d4a261e223df22e409cc94ab76182bee9fb91a3ef022e"
       }
     },
     "engineering/practices/full-output-enforcement": {
@@ -538,120 +495,112 @@
       "source": "https://github.com/greensock/gsap-skills/skills/gsap-core",
       "type": "github-subdir",
       "group": "frontend/animation",
-      "installed_at": "2026-10-21T19:30:56.090659617+08:00",
+      "installed_at": "2026-10-22T14:33:38.048092036+08:00",
       "repo_url": "https://github.com/greensock/gsap-skills.git",
       "subdir": "skills/gsap-core",
       "version": "aed9cfd",
       "tree_hash": "135754edd728103e329a8df8b471b197375b370e",
       "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
       "file_hashes": {
-        "SKILL.md": "sha256:3887b47e050ab5afbe2a9a820f23d39fa02ab785e06a343be44c6f91d84d12b3",
-        "LICENSE": "sha256:51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+        "SKILL.md": "sha256:3887b47e050ab5afbe2a9a820f23d39fa02ab785e06a343be44c6f91d84d12b3"
       }
     },
     "frontend/animation/gsap-frameworks": {
       "source": "https://github.com/greensock/gsap-skills/skills/gsap-frameworks",
       "type": "github-subdir",
       "group": "frontend/animation",
-      "installed_at": "2026-10-21T19:30:58.120654657+08:00",
+      "installed_at": "2026-10-22T14:33:40.297413714+08:00",
       "repo_url": "https://github.com/greensock/gsap-skills.git",
       "subdir": "skills/gsap-frameworks",
       "version": "aed9cfd",
       "tree_hash": "5b086fa623be801882128fa16b2a9b446d193029",
       "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
       "file_hashes": {
-        "SKILL.md": "sha256:842d9d3659ec3ddc8abbdc524708f8facf81f468ac25d0577f48c759c4fa31e6",
-        "LICENSE": "sha256:51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+        "SKILL.md": "sha256:842d9d3659ec3ddc8abbdc524708f8facf81f468ac25d0577f48c759c4fa31e6"
       }
     },
     "frontend/animation/gsap-performance": {
       "source": "https://github.com/greensock/gsap-skills/skills/gsap-performance",
       "type": "github-subdir",
       "group": "frontend/animation",
-      "installed_at": "2026-10-21T19:31:00.53795052+08:00",
+      "installed_at": "2026-10-22T14:33:42.49799368+08:00",
       "repo_url": "https://github.com/greensock/gsap-skills.git",
       "subdir": "skills/gsap-performance",
       "version": "aed9cfd",
       "tree_hash": "34dec2f051872f8d02df06de97450e448bac9c5e",
       "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
       "file_hashes": {
-        "SKILL.md": "sha256:cb5408d6fba707aabcbfe3320317a14c1f8fca6070074e5261047930f50d441e",
-        "LICENSE": "sha256:51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+        "SKILL.md": "sha256:cb5408d6fba707aabcbfe3320317a14c1f8fca6070074e5261047930f50d441e"
       }
     },
     "frontend/animation/gsap-plugins": {
       "source": "https://github.com/greensock/gsap-skills/skills/gsap-plugins",
       "type": "github-subdir",
       "group": "frontend/animation",
-      "installed_at": "2026-10-21T19:31:03.059444026+08:00",
+      "installed_at": "2026-10-22T14:33:45.239155105+08:00",
       "repo_url": "https://github.com/greensock/gsap-skills.git",
       "subdir": "skills/gsap-plugins",
       "version": "aed9cfd",
       "tree_hash": "e31ccbdb75cf41f0e7df0fec567f6e07956eaca9",
       "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
       "file_hashes": {
-        "SKILL.md": "sha256:5838b856c74c07fbc9fa99b6dfd1eee34ea554c3e530c30e0d58014b707d70a4",
-        "LICENSE": "sha256:51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+        "SKILL.md": "sha256:5838b856c74c07fbc9fa99b6dfd1eee34ea554c3e530c30e0d58014b707d70a4"
       }
     },
     "frontend/animation/gsap-react": {
       "source": "https://github.com/greensock/gsap-skills/skills/gsap-react",
       "type": "github-subdir",
       "group": "frontend/animation",
-      "installed_at": "2026-10-21T19:31:05.307421807+08:00",
+      "installed_at": "2026-10-22T14:33:47.374688226+08:00",
       "repo_url": "https://github.com/greensock/gsap-skills.git",
       "subdir": "skills/gsap-react",
       "version": "aed9cfd",
       "tree_hash": "ac01a338b96fddbc6cf65a89858d2e6068887b39",
       "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
       "file_hashes": {
-        "SKILL.md": "sha256:88e2a5312b45e8cc7b3c496637ff5bc9af2ae9c925b555c8b235b34cbc989d74",
-        "LICENSE": "sha256:51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+        "SKILL.md": "sha256:88e2a5312b45e8cc7b3c496637ff5bc9af2ae9c925b555c8b235b34cbc989d74"
       }
     },
     "frontend/animation/gsap-scrolltrigger": {
       "source": "https://github.com/greensock/gsap-skills/skills/gsap-scrolltrigger",
       "type": "github-subdir",
       "group": "frontend/animation",
-      "installed_at": "2026-10-21T19:31:08.705920974+08:00",
+      "installed_at": "2026-10-22T14:33:49.54874352+08:00",
       "repo_url": "https://github.com/greensock/gsap-skills.git",
       "subdir": "skills/gsap-scrolltrigger",
       "version": "aed9cfd",
       "tree_hash": "7838f515e05bfab0a79dd63368a409ddc7d76ee6",
       "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
       "file_hashes": {
-        "SKILL.md": "sha256:9351b6666a4749c0740406ea363aaccb99a087ff45cc5e8b99a0f367facf3ef4",
-        "LICENSE": "sha256:51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+        "SKILL.md": "sha256:9351b6666a4749c0740406ea363aaccb99a087ff45cc5e8b99a0f367facf3ef4"
       }
     },
     "frontend/animation/gsap-timeline": {
       "source": "https://github.com/greensock/gsap-skills/skills/gsap-timeline",
       "type": "github-subdir",
       "group": "frontend/animation",
-      "installed_at": "2026-10-21T19:31:11.328318437+08:00",
+      "installed_at": "2026-10-22T14:33:51.684618484+08:00",
       "repo_url": "https://github.com/greensock/gsap-skills.git",
       "subdir": "skills/gsap-timeline",
       "version": "aed9cfd",
       "tree_hash": "37eb5d623c3e14367864d57160acb64f13950994",
       "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
       "file_hashes": {
-        "SKILL.md": "sha256:1a8b0f39cc4be3ed3d834b89672e4ae2f151b901dc3450bebf10bbc45379fe02",
-        "LICENSE": "sha256:51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+        "SKILL.md": "sha256:1a8b0f39cc4be3ed3d834b89672e4ae2f151b901dc3450bebf10bbc45379fe02"
       }
     },
     "frontend/animation/gsap-utils": {
       "source": "https://github.com/greensock/gsap-skills/skills/gsap-utils",
       "type": "github-subdir",
       "group": "frontend/animation",
-      "installed_at": "2026-10-21T19:31:14.82277143+08:00",
+      "installed_at": "2026-10-22T14:33:53.868946054+08:00",
       "repo_url": "https://github.com/greensock/gsap-skills.git",
       "subdir": "skills/gsap-utils",
       "version": "aed9cfd",
       "tree_hash": "3f7aa617dd2dc7ebf21f30349b9c7b6d8640d789",
       "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
       "file_hashes": {
-        "SKILL.md": "sha256:1927bcc4ea95b38203404ad5ea1d060b15c4a886c65ae53e885ff1793aabe0ba",
-        "LICENSE": "sha256:51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+        "SKILL.md": "sha256:1927bcc4ea95b38203404ad5ea1d060b15c4a886c65ae53e885ff1793aabe0ba"
       }
     },
     "frontend/design/brandkit": {
@@ -673,7 +622,7 @@
       "source": "https://github.com/Leonxlnx/taste-skill/skills/taste-skill",
       "type": "github-subdir",
       "group": "frontend/design",
-      "installed_at": "2026-10-21T19:30:29.478486744+08:00",
+      "installed_at": "2026-10-22T14:33:16.69650164+08:00",
       "repo_url": "https://github.com/Leonxlnx/taste-skill.git",
       "subdir": "skills/taste-skill",
       "version": "6010f91",
@@ -717,8 +666,7 @@
         "scripts/lib/probe.mjs": "sha256:c14fd0bed7727855a1f3fcf5ade945fba97f314562fd7430354168b2da25433b",
         "scripts/lib/rules.mjs": "sha256:5de058543b3bd6f3dd2f85ff1c1e5e1f91918ba9f4454e7ee0b8934c607982f9",
         "scripts/lint.mjs": "sha256:05f2fae2f56fc051b539cdbacb43a6f78fbbfb9644bb74aa11be472ff12dcaf5",
-        "scripts/scenes.mjs": "sha256:234ec582e2b841457c33033feeeba8535f9ac285495a74d08dc533a1566c90d5",
-        "LICENSE": "sha256:4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df"
+        "scripts/scenes.mjs": "sha256:234ec582e2b841457c33033feeeba8535f9ac285495a74d08dc533a1566c90d5"
       }
     },
     "frontend/design/design-taste-frontend-v1": {
@@ -876,7 +824,7 @@
       "source": "https://github.com/cloudflare/skills/skills/agents-sdk",
       "type": "github-subdir",
       "group": "platforms/cloudflare",
-      "installed_at": "2026-10-21T19:29:37.803157307+08:00",
+      "installed_at": "2026-10-22T14:32:38.975228891+08:00",
       "repo_url": "https://github.com/cloudflare/skills.git",
       "subdir": "skills/agents-sdk",
       "version": "86505e4",
@@ -902,15 +850,14 @@
         "references/think.md": "sha256:9ad3c294f7feef292cdbe6ece0ac916054e4604af00e91fd02a4216fc4ad9df5",
         "references/voice.md": "sha256:ef23a2e20cdce96f606008f29d2d77145e04b0c73491505e5d971ec130bbe05f",
         "references/webhooks-push.md": "sha256:0ec967c03a5701d04505b1d1e47d056dcaf30c8326299a014b3e3e84ed4ed22f",
-        "references/workflows.md": "sha256:0cdf5b5fd935f0986c8c1b61306e8294bfe9b710ca856428cfb45296ab181aec",
-        "LICENSE": "sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+        "references/workflows.md": "sha256:0cdf5b5fd935f0986c8c1b61306e8294bfe9b710ca856428cfb45296ab181aec"
       }
     },
     "platforms/cloudflare/cloudflare": {
       "source": "https://github.com/cloudflare/skills/skills/cloudflare",
       "type": "github-subdir",
       "group": "platforms/cloudflare",
-      "installed_at": "2026-10-21T19:30:14.311701135+08:00",
+      "installed_at": "2026-10-22T14:33:04.55186687+08:00",
       "repo_url": "https://github.com/cloudflare/skills.git",
       "subdir": "skills/cloudflare",
       "version": "86505e4",
@@ -1055,15 +1002,14 @@
         "references/workflows/api.md": "sha256:322efb2052b95557a4735bb3418d584e003ce989ffabc6385dc294d2709603f7",
         "references/workflows/configuration.md": "sha256:297b59fc474f885a6c313212bc22b3485642495dced1ab4919da57c6223a2563",
         "references/workflows/gotchas.md": "sha256:178152af4c810ec7104e4459bc883b0730c06de213b25ae86b8bcd06c7259f1a",
-        "references/workflows/patterns.md": "sha256:91ea4976873dc1737173f23762b433e6fdbd3ed8ab989189490325eaeb66815f",
-        "LICENSE": "sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+        "references/workflows/patterns.md": "sha256:91ea4976873dc1737173f23762b433e6fdbd3ed8ab989189490325eaeb66815f"
       }
     },
     "platforms/cloudflare/cloudflare-email-service": {
       "source": "https://github.com/cloudflare/skills/skills/cloudflare-email-service",
       "type": "github-subdir",
       "group": "platforms/cloudflare",
-      "installed_at": "2026-10-21T19:30:17.591165445+08:00",
+      "installed_at": "2026-10-22T14:33:06.621160893+08:00",
       "repo_url": "https://github.com/cloudflare/skills.git",
       "subdir": "skills/cloudflare-email-service",
       "version": "86505e4",
@@ -1075,45 +1021,42 @@
         "references/deliverability.md": "sha256:16fac60424f90fdeeb2081eb844e79b0f3f535202778b0a5b0b1c06691eb233a",
         "references/rest-api.md": "sha256:b3c512d0e76a30dd51c6f131488c438cd3975aa0f14f42bad00ef2d442721083",
         "references/routing.md": "sha256:22e42f3b60a4c256e79c865c2c8fb0512e656e95b2b9ee206d5e7f18d9de92ec",
-        "references/sending.md": "sha256:313e75e8ec59eb428b443d284ee6e74631e8c2e0b585ee64f2e4a1c7612e4207",
-        "LICENSE": "sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+        "references/sending.md": "sha256:313e75e8ec59eb428b443d284ee6e74631e8c2e0b585ee64f2e4a1c7612e4207"
       }
     },
     "platforms/cloudflare/cloudflare-one": {
       "source": "https://github.com/cloudflare/skills/skills/cloudflare-one",
       "type": "github-subdir",
       "group": "platforms/cloudflare",
-      "installed_at": "2026-10-21T19:30:20.376337551+08:00",
+      "installed_at": "2026-10-22T14:33:08.771917353+08:00",
       "repo_url": "https://github.com/cloudflare/skills.git",
       "subdir": "skills/cloudflare-one",
       "version": "86505e4",
       "tree_hash": "d74021a79642a4594ee116249cefd1a04b3ad5a1",
       "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f",
       "file_hashes": {
-        "SKILL.md": "sha256:78c0540861f0c8f5825f7e871a6e8ebfaae0b2b5a8055ab5cfd18038b2f59b4d",
-        "LICENSE": "sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+        "SKILL.md": "sha256:78c0540861f0c8f5825f7e871a6e8ebfaae0b2b5a8055ab5cfd18038b2f59b4d"
       }
     },
     "platforms/cloudflare/cloudflare-one-migrations": {
       "source": "https://github.com/cloudflare/skills/skills/cloudflare-one-migrations",
       "type": "github-subdir",
       "group": "platforms/cloudflare",
-      "installed_at": "2026-10-21T19:30:22.966809927+08:00",
+      "installed_at": "2026-10-22T14:33:10.664965678+08:00",
       "repo_url": "https://github.com/cloudflare/skills.git",
       "subdir": "skills/cloudflare-one-migrations",
       "version": "86505e4",
       "tree_hash": "631ae2d9945516f5ebe5cf6bd9a84b7e6c6bae2d",
       "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f",
       "file_hashes": {
-        "SKILL.md": "sha256:d09dd780eeaf28f5aad17b0c2aec2bacd8b7d6cbd07919d24a2092982cab77db",
-        "LICENSE": "sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+        "SKILL.md": "sha256:d09dd780eeaf28f5aad17b0c2aec2bacd8b7d6cbd07919d24a2092982cab77db"
       }
     },
     "platforms/cloudflare/durable-objects": {
       "source": "https://github.com/cloudflare/skills/skills/durable-objects",
       "type": "github-subdir",
       "group": "platforms/cloudflare",
-      "installed_at": "2026-10-21T19:30:36.997327382+08:00",
+      "installed_at": "2026-10-22T14:33:24.459744678+08:00",
       "repo_url": "https://github.com/cloudflare/skills.git",
       "subdir": "skills/durable-objects",
       "version": "86505e4",
@@ -1123,15 +1066,14 @@
         "SKILL.md": "sha256:2468c1795f439f494f076eb13a2202a3c4e579e71e6e2ed98b4d1f5ce62fef1b",
         "references/rules.md": "sha256:8ec51f1270d6014763139236c3fb9f3a21a3bed4054c99b101f392eb5cb363bf",
         "references/testing.md": "sha256:1a99e6a2e1bd7f2fa34573b07ad036e3c2ddcf97df6a42926d737eb2d87b3168",
-        "references/workers.md": "sha256:3149c3ee371b5dbf3a84dac7d5bb42c4c6553762480741f6d2808e4ca20fd932",
-        "LICENSE": "sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+        "references/workers.md": "sha256:3149c3ee371b5dbf3a84dac7d5bb42c4c6553762480741f6d2808e4ca20fd932"
       }
     },
     "platforms/cloudflare/turnstile-spin": {
       "source": "https://github.com/cloudflare/skills/skills/turnstile-spin",
       "type": "github-subdir",
       "group": "platforms/cloudflare",
-      "installed_at": "2026-10-21T19:33:35.788749336+08:00",
+      "installed_at": "2026-10-22T14:35:26.799753556+08:00",
       "repo_url": "https://github.com/cloudflare/skills.git",
       "subdir": "skills/turnstile-spin",
       "version": "86505e4",
@@ -1151,15 +1093,14 @@
         "scripts/validate.sh": "sha256:45af59068104650ac8b247cf2059d985fa17960d9c2f3d867287fc296771de81",
         "scripts/widget-create.sh": "sha256:ebc3ef13ef99f4f6f93400ce66ffc3848c1913aac0cb0876470c6378cf1d9fed",
         "tests/test_persist_skill.py": "sha256:4f056e24454c166c289edac2dc07fb46032bb2b091a8f4cc08f7264be3bdb756",
-        "tests/validation.md": "sha256:6c6be1c540997fd1d56973bd11dff92856c4256090886bfe9a385e51058fca53",
-        "LICENSE": "sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+        "tests/validation.md": "sha256:6c6be1c540997fd1d56973bd11dff92856c4256090886bfe9a385e51058fca53"
       }
     },
     "platforms/cloudflare/workers-best-practices": {
       "source": "https://github.com/cloudflare/skills/skills/workers-best-practices",
       "type": "github-subdir",
       "group": "platforms/cloudflare",
-      "installed_at": "2026-10-21T19:33:41.500803831+08:00",
+      "installed_at": "2026-10-22T14:35:31.027857893+08:00",
       "repo_url": "https://github.com/cloudflare/skills.git",
       "subdir": "skills/workers-best-practices",
       "version": "86505e4",
@@ -1169,23 +1110,21 @@
         "SKILL.md": "sha256:039c2a70aac53e00da20adc3d527bd3fc9b727be90c28b94c81c5e10092339ef",
         "references/configuration.md": "sha256:cdb5c9cd5168231373523332c0e7a5cf8811dc244c48298823e3ccc5eb7157c1",
         "references/platform-apis.md": "sha256:9ca9f5a7a82f92de45d310f5e2ee05aa464ddb7a63a737529caa17fff3660f28",
-        "references/runtime-patterns.md": "sha256:704ce8d4ff62c7655eb1d15f804ad566ed2012d11c2086e0d94bd3addb4d2c07",
-        "LICENSE": "sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+        "references/runtime-patterns.md": "sha256:704ce8d4ff62c7655eb1d15f804ad566ed2012d11c2086e0d94bd3addb4d2c07"
       }
     },
     "platforms/cloudflare/wrangler": {
       "source": "https://github.com/cloudflare/skills/skills/wrangler",
       "type": "github-subdir",
       "group": "platforms/cloudflare",
-      "installed_at": "2026-10-21T19:33:43.870200273+08:00",
+      "installed_at": "2026-10-22T14:35:33.61469392+08:00",
       "repo_url": "https://github.com/cloudflare/skills.git",
       "subdir": "skills/wrangler",
       "version": "86505e4",
       "tree_hash": "a6f70b001b36794b778ed888fc372df40d59e6ca",
       "commit": "86505e44f87d801aa1864a3c4109e9a8ae5c409f",
       "file_hashes": {
-        "SKILL.md": "sha256:7884f560509c08ac29ee0d3cfe1b5259855fd6790acf0c5292f4d1c54db7c191",
-        "LICENSE": "sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+        "SKILL.md": "sha256:7884f560509c08ac29ee0d3cfe1b5259855fd6790acf0c5292f4d1c54db7c191"
       }
     }
   },
